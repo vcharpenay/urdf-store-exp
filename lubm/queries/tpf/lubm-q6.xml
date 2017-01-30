@@ -1,0 +1,8 @@
+<sparql:Query
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://siemens.com/urdf/univ-bench.owl#"
+    xmlns:sparql="http://www.w3.org/ns/sparql#" > 
+  <sparql:QueryVariable sparql:name="X">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+  </sparql:QueryVariable>
+</sparql:Query>

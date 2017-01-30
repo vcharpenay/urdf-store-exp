@@ -1,0 +1,74 @@
+<sparql:Query
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://siemens.com/urdf/univ-bench.owl#"
+    xmlns:sparql="http://www.w3.org/ns/sparql#" > 
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor0/Publication2">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor0/Publication3">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor0/Publication0">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor0/Publication1">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor1/Publication0">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Lecturer0/Publication0">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor1/Publication4">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor1/Publication3">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor0/Publication4">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor1/Publication2">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor1/Publication1">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Lecturer1/Publication0">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor0/Publication5">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssistantProfessor0/Publication3">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <sparql:QueryVariable sparql:name="X">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Publication"/>
+  </sparql:QueryVariable>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssistantProfessor0/Publication0">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssistantProfessor0/Publication2">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssistantProfessor0/Publication1">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssociateProfessor0/Publication4">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssociateProfessor0/Publication3">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssociateProfessor0/Publication2">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssociateProfessor0/Publication1">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssociateProfessor0/Publication0">
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+</sparql:Query>

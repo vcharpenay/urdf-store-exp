@@ -1,0 +1,22 @@
+<!DOCTYPE sparql:Query [
+<!ENTITY wot "http://www.w3c.org/wot/td#" >
+]>
+
+<sparql:Query
+	xmlns:ub="http://siemens.com/urdf/univ-bench.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:sparql="http://www.w3.org/ns/sparql#"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+    >
+
+	<rdf:Description rdf:about="http://www.University0.edu">
+		<ub:hasAlumnus>
+			<sparql:QueryVariable sparql:name="X">
+				<rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Person"/>
+			</sparql:QueryVariable>
+		</ub:hasAlumnus>
+	</rdf:Description>
+
+
+</sparql:Query>
+

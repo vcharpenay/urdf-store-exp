@@ -1,0 +1,20 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ub="http://siemens.com/urdf/univ-bench.owl#">
+  <ub:Professor rdf:about="http://www.Department0.University0.edu/AssociateProfessor0">
+    <ub:name>AssociateProfessor0</ub:name>
+    <ub:worksFor rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Professor>
+  <ub:Professor rdf:about="http://www.Department0.University0.edu/FullProfessor1">
+    <ub:name>FullProfessor1</ub:name>
+    <ub:worksFor rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Professor>
+  <ub:Professor rdf:about="http://www.Department0.University0.edu/FullProfessor0">
+    <ub:name>FullProfessor0</ub:name>
+    <ub:worksFor rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Professor>
+  <ub:Professor rdf:about="http://www.Department0.University0.edu/AssistantProfessor0">
+    <ub:name>AssistantProfessor0</ub:name>
+    <ub:worksFor rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Professor>
+</rdf:RDF>

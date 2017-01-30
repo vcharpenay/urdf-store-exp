@@ -1,0 +1,30 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ub="http://siemens.com/urdf/univ-bench.owl#">
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent17"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent8"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent15"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent0"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent2"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent13"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent11"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent7"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent3"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent5"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent1"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent3"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent5"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent16"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent7"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent9"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent14"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent1"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent12"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent10"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent4"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent6"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent0"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent2"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent4"/>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent6"/>
+</rdf:RDF>

@@ -1,0 +1,22 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ub="http://siemens.com/urdf/univ-bench.owl#">
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent16"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent7"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent17"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent8"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent9"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent14"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent15"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent12"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent13"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent10"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent11"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent0"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent1"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent2"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent3"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent4"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent5"/>
+  <ub:UndergraduateStudent rdf:about="http://www.Department0.University0.edu/UndergraduateStudent6"/>
+</rdf:RDF>

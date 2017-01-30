@@ -1,0 +1,226 @@
+<sparql:Query
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://siemens.com/urdf/univ-bench.owl#"
+    xmlns:sparql="http://www.w3.org/ns/sparql#" > 
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent17">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent8">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent15">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent0">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent2">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent13">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent11">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent7">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/sparql#Y">
+    <j.0:teacherOf rdf:resource="http://www.w3.org/ns/sparql#Z"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Faculty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent3">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent5">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent1">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent3">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent5">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent16">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent7">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent9">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent14">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent1">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent12">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent10">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <sparql:QueryVariable sparql:name="Z">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </sparql:QueryVariable>
+  <sparql:QueryVariable sparql:name="X">
+    <j.0:takesCourse>
+		<sparql:QueryVariable sparql:name="Z"/>
+	</j.0:takesCourse>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+  </sparql:QueryVariable>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent4">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent6">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent0">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent2">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent4">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent6">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </rdf:Description>
+</sparql:Query>

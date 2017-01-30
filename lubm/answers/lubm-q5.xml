@@ -1,0 +1,100 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ub="http://siemens.com/urdf/univ-bench.owl#">
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent17">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent8">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent15">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/Lecturer1">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/GraduateStudent0">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/AssistantProfessor0">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/GraduateStudent2">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent13">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent11">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/GraduateStudent7">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/GraduateStudent3">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/GraduateStudent5">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/FullProfessor0">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent1">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent3">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent5">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent16">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent7">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent9">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent14">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/Lecturer0">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/GraduateStudent1">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent12">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent10">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/AssociateProfessor0">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/FullProfessor1">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/GraduateStudent4">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/GraduateStudent6">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent0">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent2">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent4">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+  <ub:Person rdf:about="http://www.Department0.University0.edu/UndergraduateStudent6">
+    <ub:memberOf rdf:resource="http://www.Department0.University0.edu"/>
+  </ub:Person>
+</rdf:RDF>

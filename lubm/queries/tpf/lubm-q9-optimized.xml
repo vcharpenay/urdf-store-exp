@@ -1,0 +1,331 @@
+<sparql:Query
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://siemens.com/urdf/univ-bench.owl#"
+    xmlns:sparql="http://www.w3.org/ns/sparql#" > 
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent15">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course9"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course8"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Lecturer1">
+    <j.0:teacherOf>
+		<sparql:QueryVariable sparql:name="Z"/>
+	</j.0:teacherOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateCourse4">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent0">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course9"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course0"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course8"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssistantProfessor0">
+    <j.0:teacherOf>
+		<sparql:QueryVariable sparql:name="Z"/>
+	</j.0:teacherOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateCourse2">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent2">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course9"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course8"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateCourse0">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent7">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course6"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course9"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course8"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse7"/>
+  </rdf:Description>
+  <sparql:QueryVariable sparql:name="Y">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Faculty"/>
+  </sparql:QueryVariable>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Course0">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent3">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course8"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course9"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course6"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateCourse6">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent5">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course8"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course9"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor0">
+    <j.0:teacherOf>
+		<sparql:QueryVariable sparql:name="Z"/>
+	</j.0:teacherOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Course6">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Course8">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Course2">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Course4">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Lecturer0">
+    <j.0:teacherOf>
+		<sparql:QueryVariable sparql:name="Z"/>
+	</j.0:teacherOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateCourse3">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent1">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course8"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course9"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateCourse1">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent12">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course9"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course8"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course3"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssociateProfessor0">
+    <j.0:teacherOf>
+		<sparql:QueryVariable sparql:name="Z"/>
+	</j.0:teacherOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Course1">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <sparql:QueryVariable sparql:name="X">
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/FullProfessor0"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer1"/>
+    <j.0:advisor rdf:resource="http://www.Department0.University0.edu/Lecturer0"/>
+  </sparql:QueryVariable>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/FullProfessor1">
+    <j.0:teacherOf>
+		<sparql:QueryVariable sparql:name="Z"/>
+	</j.0:teacherOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateCourse7">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent4">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course3"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course8"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course9"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateCourse5">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent6">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course9"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course8"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Course7">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Course9">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Course3">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/UndergraduateStudent4">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course3"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course1"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course2"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course6"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse7"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course7"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course8"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/Course9"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/Course5">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+  </rdf:Description>
+</sparql:Query>

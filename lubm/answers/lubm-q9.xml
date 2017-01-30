@@ -1,0 +1,28 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ub="http://siemens.com/urdf/univ-bench.owl#">
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent7">
+    <ub:takesCourse>
+      <ub:Course rdf:about="http://www.Department0.University0.edu/GraduateCourse2"/>
+    </ub:takesCourse>
+    <ub:advisor>
+      <ub:Faculty rdf:about="http://www.Department0.University0.edu/AssociateProfessor0">
+        <ub:teacherOf rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+      </ub:Faculty>
+    </ub:advisor>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent1">
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+    <ub:advisor rdf:resource="http://www.Department0.University0.edu/AssociateProfessor0"/>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent12">
+    <ub:takesCourse>
+      <ub:Course rdf:about="http://www.Department0.University0.edu/Course1"/>
+    </ub:takesCourse>
+    <ub:advisor>
+      <ub:Faculty rdf:about="http://www.Department0.University0.edu/FullProfessor0">
+        <ub:teacherOf rdf:resource="http://www.Department0.University0.edu/Course1"/>
+      </ub:Faculty>
+    </ub:advisor>
+  </ub:Student>
+</rdf:RDF>

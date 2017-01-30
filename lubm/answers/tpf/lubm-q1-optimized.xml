@@ -1,0 +1,29 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://siemens.com/urdf/univ-bench.owl#" > 
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent7">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#GraduateStudent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent3">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#GraduateStudent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent4">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#GraduateStudent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent5">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#GraduateStudent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent6">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#GraduateStudent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent0">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#GraduateStudent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent1">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#GraduateStudent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent2">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#GraduateStudent"/>
+  </rdf:Description>
+</rdf:RDF>

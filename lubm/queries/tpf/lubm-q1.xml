@@ -1,0 +1,32 @@
+<sparql:Query
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://siemens.com/urdf/univ-bench.owl#"
+    xmlns:sparql="http://www.w3.org/ns/sparql#" > 
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent7">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent3">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+  </rdf:Description>
+  <sparql:QueryVariable sparql:name="X">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#GraduateStudent"/>
+  </sparql:QueryVariable>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent4">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent5">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent6">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent0">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent1">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/GraduateStudent2">
+    <j.0:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse0"/>
+  </rdf:Description>
+</sparql:Query>

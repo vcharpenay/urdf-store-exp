@@ -1,0 +1,56 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:ub="http://siemens.com/urdf/univ-bench.owl#">
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent17">
+    <ub:takesCourse>
+      <ub:Course rdf:about="http://www.Department0.University0.edu/Course5"/>
+    </ub:takesCourse>
+    <ub:takesCourse>
+      <ub:Course rdf:about="http://www.Department0.University0.edu/Course4"/>
+    </ub:takesCourse>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent8">
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent0">
+    <ub:takesCourse>
+      <ub:Course rdf:about="http://www.Department0.University0.edu/GraduateCourse2"/>
+    </ub:takesCourse>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent1">
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent12">
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent13">
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent11">
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/GraduateStudent7">
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+  </ub:Student>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssociateProfessor0">
+    <ub:teacherOf rdf:resource="http://www.Department0.University0.edu/Course5"/>
+    <ub:teacherOf rdf:resource="http://www.Department0.University0.edu/Course4"/>
+    <ub:teacherOf rdf:resource="http://www.Department0.University0.edu/GraduateCourse2"/>
+  </rdf:Description>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent0">
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent1">
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent2">
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent3">
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/Course4"/>
+  </ub:Student>
+  <ub:Student rdf:about="http://www.Department0.University0.edu/UndergraduateStudent5">
+    <ub:takesCourse rdf:resource="http://www.Department0.University0.edu/Course5"/>
+  </ub:Student>
+</rdf:RDF>

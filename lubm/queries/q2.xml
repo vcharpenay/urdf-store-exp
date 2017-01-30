@@ -1,0 +1,33 @@
+<!DOCTYPE sparql:Query [
+<!ENTITY wot "http://www.w3c.org/wot/td#" >
+]>
+
+<sparql:Query
+	xmlns:ub="http://siemens.com/urdf/univ-bench.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:sparql="http://www.w3.org/ns/sparql#"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+    >
+
+	<sparql:QueryVariable sparql:name="X">
+        <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#GraduateStudent"/>
+		<ub:undergraduateDegreeFrom>
+			<sparql:QueryVariable sparql:name="Y">
+				<rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#University"/>
+			</sparql:QueryVariable>
+		</ub:undergraduateDegreeFrom>
+		<ub:memberOf>
+			<sparql:QueryVariable sparql:name="Z">
+				<rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Department"/>
+				<ub:subOrganizationOf>
+					<!-- Note: DAG, not a tree -->
+					<sparql:QueryVariable sparql:name="Y">
+					</sparql:QueryVariable>
+				</ub:subOrganizationOf>
+			</sparql:QueryVariable>
+		</ub:memberOf>
+    </sparql:QueryVariable>
+
+
+</sparql:Query>
+

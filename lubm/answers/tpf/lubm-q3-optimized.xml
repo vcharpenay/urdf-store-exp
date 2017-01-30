@@ -1,0 +1,20 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://siemens.com/urdf/univ-bench.owl#" > 
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssistantProfessor0/Publication3">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Publication"/>
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssistantProfessor0/Publication0">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Publication"/>
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssistantProfessor0/Publication2">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Publication"/>
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.Department0.University0.edu/AssistantProfessor0/Publication1">
+    <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Publication"/>
+    <j.0:publicationAuthor rdf:resource="http://www.Department0.University0.edu/AssistantProfessor0"/>
+  </rdf:Description>
+</rdf:RDF>
