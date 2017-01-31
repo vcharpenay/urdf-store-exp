@@ -1,6 +1,17 @@
 # µRDF store experiments
 
-Test sets and queries used in the experiments were derived from the [Lehigh University Benchmark (LUBM)](http://swat.cse.lehigh.edu/projects/lubm/).
+Experiments on the µRDF store include (1) memory footprint evaluation, (2) query processing
+time for various SPARQL queries and (3) volume of data exchanged. In the first experiment, the
+µRDF store is compared to existing implementations of 
+[Wiselib Tuplestore](https://github.com/ibr-alg/wiselib/tree/master/apps/generic_apps/tuplestore_example)
+and [HDT](https://github.com/rdfhdt/hdt-cpp) (both with bitmap encoding and k2-tree encoding).
+No comparison could be made for the second experiment, as the µRDF store is, to the best of our
+knowledge, the first RDF store with a SPARQL interface (µSPARQL) running on micro-controllers.
+In the third experiment, it is compared to a simulated
+[Triple Pattern Fragments (TPF)](http://www.hydra-cg.com/spec/latest/triple-pattern-fragments/)
+interface. Test sets and queries used in the experiments were derived from the
+[Lehigh University Benchmark (LUBM)](http://swat.cse.lehigh.edu/projects/lubm/). All files can
+be found in this repository.
 
 ## Test sets & queries
 
@@ -24,17 +35,29 @@ The repository is organized as follows:
 
 ### Memory footprint
 
-To evaluate the memory footprint of the µRDF Store, we generated random data sets of increasing size. We first generated a dataset of max. 10,000 triples, included inferred axioms (ABox only), and created files with the name `/lubm/{number of triples}.lubm-inf-10000.nt`, each containing `{number of triples}` triples from the original dataset.
+To evaluate the memory footprint of the µRDF Store, we generated random data sets of
+increasing size. We first generated a dataset of max. 10,000 triples, included inferred
+axioms (ABox only), and created files with the name
+`/lubm/{number of triples}.lubm-inf-10000.nt`, each containing `{number of triples}`
+triples from the original dataset.
 
-### Query processing time
+### Query processing time & exchange volume
 
-All other experiments were conducted with the dataset in `/lubm/lubm-inf-1000.nt`, constructed the same way. The queries in `/lubm/queries` are derived from LUBM's query mix. The expected answer for each query against our dataset can be found in `/lubm/answers` with the same file name. Both folders contain a subfolder `/tpf` that include queries and answers theoretically exchanged through an inteface similar to that of [Triple Pattern Fragments (TPF)](http://www.hydra-cg.com/spec/latest/triple-pattern-fragments/).
+All other experiments were conducted with the dataset in `/lubm/lubm-inf-1000.nt`,
+constructed the same way. The queries in `/lubm/queries` are derived from LUBM's query mix.
+The expected answer for each query against our dataset can be found in `/lubm/answers` with
+the same file name. Both folders contain a subfolder `/tpf` that include queries and
+answers theoretically exchanged through an inteface similar to that of TPF.
 
 ## Implementation details
 
 ### UBA profile
 
-UBA is configured to generate at least 100,000 triples with the [default data profile](http://swat.cse.lehigh.edu/projects/lubm/profile.htm). As the datasets we target in these experiments cannot exceed 10,000 triples, we ran UBA with a custom profile (default values in parentheses, see `Generator.java` from UBA 1.7):
+UBA, the data generator distributed with LUBM, is configured to generate at least
+100,000 triples with the
+[default data profile](http://swat.cse.lehigh.edu/projects/lubm/profile.htm). As the
+datasets we target in these experiments cannot exceed 10,000 triples, we ran UBA with a
+custom profile (default values in parentheses, see `Generator.java` from UBA 1.7):
 
 ```java
 private static final int UNDER_COURSE_NUM = 100; //must >= max faculty # * FACULTY_COURSE_MAX
@@ -92,24 +115,42 @@ it exposes (triple count estimations). These statistics are at the basis of vari
 for client-side SPARQL query evaluation, where clients fetch these metadata during the execution.
 In constrained environments, where datasets are expected to be small, sending metadata is as
 expensive as sending actual data. Therefore, in our implementation, such metadata are not used
-directly. The SPARQL query is evaluated naively, the following way:
+directly. The SPARQL query is evaluated the following way:
 
- 1. retrieve fragment for first triple pattern
- 2. for each triple found
-   1. bind ... TODO
+1. get next triple pattern _tp_ in query _q_
+  1. retrieve associated fragment _f_
+  2. for each triple _t_ in _f_
+    1. generate mapping _µ_ such that _µ(tp) = t_
+    2. create _q'_ by removing tp and applying mu to remaining triple patterns
+    3. if _q'_ is empty
+      1. initialize _Ω_ with empty mapping
+    4. else
+      1. get _Ω_, set of mappings for _q'_ (recursive call)
+2. merge _µ_ with all _µ'_ in _Ω_ compatible with _µ_
+3. return _Ω_
 
-An important consideration in TPF is pagination. But again, it is less relevant in
-our current field of study where data fragmentation is to be avoided, which is why we did not
+This algorithm is the one defined in "Querying Datasets on the Web with High Availability",
+from Verborgh et al., with the difference that the order in which query patterns appear
+is statically define before query evaluation.
+
+An important consideration in TPF is pagination. Yet, it is less relevant in our current
+field of study (where data fragmentation is to be avoided), which is why we did not
 consider that aspect. In our implementation, only whole fragments are retrieved by the client.
 
 However, it is known that triple pattern ordering greatly influences query evaluation. We
 therefore consider the case where queries were optimized before being evaluated, based on
 statistics on the dataset that were computed offline. Under the assumption that no pagination
 is used, optimizing the query beforehand is equivalent to relying on online estimations provided
-for each fragment. Both use a greedy algorithm that evaluate triple patterns in descending order
-of selectivity. See next section for details on query optimization.
+for each fragment. Both algorithms are greedy, iterating over triple patterns in descending order
+by selectivity. See next section for implementation details on query optimization.
 
 ### Query optimization
+
+The ARQ module from Apache Jena includes a reference implementation of SPARQL query
+optimization (see the associated
+[technical report](http://markusstocker.com/26fe0502-b1c3-49e9-a90a-582d938ca158)).
+Statistics on the dataset are first produced through a `StatsCollector` and stored in a
+separate file:
 
 ```java
 String fstats = "micro-lubm-stats.sse";
@@ -118,6 +159,9 @@ StatsCollector c = Stats.gather(m.getGraph());
 Stats.write(fstats, c.results());
 ```
 
+This file is then used to construct an instance of `TransformReorder` that will processes
+the triple patterns of a given query (which is assumed to run over the same dataset):
+
 ```java
 Query q = QueryFactory.create("some SPARQL query string");
 Op op = Algebra.compile(q);
@@ -125,13 +169,9 @@ Transform t = new TransformReorder(ReorderLib.weighted(fstats));
 Op optimizedOp = Transformer.transform(t, op);
 ```
 
-TPF: no pagination, both with query optimization (provided by Jena) and without (original LUBM queries). The query optimization simulates the greedy algorithm described in the original paper.
-
 ## Results
 
 ### Memory footprint
-
-_Note: HDT headers were not included in the results._
 
 | **Number of triples** | **µRDF store** | **Wiselib TupleStore** | HDT (dictionary) | HDT (triples/dictionary) | HDT (indexes) | **HDT** | k2 -triples (triples) | **k2 -triples** |
 | ----------------- | ---------- | ------------------ | ---------------- | ------------------------ | ------------- | --- | --------------------- | ----------- |
@@ -147,6 +187,8 @@ _Note: HDT headers were not included in the results._
 | 4102 | 53284 | 48754 | 11456 | 20685 | 8401 | 29086 | 15803 | 27259 |
 | 8198 | 99141 | 78339 | 17515 | 36880 | 17456 | 54336 | 20886 | 38401 |
 
+Sizes are expressed in byte. HDT headers were not included in the results.
+
 ### Query processing time
 
 |     | EXI processing time | Total time | Number of triples | Result size (RDF/EXI) |
@@ -157,4 +199,14 @@ _Note: HDT headers were not included in the results._
 | Q8  | 71                  | 646        | 53                | 2202                  |
 | Q9  | 82                  | 924        | 15                | 608                   |
 
-Execution times expressed in clock ticks (C type `clock_t`). On the ESP9266, this roughly corresponds to times in millisecond.
+Execution times expressed in clock ticks (C type `clock_t`). On micro-controllers like the ESP9266, this roughly corresponds to times in millisecond.
+
+### Exchange volume
+
+|     | µSPARQL query | TPF query | TPF query (optimized) | µSPARQL result | TPF result | TPF result (optimized) | Number of mappings |
+| --- | ------------- | --------- | --------------------- | -------------- | ---------- | ---------------------- | ------------------ |
+| Q1 | 203 | 689 | 689 | 203 | 645 | 645 | 1 |
+| Q3 | 209 | 1890 | 480 | 495 | 1792 | 504 | 4 |
+| Q6 | 67 | 67 | 67 | 1826 | 1826 | 1826 | 26 | 
+| Q8 | 278 | 2310 | 2071 | 2202 | 2202 | 2202 | 26 | 
+| Q9 | 302 | 3650 | 4209 | 608 | 4092 | 2676 | 3 |
