@@ -159,7 +159,7 @@ StatsCollector c = Stats.gather(m.getGraph());
 Stats.write(fstats, c.results());
 ```
 
-This file is then used to construct an instance of `TransformReorder` that will processes
+This file is then used to construct an instance of `TransformReorder` that will process
 the triple patterns of a given query (which is assumed to run over the same dataset):
 
 ```java
