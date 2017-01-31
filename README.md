@@ -210,3 +210,5 @@ Execution times expressed in clock ticks (C type `clock_t`). On micro-controller
 | Q6 | 67 | 67 | 67 | 1826 | 1826 | 1826 | 26 | 
 | Q8 | 278 | 2310 | 2071 | 2202 | 2202 | 2202 | 26 | 
 | Q9 | 302 | 3650 | 4209 | 608 | 4092 | 2676 | 3 |
+
+Sizes expressed in byte.
