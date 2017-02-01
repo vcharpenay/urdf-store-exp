@@ -138,7 +138,7 @@ field of study (where data fragmentation is to be avoided), which is why we did 
 consider that aspect. In our implementation, only whole fragments are retrieved by the client.
 
 However, it is known that triple pattern ordering greatly influences query evaluation. We
-therefore consider the case where queries were optimized before being evaluated, based on
+therefore considered the case where queries were optimized before being evaluated, based on
 statistics on the dataset that were computed offline. Under the assumption that no pagination
 is used, optimizing the query beforehand is equivalent to relying on online estimations provided
 for each fragment. Both algorithms are greedy, iterating over triple patterns in descending order
