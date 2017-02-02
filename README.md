@@ -29,6 +29,9 @@ The repository is organized as follows:
       q{query number}.xml
       q{query number}-optimized.xml
     q{query number}.xml
+  /schema
+    basic_rdf_for_exi_v03.xsd
+    basic_rdf_query_v02.xsd
   {number of triples}.lubm-inf-10000.nt
   lubm-inf-1000.nt
 ```
@@ -48,6 +51,12 @@ constructed the same way. The queries in `/lubm/queries` are derived from LUBM's
 The expected answer for each query against our dataset can be found in `/lubm/answers` with
 the same file name. Both folders contain a subfolder `/tpf` that include queries and
 answers theoretically exchanged through an inteface similar to that of TPF.
+
+Queries and answers are given as XML files for readability. In the experiments, they were
+serialized in the [Efficient XML Interchange (EXI) format](http://www.w3.org/TR/exi/),
+a schema-aware binary representation for XML. The schemas
+`/lubm/schema/basic_rdf_query_v02.xsd` and `/lubm/schema/basic_rdf_for_exi_v03.xsd` were
+used for queries and answers, respectively.
 
 ## Implementation details
 
@@ -168,6 +177,18 @@ Op op = Algebra.compile(q);
 Transform t = new TransformReorder(ReorderLib.weighted(fstats));
 Op optimizedOp = Transformer.transform(t, op);
 ```
+
+### EXI Serialization
+
+We used the open-source [EXIficient GUI](https://github.com/EXIficient/exificient-gui)
+to generate EXI from the XML files. To reproduce our results, the following settings should
+be used (see [EXI profile guidelines](https://www.w3.org/TR/exi-profile/#guidelines)):
+
+* local value partitions: 0
+* max. number of built-in element grammars: 0
+* max. number of built-in productions: 0
+* max. value length: unbounded
+* strict interpretation of schema: true
 
 ## Results
 
