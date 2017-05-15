@@ -13,6 +13,5 @@
         <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Student"/>
     </sparql:QueryVariable>
 
-
 </sparql:Query>
 

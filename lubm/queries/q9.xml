@@ -14,8 +14,10 @@
 		<ub:advisor>
 			<sparql:QueryVariable sparql:name="Y">
 				<rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Faculty"/>
-				<ub:teacherOf sparql:name="Z">
-					<rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+				<ub:teacherOf>
+                    <sparql:QueryVariable sparql:name="Z">
+                        <rdf:type rdf:resource="http://siemens.com/urdf/univ-bench.owl#Course"/>
+                    </sparql:QueryVariable>
 				</ub:teacherOf>
 			</sparql:QueryVariable>
 		</ub:advisor>
@@ -24,7 +26,6 @@
 			</sparql:QueryVariable>
 		</ub:takesCourse>
     </sparql:QueryVariable>
-
 
 </sparql:Query>
 

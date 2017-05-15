@@ -14,6 +14,5 @@
 		<ub:subOrganizationOf rdf:resource="http://www.University0.edu"/>
     </sparql:QueryVariable>
 
-
 </sparql:Query>
 
