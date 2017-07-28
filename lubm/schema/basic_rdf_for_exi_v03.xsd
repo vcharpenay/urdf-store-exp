@@ -28,12 +28,14 @@
                 <!-- property -->
                 <xs:any maxOccurs="unbounded" namespace="##any" processContents="lax"/>
             </xs:sequence>
-            <xs:attribute name="about" type="xs:anyURI" use="required"/>
+            <xs:attribute name="about" type="xs:anyURI"/>
+            <xs:attribute name="nodeID" type="xs:string"/>
         </xs:complexType>
     </xs:element>
     
     <!-- for predicates, that use a reference to a object -->
     <xs:attribute name="resource" type="xs:anyURI"/>
+    <xs:attribute name="nodeID" type="xs:string"/>
     
     <!-- for predicate, that use type aware values -->
     <xs:attribute name="datatype" type="xs:anyURI"/>
