@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:geonames="http://www.geonames.org/ontology#"
+   xmlns:ns1="http://www.daml.org/2003/02/fips55/location-ont#"
+   xmlns:ns2="http://www.daml.org/2003/02/fips55/fips-55-ont#"
+   xmlns:ns3="http://www.daml.org/2002/02/telephone/1/areacodes-ont#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:sioc="http://rdfs.org/sioc/ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:swivt="http://semantic-mediawiki.org/swivt/1.0#"
+>
+  <rdf:Description rdf:nodeID="N78d4957027764baa8913ea34636d7f24">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/203337812"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N07893fd5c6ed431195f29f58dd4e9cc2">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/175074448"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://chatlogs.musicbrainz.org/musicbrainz/2005/2005-11/2005-11-10.rdf#T22-04-53">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/chatEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfbbcdfbf21bf40a19572b3ff9794cb3f">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2e05afc0474441b1982cf334cb92f3dd">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N55e64972f1f84493b9bb81f3e8927bbe">
+    <foaf:knows rdf:nodeID="N77015f431eea491ba3097fb8e196fef7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2d5b5ecf64fc4b25b27cbd314b89cc96">
+    <rdfs:seeAlso rdf:resource="http://igorsidorov.livejournal.com/data/foaf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N933420d9c8ca45b1b8467d312c319d19">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/222857594"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3c4b7e9ec1344713a2d3ee85bd27c58b">
+    <foaf:nick>miCk3y</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0415d9e953a345cbb087f1aa363e415c">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/101978617"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndcb42f81b4b84514bc2971bbb52aba85">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/290883331"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb6c8c75040474cebb34103a60c91b7e8">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8cced418f23442509e1373df41720c91">
+    <foaf:nick>ruaok</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd3bd2b9c0c9b4126ab69109bd75d8317">
+    <foaf:knows rdf:nodeID="Na9e163ef486e4e58bca29ead22390e3a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/KairatNo1/xml/foaf#me">
+    <foaf:mbox_sha1sum>1dec162c48b8fd504b3f46b391f7d9bc6be5f3ad</foaf:mbox_sha1sum>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N17d64a5a47af4a41b29672cb1102131c">
+    <foaf:knows rdf:nodeID="N787a99db39ad4e7aaca0c04471194af9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/Kawaii-pandi/xml/foaf#me">
+    <foaf:nick>Kawaii-pandi</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naa96d243aeb34a2ebfe2b12f4441e65b">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/184461178"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na3ba0337e4e249248847b50cea81cdda">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+<!--   <rdf:Description rdf:about="http://www.daml.org/2002/02/telephone/1/509#x910">
+    <ns3:use rdf:resource="http://www.daml.org/2002/02/telephone/1/509"/>
+  </rdf:Description> -->
+  <rdf:Description rdf:about="http://semanticweb.org/id/Property-3AAffiliation">
+    <swivt:page rdf:resource="http://semanticweb.org/wiki/Property:Affiliation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.linkedmdb.org/resource/film/2755">
+    <dcterms:language rdf:resource="http://www.lingvoj.org/lingvo/en"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/sandip0007/xml/foaf#me">
+    <foaf:nick>sandip0007</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rdf.freebase.com/ns/base.consumermedical.medical_term.consumer_name">
+    <rdfs:label>Consumer name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N08079b8de5e84a28a1455b1f812df6df">
+    <foaf:nick>andrei</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nebdac5fac3e14a1f8ae39ce72d351717">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd81936ffea9b40f88af97d4688d65c1a">
+    <foaf:knows rdf:nodeID="Naf0e58f17d924573abc08099078d03da"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6e86630d2a294510ac5a7284d3878cc8">
+    <foaf:nick xml:lang="en">leonid_b</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5e21dbde79fb40dba6fd14dfd1975fa7">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0c631d2e6b04445b8d38cf159be424f4">
+    <foaf:knows rdf:nodeID="Ndb59f0f60c36428c9bfcd09c9805637e"/>
+  </rdf:Description>
+<!--   <rdf:Description rdf:about="http://www.daml.org/2003/02/fips55/LA.owl#p49450">
+    <ns1:directlyLocatedIn rdf:resource="http://www.daml.org/2003/02/fips55/LA.owl#c033"/>
+  </rdf:Description> -->
+  <rdf:Description rdf:nodeID="N6659a66e68984eae95cf0db3bb8c2345">
+    <foaf:knows rdf:nodeID="N120dc30f710942efbc24489a213dadd9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/user/199664#acct">
+    <foaf:accountProfilePage rdf:resource="http://identi.ca/comanche"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne774605c80a14a2dae2648a10ac98f79">
+    <foaf:nick>estefani</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc7c0bccd1f754d4abf4838c0d6e1da07">
+    <foaf:nick>cikkolata</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd920d6f42efc4e0dbbd67c4d22ad05ca">
+    <foaf:weblog rdf:resource="http://fistashka-kr.livejournal.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb748f9a4920f47ccb509d306a4ee70f4">
+    <rdfs:seeAlso rdf:resource="http://mikrash.livejournal.com/data/foaf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4615d58cd39e4703ab2cffec2699df39">
+    <foaf:tagLine xml:lang="en">Xeruvim Ёпт</foaf:tagLine>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8376887031784a46bd0c523fea4696fe">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1b8d614dcd614471b5b1ca2ca26d137b">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/295912061"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbfcc8b770fa8492c8156fa4534ac3537">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N93b88216a87341eb98ac5fa4329bfd4f">
+    <foaf:tagLine xml:lang="en">A look inside</foaf:tagLine>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/masthebee/xml/foaf#me">
+    <foaf:nick>masthebee</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/Chacutie/xml/foaf#me">
+    <rdfs:seeAlso rdf:resource="http://my.opera.com/Chacutie/xml/foaf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N293a6c57a4e3486db310f81331c39cc9">
+    <foaf:knows rdf:nodeID="N00864687f748435e9e706ce04087179f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/user/21116#acct">
+    <sioc:follows rdf:resource="http://identi.ca/user/24533#acct"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://musicbrainz.org/artist/bf61e8ff-7621-4655-8ebd-68210645c5e9">
+    <rdf:type rdf:resource="http://musicbrainz.org/mm/mm-2.1#Artist"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne3d635db91f1457ab274168cf98d1693">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N295516ba09174af69bc57276fe71c399">
+    <rdfs:seeAlso rdf:resource="http://krasovkin.livejournal.com/data/foaf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na809424c50164385bae1065f86bc0947">
+    <foaf:weblog rdf:resource="http://klab.lv/users/illumine/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/user/157788">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3d9839012b044ed090a3dcc8b11b7a8c">
+    <foaf:weblog rdf:resource="http://czy.livejournal.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/Alin555/xml/foaf#me">
+    <rdfs:seeAlso rdf:resource="http://my.opera.com/Alin555/xml/foaf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N724af5369faf486789f4fa2d6468044b">
+    <foaf:knows rdf:nodeID="N27260b9ba0d74dfea7e5b8859afe2597"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N64e750cd0ed341d9aab36a93f0524e78">
+    <foaf:weblog rdf:resource="http://arnolid.livejournal.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfcbb3959053e4dd490f217fccd16741d">
+    <foaf:knows rdf:nodeID="Nc9c2e142e92f45cb82b933f6d829b509"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://sws.geonames.org/3036264/">
+    <geonames:wikipediaArticle rdf:resource="http://vi.wikipedia.org/wiki/Aude"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3debec5466b347d7bcdff8129fee2bb0">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N209add12a9aa4b7ca5c9b6b93866d12a">
+    <foaf:mbox_sha1sum xml:lang="en">1fec6ca96a80addfe686ad1b8a41cde3c3119461</foaf:mbox_sha1sum>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbtune.org/musicbrainz/resource/track/78b88e31-eddd-4225-ae65-7221c5bb9a16">
+    <foaf:maker rdf:resource="http://dbtune.org/musicbrainz/resource/artist/515b236c-cce1-4dc2-aedd-50de7b1736e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf89851378ad143ed91685cb4c7887c9a">
+    <foaf:member_name xml:lang="en">Вадим</foaf:member_name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N212fd6f93e2b4ae5b66b6399eb1f1a5c">
+    <foaf:nick xml:lang="en">pantherclaw</foaf:nick>
+  </rdf:Description>
+<!--   <rdf:Description rdf:about="http://www.daml.org/2002/02/telephone/1/336#A328870">
+    <ns3:exchange rdf:resource="http://www.daml.org/2002/02/telephone/1/336#x737"/>
+  </rdf:Description> -->
+<!--   <rdf:Description rdf:about="http://www.daml.org/2003/02/fips55/FL.owl#p42300">
+    <ns2:county rdf:resource="http://www.daml.org/2003/02/fips55/FL.owl#c045"/>
+  </rdf:Description> -->
+  <rdf:Description rdf:about="http://identi.ca/user/289386#acct">
+    <foaf:accountName>adam78novak</foaf:accountName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/marcelonovaiss/xml/foaf#me">
+    <foaf:mbox_sha1sum>0c8e37caf931bef192953308558aa447c509f61b</foaf:mbox_sha1sum>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N801770b7e7f146bf9f1afacf8f94ab13">
+    <foaf:nick>anibal</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6f73df0f0cb24683bbde79c01f7e49d2">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.advogato.org/person/acidx/foaf.rdf#me">
+    <foaf:nick>acidx</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5bc8533b63c24d13ba5f483c55a85687">
+    <foaf:knows rdf:nodeID="N6c2396871afd41d990f2ffa6ca40a179"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nae92ff17d2644fcfb49289d7701c0b8c">
+    <rdf:_96 rdf:nodeID="N244320d5cd154a77bc966f313250e675"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/user/58104">
+    <foaf:knows rdf:resource="http://identi.ca/user/38206"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N71b242b78c384d4bb5ed0232bb14fa1b">
+    <rdf:type rdf:resource="http://purl.org/vocab/bio/0.1/Birth"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na05a9dea63694140a601e58217b00700">
+    <foaf:nick>Daniel</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd6ae62b0f6cc4f909b1427569b2f04e9">
+    <foaf:member_name xml:lang="en">kyta_kyta</foaf:member_name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N034a61110d3c4ecbbc6938c54be10739">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/user/46474#acct">
+    <foaf:accountProfilePage rdf:resource="http://identi.ca/canuckpost"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N62b0525f35b24d0baf879dcdf9eab15c">
+    <foaf:nick>HbooSh</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbba431360e044e42aaf670e35723776d">
+    <foaf:knows rdf:nodeID="N973bbdef4c784683b5728bdce8a92fe2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/bachphong/xml/foaf#me">
+    <foaf:mbox_sha1sum>833f43985bc491cab9f7a97aaf2d33f44cb6ee26</foaf:mbox_sha1sum>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N69a9bbc01ffe4b9b867272cdffebaed1">
+    <foaf:image xml:lang="en">http://l-userpic.livejournal.com/63768965/10761950</foaf:image>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9c4000485a9b426fae83ac2333595e79">
+    <foaf:nick xml:lang="en">lusienius</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N263e3d2bd5414d5ebd4df3a5d6b893a4">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/71403972"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2bc8dc3b963b46ebbb2515dc1815d19e">
+    <foaf:knows rdf:nodeID="Nbfb6ac1819d849969d5b7af7695b9f18"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3db0f834c92148438034d1448a633c5c">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/96770226"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndfb9222f6eb54272a26c135884181eb7">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndce0b7f409d64d089dab6ca3a6d8ec9e">
+    <foaf:knows rdf:nodeID="N00a884bde3d342e49439bc7525f2a48a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/user/338303#acct">
+    <foaf:accountName>cr4321</foaf:accountName>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc95dfdea23b7454f934913a8b7aa2028">
+    <foaf:knows rdf:nodeID="N618e461138154f739fb09bdd39463b67"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4449ee7f20ff45d3b8b03058bf59a1b3">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/158851261"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/btn/foaf">
+    <foaf:primaryTopic rdf:resource="http://identi.ca/user/4161"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/user/422697#acct">
+    <sioc:follows rdf:resource="http://identi.ca/user/77558#acct"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N68e5f95ece9649e6b9b7b3496d2cc316">
+    <foaf:nick>Mariana</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/olusholex/xml/foaf#me">
+    <foaf:name>OLUSHOLA MICHEAL</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8ff45f24892248cd969dd21a51e047b5">
+    <rdf:_355 rdf:resource="http://blogspace.com/swhack/chatlogs/2001-12-04.rdf#T03-34-30-1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uniprot.org/uniprot/C3UX74.rdf#_43335558373400A">
+    <rdf:predicate rdf:resource="http://purl.org/dc/terms/creator"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/crazydeep/foaf">
+    <foaf:primaryTopic rdf:resource="http://identi.ca/user/56460"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://rdf.freebase.com/ns/m.01t6_q_">
+    <rdf:type rdf:resource="http://rdf.freebase.com/ns/common.topic"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N19d3a54682d74cb2a3cdf9e3bf90e7f4">
+    <rdf:_382 rdf:resource="http://blogspace.com/openacs/chatlogs/2001-10-29.rdf#T16-58-38"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/immika/xml/foaf#me">
+    <foaf:name>nobodyknows</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc657d1b7c5a649bebea47bddebc4a389">
+    <rdfs:seeAlso rdf:resource="http://planeta.rambler.ru/users/diezka113/friends/foaf/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndedaa9da2be24112a32dd30a73157e5d">
+    <foaf:weblog rdf:resource="http://xaminmo.livejournal.com/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0df31ef27d6d40f78d8e1402bb52c546">
+    <foaf:nick>gUiLheRmE  xD</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf30bff39ae82406eb0971340089886fa">
+    <foaf:nick>-FantabulousShan-</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N74bb275259544f869a3aee579a333de7">
+    <foaf:nick>SONSALSERO</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd6697cc58d434be4b549682056ab257a">
+    <foaf:nick>explocion latina</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/siran11/xml/foaf#me">
+    <foaf:mbox_sha1sum>c31005e0154456091f8254c2476fb21187a31b7f</foaf:mbox_sha1sum>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N21481c30e68a4b1096ce1705555636d0">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://blogspace.com/swhack/chatlogs/rdflogs/2002-04-19.rdf#T17-27-13">
+    <dc:creator rdf:nodeID="N78e6b6a249c4459e9a211902750e48e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4342abf5392949f4b02066ed4d6eceeb">
+    <foaf:knows rdf:nodeID="Naaef14170d3243beb123890d36a8470b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nadc6370385664d41ad75b07a8d5ab0b8">
+    <foaf:nick>samoray</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd4accde50f84412f8ff4820f0c1e6693">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/elidiane/foaf">
+    <foaf:primaryTopic rdf:resource="http://identi.ca/user/208004"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9441fa6fad36449c94a72ce67951964d">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/Ixij/xml/foaf#me">
+    <foaf:homepage rdf:resource="http://my.opera.com/Ixij/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8f6915918ec9475bb8ef0bfcac948b43">
+    <foaf:nick>Sheyla</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nead1d39852384a1c9827d1cf6ffe6497">
+    <foaf:knows rdf:nodeID="N4bd10453a32f45d0baaa6e38b693a37a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/insightme/xml/foaf#me">
+    <foaf:mbox_sha1sum>aef2c34d29bc166fcc51ba1798026557ea4333af</foaf:mbox_sha1sum>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N336d09cca233469e9718209d62b68449">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/144329095"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc3afdf09570944068cc35124aa21d18d">
+    <foaf:weblog rdf:resource="http://planeta.rambler.ru/users/lightninggirl/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/user/40983#acct">
+    <foaf:accountProfilePage rdf:resource="http://identi.ca/zehra851"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N44c38bf2731748eebcd619d093686ec5">
+    <foaf:knows rdf:nodeID="N1c1a4895f53c4ddc920615cca3695223"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/Pamperosudamericano/xml/foaf#me">
+    <foaf:mbox_sha1sum>d3fa5a067968abc64c0b43ac5fe0f49b8c185b79</foaf:mbox_sha1sum>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndf65a7e5fe9f4142b5b2a1f1a9b789d6">
+    <foaf:tagLine xml:lang="en">Блондинка продолжает зажигать!</foaf:tagLine>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/user/50565">
+    <foaf:knows rdf:resource="http://identi.ca/user/6687"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd49c970452b24b70b72e0e7ec0633322">
+    <foaf:interest rdf:resource="http://www.livejournal.com/interests.bml?int=speed%2Ftrash"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N966ed4fe06bd4899a0bcf807c50330ab">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne976aa32a73341308b74f1f3dd8b75a9">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/451888430"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://zitgist.com/music/artist/8f9d6bb2-dba4-4cca-9967-cc02b9f4820c">
+    <foaf:made rdf:resource="http://zitgist.com/music/record/7d96f5a4-0b08-46eb-bd1c-67010cc2ddf9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uniprot.org/uniprot/Q08N57.rdf#_5130384E3537004">
+    <rdf:subject rdf:resource="http://www.uniprot.org/uniprot/Q08N57.rdf#_5130384E3537006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://semantic-mediawiki.org/swivt/1.0#creationDate">
+    <rdfs:isDefinedBy rdf:resource="http://semantic-mediawiki.org/swivt/1.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ebffbf4f2b7496894b67774cfe19d96">
+    <foaf:knows rdf:nodeID="N16ecfc746d0e4a368c8114c3e12a25e9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N30bde3baa0694c59a6e24563967dfed2">
+    <foaf:interest rdf:resource="http://www.livejournal.com/interests.bml?int=%D0%B2%D0%B5%D1%80%D0%B0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd68ae7bd7b0642339b01a62ac8b14b7a">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9b65deeb40af4ce2960e454f6b82257a">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/120770508"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nacc057cf1de84444a8842fecab393905">
+    <foaf:knows rdf:nodeID="N0ed56be354074a30b44887016e21cd38"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd4497e38369f4fd594ca204dd98c72d0">
+    <foaf:image xml:lang="en">http://l-userpic.livejournal.com/92283297/21707433</foaf:image>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N550ffa5dead84f779e5fe0e29cd1f055">
+    <foaf:nick>Claudio Piteira </foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8f62e34fc14b4aabb713e49de236ec57">
+    <foaf:knows rdf:nodeID="Nc293ef6c70594fa1a1eff133198a2d16"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf28ae7a4d8784461a3c3f2a996a2b724">
+    <foaf:knows rdf:nodeID="N046d54c80942488fb21e3f8d2a82ef27"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neda7e2654ec34458b8d2d4fe5a61dd63">
+    <foaf:weblog rdf:resource="http://laima.livejournal.com/"/>
+  </rdf:Description>
+<!--   <rdf:Description rdf:about="http://www.daml.org/2003/02/fips55/MT.owl#p70750">
+    <ns2:county rdf:resource="http://www.daml.org/2003/02/fips55/MT.owl#c063"/>
+  </rdf:Description> -->
+  <rdf:Description rdf:about="http://www.eea.europa.eu/publications/signals-2000">
+    <dcterms:hasPart rdf:resource="http://www.eea.europa.eu/publications/signals-2000/fig10.15.gif"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4984b361c3424a5480fb68a3563aaecc">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/178672684"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2bbfc6db5e594c0095af2e353575650b">
+    <foaf:schoolHomepage rdf:resource="http://www.livejournal.com/schools/?ctc=US&amp;sc=PA&amp;cc=Philadelphia&amp;sid=3430"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/bustalady/foaf">
+    <foaf:maker rdf:resource="http://identi.ca/user/316870"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3798b4a88deb44db91966cd5603d9e86">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/79831403"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://my.opera.com/dcompany11/xml/foaf#me">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndca33ea981fc4200b837ccdc34fd9663">
+    <foaf:nick>baubau</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8ec0a36d640d42d49bdf22189f913243">
+    <rdf:_1183 rdf:resource="http://chatlogs.musicbrainz.org/musicbrainz/2006/2006-06/2006-06-27.rdf#T18-47-26-988672"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1e9edb9a6b894a2698ca8d973893c341">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/130743519"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N559dc9a159bc44518af88f8fa5c74702">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0ff4072028074ffe8f05467226c9c1cc">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc2ee4bfcc3224221ad10b259f4d596d0">
+    <foaf:knows rdf:nodeID="Nb4f729ab7eaf4d6591aa1792fb0f1a5d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N29ae9b6ae6c54978abb170ffbd1145e3">
+    <foaf:knows rdf:nodeID="Ndce95e7252ab42eab0a3589cc25dd8b1"/>
+  </rdf:Description>
+<!--   <rdf:Description rdf:about="http://www.daml.org/2003/02/fips55/PA.owl#p67611">
+    <ns2:county rdf:resource="http://www.daml.org/2003/02/fips55/PA.owl#c021"/>
+  </rdf:Description> -->
+  <rdf:Description rdf:nodeID="Nebcde633ea0e49b6bcf6c42d349f34e1">
+    <foaf:knows rdf:nodeID="Ne2753f5b9a064a3ea9a103f29e856091"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nabec2e9ad4e14e54ad5db26f0269595c">
+    <foaf:image xml:lang="en">http://l-userpic.livejournal.com/28052470/1619615</foaf:image>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncbdac5fd20fa457b922d827ba0f24db1">
+    <foaf:image xml:lang="en">http://l-userpic.livejournal.com/103410567/29794032</foaf:image>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb1b10420d18641d7bf590322907c455d">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ukat.org.uk/thesaurus/concept/4337">
+    <skos:related rdf:resource="http://www.ukat.org.uk/thesaurus/concept/7288"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf565cf2e6a5e4676a287247f76cb8156">
+    <foaf:knows rdf:nodeID="Nf565ff79198f4a03ac609fe8a5181b45"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc725601ab5cb4f5583b55b6ca7fac22f">
+    <foaf:nick>dOnAtElLoOoO</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.livejournal.com/interests.bml?int=%D0%98%D0%A2">
+    <dc:title xml:lang="en">ИТ</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://blogspace.com/swhack/chatlogs/2002-03-18.rdf#T04-48-07">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/chatEvent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N90605c3dc060416280da58a632fc13d8">
+    <foaf:nick>Corrine</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf894fd2b8ac94ee2935e68e3bc53fcb9">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N17cfdde40f1743e3802af22f8c66e663">
+    <foaf:nick>Nuno</foaf:nick>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N850c495a23644a8bb1ef05bbb5e55473">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/user/356536#acct">
+    <sioc:follows rdf:resource="http://identi.ca/user/22805#acct"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://identi.ca/user/97330">
+    <foaf:account rdf:resource="http://identi.ca/user/97330#acct"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N94858293f25645409d77a1b7a5b8632d">
+    <foaf:knows rdf:nodeID="N38fafca2032047bf94f47d59fdd9b293"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd8f16cc01a55446399fec25d1d7a39b5">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/91775356"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb9569f7934cb461e8cff9435a789da9d">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/85139823"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfc9379df138b4d22a570022dd055b05c">
+    <foaf:member_name xml:lang="en">drugoi_drug</foaf:member_name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0e5eb8c6900b41588f06adda0700270a">
+    <rdfs:seeAlso rdf:resource="http://livemarian.livejournal.com/data/foaf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca913a8856a54e0a8cbdff5ed66bed28">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33f505d3066c4d75a28ef5685e1d66e8">
+    <rdfs:seeAlso rdf:resource="http://api.hi5.com/rest/profile/foaf/533002927"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N33e4fdb31f4948c6b674b8ed73766e1e">
+    <rdfs:seeAlso rdf:resource="http://andrey-lazy.livejournal.com/data/foaf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uniprot.org/uniprot/Q1IJ94.rdf#_5131494A393400D">
+    <rdf:subject rdf:resource="http://www.uniprot.org/uniprot/Q1IJ94.rdf#_5131494A393400E"/>
+  </rdf:Description>
+</rdf:RDF>

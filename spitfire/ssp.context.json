@@ -1,0 +1,3115 @@
+{
+    "@context": {
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "gns": "http://sws.geonames.org/",
+        "\u0012a": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#PowerConsumption" },
+        "\u0012b": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#PowerConsumptionCounter" },
+        "\u0012c": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#Activation" },
+        "\u0012d": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#MediumTemperature" },
+        "\u0012e": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#ReturnTemperatureSensor" },
+        "\u0012f": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#PowerSensor" },
+        "\u0012g": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#VolumeSensor" },
+        "\u0012h": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#FlowSensor" },
+        "\u0012i": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#HumiditySensor" },
+        "\u0012j": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#ContactDetector" },
+        "\u0012k": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#EnergyConsumptionSensor" },
+        "\u0012l": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#ReturnTemperature" },
+        "\u0012m": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#BrightnessSensor" },
+        "\u0012n": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#FlowTemperatureSensor" },
+        "\u0012o": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#FlowTemperature" },
+        "\u0012p": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#SoundSensor" },
+        "\u0012q": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#CO2Sensor" },
+        "\u0012r": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#AirTemperatureSensor" },
+        "\u0012s": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#DifferentialPressureSensor" },
+        "\u0012t": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#AirFlow" },
+        "\u0012u": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#AirFlowSensor" },
+        "\u0012v": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#VOCSensor" },
+        "\u0012w": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#MovementDetector" },
+        "\u0012x": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#Motion" },
+        "\u0012y": { "@id": "http://spitfire.ibr.cs.tu-bs.de/static/descriptions#RainSensor" },
+        "\u0012z": { "@id": "http://purl.org/dc/terms/date" },
+        "\u0013a": { "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#DifferentialPressure" },
+        "\u0013b": { "@id": "http://dbpedia.org/resource/Hertz" },
+        "\u0013c": { "@id": "http://dbpedia.org/resource/Temperature" },
+        "\u0013d": { "@id": "http://dbpedia.org/resource/Moisture" },
+        "\u0013e": { "@id": "http://sweet.jpl.nasa.gov/2.2/matrCompound.owl#CO2" },
+        "\u0013f": { "@id": "http://sweet.jpl.nasa.gov/2.2/matrOrganicalCompound.owl#VOC" },
+        "\u0013g": { "@id": "http://dbpedia.org/resource/Celsius" },
+        "0": {
+            "@id": "http://purl.org/dc/terms/isVersionOf"
+        },
+        "1": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Landspout"
+        },
+        "2": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#HeatFlow"
+        },
+        "3": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isTaskOf"
+        },
+        "4": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Ecnephias"
+        },
+        "5": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#StationaryEddy"
+        },
+        "6": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasConstituent"
+        },
+        "7": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#withRestrictions"
+        },
+        "8": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Crest"
+        },
+        "9": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2000/01/rdf-schema#member"
+        },
+        "\u0000": {
+            "@id": "http://www.w3.org/2002/07/owl#versionIRI"
+        },
+        "\u0006k": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#realizes"
+        },
+        "T": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#hasSelf"
+        },
+        "\u00015": {
+            "@id": "http://purl.org/dc/terms/hasVersion"
+        },
+        "\u0002\u0016": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matrCompound.owl#InorganicCompound"
+        },
+        "\u0004d": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant"
+        },
+        "\u0005E": {
+            "@id": "https://linked-data-api.googlecode.com/svn/trunk/vocab/api.ttl#endpoint"
+        },
+        "\u0006&": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#AngularDirection"
+        },
+        "\u0007\u0007": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/educationLevel"
+        },
+        "\u0002n": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#PlasmaWave"
+        },
+        "\u0003O": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#WaveProperty"
+        },
+        "\u00040": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#hasGreaterVerticalExtentThan"
+        },
+        "\u0005\u0011": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/provenance"
+        },
+        "\u0006~": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#ChemicalObject"
+        },
+        "\u0002a": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#hasOscillationField"
+        },
+        "\u0003B": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#WindShear"
+        },
+        "\u0004#": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Goal"
+        },
+        "\u0005\u0004": {
+            "@id": "http://spitfire-project.eu/ontology/ns/TemporalProperty"
+        },
+        "d": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/accrualPeriodicity"
+        },
+        "\u0001E": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"
+        },
+        "\u0002&": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Resolution"
+        },
+        "\u0003\u0007": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/wears"
+        },
+        "n": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/outOf"
+        },
+        "\u0001O": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isConceptExpressedBy"
+        },
+        "\u00020": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#RadiativeFlux"
+        },
+        "\u0003\u0011": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/ownedBy"
+        },
+        "\u0001\u001a": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.w3.org/2002/07/owl#minCardinality"
+        },
+        "\u0005u": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+        },
+        "\u0006V": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#InternalGravityWave"
+        },
+        "\u0002q": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note"
+        },
+        "\u0003R": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isRoleOf"
+        },
+        "\u00043": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"
+        },
+        "\u0005\u0014": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observedProperty"
+        },
+        "K": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#includesAgent"
+        },
+        "\u0001,": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Angle"
+        },
+        "\u0002\r": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Typhoon"
+        },
+        "\u0002b": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/medium"
+        },
+        "\u0003C": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/valid"
+        },
+        "\u0004$": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Plan"
+        },
+        "\u0005\u0005": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#Brightness"
+        },
+        "]": {
+            "@id": "http://purl.org/dc/terms/RightsStatement"
+        },
+        "\u0001>": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#hasAxis"
+        },
+        "\u0002\u001f": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Sensing"
+        },
+        "\u0003\u0000": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Outward"
+        },
+        "z": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf"
+        },
+        "\u0001[": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#Circulation"
+        },
+        "\u0002<": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matr.owl#Chemical"
+        },
+        "\u0003\u001d": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#annotatedTarget"
+        },
+        "w": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#WorkflowExecution"
+        },
+        "\u0001X": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#includesAction"
+        },
+        "\u00029": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementProperty"
+        },
+        "\u0003\u001a": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#expresses"
+        },
+        "\u0001\u0014": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenSolid.owl#Shear"
+        },
+        "'": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#GroupVelocity"
+        },
+        "\u0001\b": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+        },
+        "\u0013": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SystemLifetime"
+        },
+        "\r": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Rainfall"
+        },
+        "\u0002}": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Relation"
+        },
+        "\u0003^": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#covers"
+        },
+        "\u0004?": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#HorizontalDirection"
+        },
+        "\u0005 ": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#SecchiDepth"
+        },
+        "\u0006\u0001": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/language"
+        },
+        "\u0002\u007f": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#RadialVelocity"
+        },
+        "\u0003`": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#GravitationalWave"
+        },
+        "\u0004A": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#SolidWave"
+        },
+        "\u0005\"": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Inclination"
+        },
+        "\u0006\u0003": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#LakeEffectSnow"
+        },
+        "\u0006n": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/temporal"
+        },
+        "\u0005c": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/layer"
+        },
+        "\u0006D": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Magnetic"
+        },
+        "\u0001v": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn"
+        },
+        "\u0002W": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"
+        },
+        "\u00038": {
+            "@id": "http://spitfire-project.eu/ontology/ns/LinkAssociation"
+        },
+        "\u0004\u0019": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#includesObject"
+        },
+        "s": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sensed"
+        },
+        "\u0001T": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#TerminalVelocity"
+        },
+        "\u00025": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.w3.org/2002/07/owl#maxQualifiedCardinality"
+        },
+        "\u0003\u0016": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#directlyFollows"
+        },
+        "\u0001x": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+        },
+        "\u0002Y": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Personification"
+        },
+        "\u0003:": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+        },
+        "\u0004\u001b": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAttribute"
+        },
+        ")": {
+            "@id": "http://qudt.org/schema/qudt#QuantityValue"
+        },
+        "\u0001\n": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#RossbyWave"
+        },
+        "=": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+        },
+        "\u0001\u001e": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#LongCrestedWave"
+        },
+        "\u0004m": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#DesignedSubstance"
+        },
+        "\u0005N": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#ThermodynamicProperty"
+        },
+        "\u0006/": {
+            "@type": "http://www.w3.org/2001/XMLSchema#double",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprMathOperation.owl#toThePower"
+        },
+        "\u0006t": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+        },
+        "\u0006u": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#Flow"
+        },
+        "`": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SocialAgent"
+        },
+        "\u0001A": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasRegionDataValue"
+        },
+        "\u0002\"": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/repr.owl#hasScale"
+        },
+        "\u0003\u0003": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#LakeEffectSnowstorm"
+        },
+        "\"": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#equivalentClass"
+        },
+        "\u0001\u0003": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasOperatingProperty"
+        },
+        "!": {
+            "@id": "http://www.w3.org/2002/07/owl#Annotation"
+        },
+        "\u0001\u0002": {
+            "@id": "http://spitfire-project.eu/ontology/ns/DistributionLayer"
+        },
+        "\u0004y": {
+            "@id": "http://purl.org/dc/terms/LicenseDocument"
+        },
+        "\u0005Z": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkQualityOf"
+        },
+        "\u0006;": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/stateChemical.owl#hasChemicalState"
+        },
+        "*": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSpaceGeometry3D.owl#ReferenceEllipsoid"
+        },
+        "\u0001\u000b": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#Wave"
+        },
+        "%": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Stimulus"
+        },
+        "\u0001\u0006": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDistance.owl#SpatialExtent"
+        },
+        "\u0003y": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Quantity"
+        },
+        "\u0004Z": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#hasDirection"
+        },
+        "\u0005;": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Entity"
+        },
+        "\u0006\u001c": {
+            "@id": "http://purl.org/dc/terms/requires"
+        },
+        "\u0005s": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#ZenithAngle"
+        },
+        "\u0006T": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#Recirculation"
+        },
+        "\u0004j": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "\u0005K": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#Illuminance"
+        },
+        "\u0006,": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Device"
+        },
+        "\u0001s": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"
+        },
+        "\u0002T": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#KelvinHelmholtzWave"
+        },
+        "\u00035": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Graupel"
+        },
+        "\u0004\u0016": {
+            "@id": "http://purl.org/dc/terms/Standard"
+        },
+        "\u0002w": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkQuality"
+        },
+        "\u0003X": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#hasRestoringForce"
+        },
+        "\u00049": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#forProperty"
+        },
+        "\u0005\u001a": {
+            "@id": "http://spitfire-project.eu/ontology/ns/MeshModel"
+        },
+        "\u0005p": {
+            "@id": "http://spitfire-project.eu/ontology/ns/NetworkQuality"
+        },
+        "\u0006Q": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        "\u0001\u0015": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#assertionProperty"
+        },
+        "\u0003~": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isActionIncludedIn"
+        },
+        "\u0004_": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/link"
+        },
+        "\u0005@": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Hurricane"
+        },
+        "\u0006!": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Right"
+        },
+        "\u0007\u0002": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SurvivalProperty"
+        },
+        "f": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isConcretelyExpressedBy"
+        },
+        "\u0001G": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#hasValue"
+        },
+        "\u0002(": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/projectTopic"
+        },
+        "\u0003\t": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Quality"
+        },
+        "\u0003|": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"
+        },
+        "\u0004]": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#Flux"
+        },
+        "\u0005>": {
+            "@id": "http://purl.org/dc/terms/replaces"
+        },
+        "\u0006\u001f": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"
+        },
+        "\u0007\u0000": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#CapillaryAction"
+        },
+        "\u0001j": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Community"
+        },
+        "\u0002K": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#TransverseWave"
+        },
+        "\u0003,": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+        },
+        "\u0004\r": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#Radiance"
+        },
+        "\u0001\u0019": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#hasEnergyFlux"
+        },
+        "e": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#SoundWave"
+        },
+        "\u0001F": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"
+        },
+        "\u0002'": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/reprSpaceGeometry.owl#Trough"
+        },
+        "\u0003\b": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasTask"
+        },
+        "\u0004~": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#nearTo"
+        },
+        "\u0005_": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSpaceRelation.owl#orthogonalTo"
+        },
+        "\u0006@": {
+            "@id": "http://www.w3.org/2002/07/owl#incompatibleWith"
+        },
+        "\u0003u": {
+            "@id": "http://spitfire-project.eu/ontology/ns/HierarchicalModel"
+        },
+        "\u0004V": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        },
+        "\u00057": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#onProperty"
+        },
+        "\u0006\u0018": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasComponent"
+        },
+        "\u0001m": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#complementOf"
+        },
+        "\u0002N": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#SquallLine"
+        },
+        "\u0003/": {
+            "@id": "http://spitfire-project.eu/ontology/ns/NetworkLink"
+        },
+        "\u0004\u0010": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#AlfvenVelocity"
+        },
+        "Q": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#specializes"
+        },
+        "\u00012": {
+            "@id": "http://www.w3.org/2003/g/data-view#namespaceTransformation"
+        },
+        "\u0002\u0013": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matrCompound.owl#InorganicAcid"
+        },
+        "\u0005z": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#SeepageVelocity"
+        },
+        "\u0006[": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/belongsToLayer"
+        },
+        "\u0005g": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#expands"
+        },
+        "\u0006H": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/reprSpaceGeometry.owl#Region"
+        },
+        "\u0002{": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#MaintenanceSchedule"
+        },
+        "\u0003\\": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#PrefrontalSquallLine"
+        },
+        "\u0004=": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/out"
+        },
+        "\u0005\u001e": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Drawdown"
+        },
+        "\u0004g": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#SolarFlux"
+        },
+        "\u0005H": {
+            "@id": "http://www.w3.org/2002/07/owl#AnnotationProperty"
+        },
+        "\u0006)": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation"
+        },
+        "\u0007\n": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#PoyntingVector"
+        },
+        "\u0003m": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#LuminousIntensity"
+        },
+        "\u0004N": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sameAsLink"
+        },
+        "\u0005/": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#hasAverageDepth"
+        },
+        "\u0006\u0010": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#NortheastStorm"
+        },
+        "\u0005b": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#Seiche"
+        },
+        "\u0006C": {
+            "@id": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        },
+        "\u0001f": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/tsMap"
+        },
+        "\u0002G": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#introduces"
+        },
+        "\u0003(": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/statePhysical.owl#hasPhysicalState"
+        },
+        "\u0004\t": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"
+        },
+        "\u0015": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Elevation"
+        },
+        "|": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#transferOf"
+        },
+        "\u0001]": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#UnitDefinedByProduct"
+        },
+        "\u0002>": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Hail"
+        },
+        "\u0003\u001f": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciComponent.owl#hasSource"
+        },
+        "\u0004\u0000": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#BatteryLifetime"
+        },
+        "~": {
+            "@id": "http://purl.org/dc/terms/MediaType"
+        },
+        "\u0001_": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#FunctionalSubstance"
+        },
+        "\u0002@": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#RadiativeForcing"
+        },
+        "\u0003!": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#hasStorm"
+        },
+        "\u0004\u0002": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDistance.owl#Distance"
+        },
+        "q": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#ofFeature"
+        },
+        "\u0001R": {
+            "@id": "http://spitfire-project.eu/ontology/ns/ModelLayer"
+        },
+        "\u00023": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprMath.owl#hasFirstOperand"
+        },
+        "\u0003\u0014": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#EscapeVelocity"
+        },
+        "\u000f": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/dateAccepted"
+        },
+        "\u0003p": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#PhaseVelocity"
+        },
+        "\u0004Q": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#PopUpThunderstorm"
+        },
+        "\u00052": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#HeightRange_km"
+        },
+        "\u0006\u0013": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/mediator"
+        },
+        "\u0003o": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Mist"
+        },
+        "\u0004P": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "\u00051": {
+            "@id": "http://purl.org/dc/elements/1.1/date"
+        },
+        "\u0006\u0012": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/to"
+        },
+        "L": {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@id": "http://spitfire-project.eu/ontology/ns/activityStart"
+        },
+        "\u0001-": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#FluxDensity"
+        },
+        "\u0002\u000e": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Electrical"
+        },
+        "\u0002f": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#IceStorm"
+        },
+        "\u0003G": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Tornado"
+        },
+        "\u0004(": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Place"
+        },
+        "\u0005\t": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isPreconditionOf"
+        },
+        "\u0004": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#ViscousFlow"
+        },
+        "\u0017": {
+            "@id": "http://purl.org/dc/terms/abstract"
+        },
+        "\u0006o": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#DepthRange_km"
+        },
+        "\u0003w": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/procPhysical.owl#Pressure"
+        },
+        "\u0004X": {
+            "@id": "http://spitfire-project.eu/ontology/ns/EnergyLabel"
+        },
+        "\u00059": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Blizzard"
+        },
+        "\u0006\u001a": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#hasOscillationDirection"
+        },
+        "\u0001l": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/energySource"
+        },
+        "\u0002M": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#overlaps"
+        },
+        "\u0003.": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#ElectromagneticProperty"
+        },
+        "\u0004\u000f": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#hasPrefix"
+        },
+        "p": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes"
+        },
+        "\u0001Q": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isTimeIncludedIn"
+        },
+        "\u00022": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#Opacity"
+        },
+        "\u0003\u0013": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Renewable"
+        },
+        "\u0001{": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact"
+        },
+        "\u0002\\": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#WavePhenomena"
+        },
+        "\u0003=": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#Jet"
+        },
+        "\u0004\u001e": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/bytes"
+        },
+        "/": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#Unit"
+        },
+        "\u0001\u0010": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Azimuth"
+        },
+        "\u0003z": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#VerticalExtent"
+        },
+        "\u0004[": {
+            "@id": "http://www.w3.org/2002/07/owl#ReflexiveProperty"
+        },
+        "\u0005<": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isRegionFor"
+        },
+        "\u0006\u001d": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkActivity"
+        },
+        "\u0003f": {
+            "@id": "http://purl.org/dc/terms/PhysicalResource"
+        },
+        "\u0004G": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#BodyWave"
+        },
+        "\u0005(": {
+            "@id": "http://spitfire-project.eu/ontology/ns/LinkActivity"
+        },
+        "\u0006\t": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Group"
+        },
+        "\u0003l": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isAbout"
+        },
+        "\u0004M": {
+            "@id": "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+        },
+        "\u0005.": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasParameterDataValue"
+        },
+        "\u0006\u000f": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#PhysicalConstant"
+        },
+        "\u0004q": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmo.owl#MeteorologicalPhenomena"
+        },
+        "\u0005R": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+        },
+        "\u00063": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"
+        },
+        "\u0005h": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#SkinDepth"
+        },
+        "\u0006I": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#executesTask"
+        },
+        "\u0006c": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#Eddy"
+        },
+        "\u0006s": {
+            "@id": "http://purl.org/dc/terms/LocationPeriodOrJurisdiction"
+        },
+        "\u0004i": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/actuatedBy"
+        },
+        "\u0005J": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Collective"
+        },
+        "\u0006+": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"
+        },
+        "\u0007\f": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"
+        },
+        "j": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#LaminarSublayer"
+        },
+        "\u0001K": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime"
+        },
+        "\u0002,": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "\u0003\r": {
+            "@id": "http://spitfire-project.eu/ontology/ns/NotRenewable"
+        },
+        "-": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"
+        },
+        "\u0001\u000e": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"
+        },
+        "\u0006i": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/format"
+        },
+        "\u0005a": {
+            "@id": "http://www.w3.org/2002/07/owl#NegativePropertyAssertion"
+        },
+        "\u0006B": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sameContext"
+        },
+        "\u0003d": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/networkRole"
+        },
+        "\u0004E": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"
+        },
+        "\u0005&": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/accessRights"
+        },
+        "\u0006\u0007": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#IcePellet"
+        },
+        "\u0001w": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        "\u0002X": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasProperty"
+        },
+        "\u00039": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Ceiling"
+        },
+        "\u0004\u001a": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        "\u0005|": {
+            "@id": "http://spitfire-project.eu/ontology/ns/DeviceRole"
+        },
+        "\u0006]": {
+            "@id": "http://purl.org/dc/elements/1.1/description"
+        },
+        "\u0004p": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isExpressedBy"
+        },
+        "\u0005Q": {
+            "@type": "http://www.w3.org/2001/XMLSchema#double",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#hasScalingNumber"
+        },
+        "\u00062": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Action"
+        },
+        "x": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#Prefix"
+        },
+        "\u0001Y": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasEventDate"
+        },
+        "\u0002:": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#AbsorptionCoefficient"
+        },
+        "\u0003\u001b": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phen.owl#Precipitation"
+        },
+        "\u0001e": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#LowPressure"
+        },
+        "\u0002F": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#bottomObjectProperty"
+        },
+        "\u0003'": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Role"
+        },
+        "\u0004\b": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Snowfall"
+        },
+        "G": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#onPlatform"
+        },
+        "\u0001(": {
+            "@id": "http://www.w3.org/2002/07/owl#FunctionalProperty"
+        },
+        "\u0002\t": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#characterizes"
+        },
+        "\u0006\u007f": {
+            "@id": "http://www.w3.org/2002/07/owl#Ontology"
+        },
+        "\u0001z": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        "\u0002[": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isMemberOf"
+        },
+        "\u0003<": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#Gyre"
+        },
+        "\u0004\u001d": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#hasBaseUnit"
+        },
+        "\u0005{": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#hasKey"
+        },
+        "\u0006\\": {
+            "@id": "http://purl.org/dc/terms/PeriodOfTime"
+        },
+        "\u0002v": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observedBy"
+        },
+        "\u0003W": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Thunderstorm"
+        },
+        "\u00048": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Workflow"
+        },
+        "\u0005\u0019": {
+            "@id": "http://www.w3.org/2002/07/owl#DeprecatedClass"
+        },
+        "\u0001": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#implements"
+        },
+        "J": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDistance.owl#hasLength"
+        },
+        "\u0001+": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#ComplexUnit"
+        },
+        "\u0002\f": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#CapillaryWave"
+        },
+        "\u0006w": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/realm.owl#Ocean"
+        },
+        "\u0005}": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#LongitudinalWave"
+        },
+        "\u0006^": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isCoveredBy"
+        },
+        "\u0006m": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#Anticyclone"
+        },
+        "\u0004}": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#ThermalVelocity"
+        },
+        "\u0005^": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#includesTime"
+        },
+        "\u0006?": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy"
+        },
+        "\u0004{": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#propertyDisjointWith"
+        },
+        "\u0005\\": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#UpperLevel"
+        },
+        "\u0006=": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#TangentialAcceleration"
+        },
+        "v": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor"
+        },
+        "\u0001W": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#Omega"
+        },
+        "\u00028": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SocialObjectAttribute"
+        },
+        "\u0003\u0019": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#LuminousFlux"
+        },
+        "\u0003q": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Description"
+        },
+        "\u0004R": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAgent"
+        },
+        "\u00053": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#isPropertyOf"
+        },
+        "\u0006\u0014": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#SeaState"
+        },
+        "\u0005m": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.w3.org/2002/07/owl#cardinality"
+        },
+        "\u0006N": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#Overturning"
+        },
+        "\u0004f": {
+            "@id": "http://purl.org/dc/elements/1.1/source"
+        },
+        "\u0005G": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#DesignedArtifact"
+        },
+        "\u0006(": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#Velocity"
+        },
+        "\u0007\t": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#SolarForcing"
+        },
+        "M": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Direction"
+        },
+        "\u0001.": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Bathymetry"
+        },
+        "\u0002\u000f": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"
+        },
+        "(": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
+        },
+        "\u0001\t": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isTaskDefinedIn"
+        },
+        "\u0003a": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#detects"
+        },
+        "\u0004B": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Project"
+        },
+        "\u0005#": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#FluidWave"
+        },
+        "\u0006\u0004": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sameDomain"
+        },
+        "\u0006b": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Storm"
+        },
+        "\u0006p": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/accrualPolicy"
+        },
+        "\u0001g": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#CloudBurst"
+        },
+        "\u0002H": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkActivityOf"
+        },
+        "\u0003)": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#Capillary"
+        },
+        "\u0004\n": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Input"
+        },
+        "\u0004v": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#FlightLevel"
+        },
+        "\u0005W": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Condition"
+        },
+        "\u00068": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#NeutralVelocity"
+        },
+        "S": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#hasReferenceHeight"
+        },
+        "\u00014": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOfInformationRealizedBy"
+        },
+        "\u0002\u0015": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Contract"
+        },
+        "Y": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Amount"
+        },
+        "\u0001:": {
+            "@id": "http://www.w3.org/2002/07/owl#Nothing"
+        },
+        "\u0002\u001b": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matr.owl#hasChemical"
+        },
+        "\u0010": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Design"
+        },
+        "\u0001c": {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@id": "http://spitfire-project.eu/ontology/ns/activityEnd"
+        },
+        "\u0002D": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isConceptUsedIn"
+        },
+        "\u0003%": {
+            "@id": "http://www.w3.org/2002/07/owl#NamedIndividual"
+        },
+        "\u0004\u0006": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#UnitDerivedByScaling"
+        },
+        "?": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#HeatThunderstorm"
+        },
+        "\u0001 ": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matrWater.owl#Ice"
+        },
+        "\u0002\u0001": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoWind.owl#Wind"
+        },
+        "\u0002|": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#HailStorm"
+        },
+        "\u0003]": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#ResponseTime"
+        },
+        "\u0004>": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#ShearWave"
+        },
+        "\u0005\u001f": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#madeObservation"
+        },
+        "\u0006\u0000": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#directlyPrecedes"
+        },
+        "\u0001n": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#DeploymentRelatedProcess"
+        },
+        "\u0002O": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Drizzle"
+        },
+        "\u00030": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isIntroducedBy"
+        },
+        "\u0004\u0011": {
+            "@type": "http://spitfire-project.eu/ontology/ns/context-types#Status",
+            "@id": "http://spitfire-project.eu/ontology/ns/forSTatus"
+        },
+        "\u0004a": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Inward"
+        },
+        "\u0005B": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Latency"
+        },
+        "\u0006#": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#actsFor"
+        },
+        "\u0007\u0004": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#SpectralRadiance"
+        },
+        "Z": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Orientation"
+        },
+        "\u0001;": {
+            "@type": "http://www.w3.org/2001/XMLSchema#double",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkQualityValue"
+        },
+        "\u0002\u001c": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Location"
+        },
+        "H": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy"
+        },
+        "\u0001)": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#TropicalStorm"
+        },
+        "\u0002\n": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/obsBy"
+        },
+        "\u0001p": {
+            "@id": "http://spitfire-project.eu/ontology/ns/PlatformTemporalProperty"
+        },
+        "\u0002Q": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Axis"
+        },
+        "\u00032": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#expressesConcept"
+        },
+        "\u0004\u0013": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"
+        },
+        "\u0006v": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#AcousticGravityWave"
+        },
+        "\u0001\u0018": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprMathOperation.owl#Product"
+        },
+        "\u0005y": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sensedBy"
+        },
+        "\u0006Z": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isParameterFor"
+        },
+        "\u0005n": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/isLayerOf"
+        },
+        "\u0006O": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#sensingMethodUsed"
+        },
+        "\u0006h": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy"
+        },
+        "\u0005f": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/audience"
+        },
+        "\u0006G": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#MeasurementRange"
+        },
+        "\u0006f": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#Whistler"
+        },
+        "\u0004r": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#RadiantFlux"
+        },
+        "\u0005S": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Selectivity"
+        },
+        "\u00064": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSpaceRelation.owl#perpendicularTo"
+        },
+        "\u0005j": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/energyLabel"
+        },
+        "\u0006K": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Power"
+        },
+        "\u0002k": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#someValuesFrom"
+        },
+        "\u0003L": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isSpecializedBy"
+        },
+        "\u0004-": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Abstract"
+        },
+        "\u0005\u000e": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Frequency"
+        },
+        "\u0006": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Precision"
+        },
+        "\u0011": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#MotionProperty"
+        },
+        "\u0001\u0016": {
+            "@id": "http://purl.org/dc/terms/isReplacedBy"
+        },
+        "E": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#ElectromagneticRadiationProperty"
+        },
+        "\u0001&": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasOutput"
+        },
+        "\u0002\u0007": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#CompressionWave"
+        },
+        "\u0001}": {
+            "@id": "http://spitfire-project.eu/ontology/ns/AccessLayer"
+        },
+        "\u0002^": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+        },
+        "\u0003?": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#LaminarBoundaryLayer"
+        },
+        "\u0004 ": {
+            "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasProxy"
+        },
+        "\u0005\u0001": {
+            "@id": "http://spitfire-project.eu/ontology/ns/TSMap"
+        },
+        "\u0001\u007f": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/obs"
+        },
+        "\u0002`": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#defines"
+        },
+        "\u0003A": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/procPhysical.owl#Rotation"
+        },
+        "\u0004\"": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        },
+        "\u0005\u0003": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/realm.owl#hasPlanetaryRealm"
+        },
+        "\u0002o": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#MeasurementProperty"
+        },
+        "\u0003P": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isSuperordinatedTo"
+        },
+        "\u00041": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#KelvinWave"
+        },
+        "\u0005\u0012": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/from"
+        },
+        "\u0004k": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprMath.owl#hasNumericValue"
+        },
+        "\u0005L": {
+            "@id": "http://purl.org/dc/terms/Policy"
+        },
+        "\u0006-": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/available"
+        },
+        "R": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#SolidAngle"
+        },
+        "\u00013": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"
+        },
+        "\u0002\u0014": {
+            "@id": "http://purl.org/dc/terms/isFormatOf"
+        },
+        "C": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#MagnetiCurvatureDrift"
+        },
+        "\u0001$": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matrCompound.owl#Peroxide"
+        },
+        "\u0002\u0005": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Monsoon"
+        },
+        "\u0003{": {
+            "@id": "http://qudt.org/schema/qudt#QuantityKind"
+        },
+        "\u0004\\": {
+            "@id": "http://purl.org/dc/elements/1.1/title"
+        },
+        "\u0005=": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/projectTopicOf"
+        },
+        "\u0006\u001e": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Kaavie"
+        },
+        "\u0004\u007f": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalProperty"
+        },
+        "\u0005`": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#AcousticWave"
+        },
+        "\u0006A": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"
+        },
+        "F": {
+            "@id": "http://www.w3.org/2002/07/owl#DeprecatedProperty"
+        },
+        "\u0001'": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#BoundaryLayer"
+        },
+        "\u0002\b": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#Sound"
+        },
+        "\u0004l": {
+            "@id": "http://spitfire-project.eu/ontology/ns/NotGreen"
+        },
+        "\u0005M": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#IntervalQuantity"
+        },
+        "\u0006.": {
+            "@id": "http://www.w3.org/2002/07/owl#AsymmetricProperty"
+        },
+        "\u0002e": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Person"
+        },
+        "\u0003F": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#implementedBy"
+        },
+        "\u0004'": {
+            "@id": "http://www.w3.org/2002/07/owl#IrreflexiveProperty"
+        },
+        "\u0005\b": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+        },
+        "\u0006r": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#RadiationMediumInteractionProperty"
+        },
+        "\u0002z": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#ShortWave"
+        },
+        "\u0003[": {
+            "@id": "http://spitfire-project.eu/ontology/ns/LinkProperty"
+        },
+        "\u0004<": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#coparticipatesWith"
+        },
+        "\u0005\u001d": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#hasUnit"
+        },
+        "\u0006g": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"
+        },
+        "\u0006a": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/belongsToNetwork"
+        },
+        "\u0004w": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#BulkHeatFlux"
+        },
+        "\u0005X": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Shower"
+        },
+        "\u00069": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Configuration"
+        },
+        "\u0007": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#hasSpeed"
+        },
+        "\b": {
+            "@id": "http://www.w3.org/2002/07/owl#SymmetricProperty"
+        },
+        "\u0004u": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://www.w3.org/2002/07/owl#targetValue"
+        },
+        "\u0005V": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenSystem.owl#Shock"
+        },
+        "\u00067": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/alternative"
+        },
+        "\u0003": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Level"
+        },
+        "\u0005v": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matrCompound.owl#hasCompound"
+        },
+        "\u0006W": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#InternalWave"
+        },
+        "B": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/mood"
+        },
+        "\u0001#": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isTimeOfObservationOf"
+        },
+        "\u0002\u0004": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/energyUsedIn"
+        },
+        "\u0004|": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#oneOf"
+        },
+        "\u0005]": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Output"
+        },
+        "\u0006>": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Electromagnetic"
+        },
+        "\u0004c": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/dateSubmitted"
+        },
+        "\u0005D": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isQualityOf"
+        },
+        "\u0006%": {
+            "@id": "http://www.w3.org/2002/07/owl#imports"
+        },
+        "\u0007\u0006": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Sensor"
+        },
+        "\u0012": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isExecutedIn"
+        },
+        "\u0014": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Outgoing"
+        },
+        "\u0002y": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasPostcondition"
+        },
+        "\u0003Z": {
+            "@id": "http://purl.org/dc/elements/1.1/rights"
+        },
+        "\u0004;": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSpaceGeometry3D.owl#Cone"
+        },
+        "\u0005\u001c": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#unionOf"
+        },
+        "a": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#Momentum"
+        },
+        "\u0001B": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#precedes"
+        },
+        "\u0002#": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matrCompound.owl#ChemicalCompound"
+        },
+        "\u0003\u0004": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#ConvectiveStorm"
+        },
+        "\f": {
+            "@id": "http://www.w3.org/2002/07/owl#Axiom"
+        },
+        "\u0016": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#PlanetaryWave"
+        },
+        "\u0001h": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SurvivalRange"
+        },
+        "\u0002I": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Event"
+        },
+        "\u0003*": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.3/rela.owl#hasProcess"
+        },
+        "\u0004\u000b": {
+            "@id": "http://www.w3.org/2002/07/owl#deprecated"
+        },
+        "\u0019": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#farFrom"
+        },
+        "\u0003k": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#AbsorbedSolarRadiation"
+        },
+        "\u0004L": {
+            "@id": "http://purl.org/dc/terms/Jurisdiction"
+        },
+        "\u0005-": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability"
+        },
+        "\u0006\u000e": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#definesRole"
+        },
+        "\u0006y": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/isLinkOf"
+        },
+        "\t": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"
+        },
+        "\u0006|": {
+            "@id": "http://purl.org/dc/dcmitype/Collection"
+        },
+        "_": {
+            "@id": "http://purl.org/dc/terms/license"
+        },
+        "\u0001@": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#ShockWave"
+        },
+        "\u0002!": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isConstituentOf"
+        },
+        "\u0003\u0002": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanFunction.owl#hasMaximum"
+        },
+        "\u0001\u0017": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"
+        },
+        "&": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#disjointUnionOf"
+        },
+        "\u0001\u0007": {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+        },
+        "\u001c": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#annotatedSource"
+        },
+        "\u0002x": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#EnergyFlux"
+        },
+        "\u0003Y": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#involvesAgent"
+        },
+        "\u0004:": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#classifies"
+        },
+        "\u0005\u001b": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#hasNormal"
+        },
+        "P": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#HydrogeologicalProperty"
+        },
+        "\u00011": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalBody"
+        },
+        "\u0002\u0012": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.w3.org/2002/07/owl#qualifiedCardinality"
+        },
+        "\u0005~": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isRoleDefinedIn"
+        },
+        "\u0006_": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalRange"
+        },
+        "\u0006j": {
+            "@id": "http://purl.org/dc/terms/MethodOfInstruction"
+        },
+        "t": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/outputEnergy"
+        },
+        "\u0001U": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phen.owl#hasPhenomena"
+        },
+        "\u00026": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#equivalentProperty"
+        },
+        "\u0003\u0017": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#GreenThunderstorm"
+        },
+        "\u0002g": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/energyConsumed"
+        },
+        "\u0003H": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#PolarDirection"
+        },
+        "\u0004)": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprMath.owl#Vector"
+        },
+        "\u0005\n": {
+            "@id": "http://purl.org/dc/terms/modified"
+        },
+        "\u001d": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Situation"
+        },
+        "V": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToConcept"
+        },
+        "\u00017": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#targetIndividual"
+        },
+        "\u0002\u0018": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#Irradiance"
+        },
+        "U": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#hasSymbol"
+        },
+        "\u00016": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#allValuesFrom"
+        },
+        "\u0002\u0017": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#ThermalFlux"
+        },
+        "\u0001d": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasRole"
+        },
+        "\u0002E": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Light"
+        },
+        "\u0003&": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#LambingStorm"
+        },
+        "\u0004\u0007": {
+            "@id": "http://purl.org/dc/terms/PhysicalMedium"
+        },
+        ":": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#hasMaximumDepth"
+        },
+        "\u0001\u001b": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSpaceRelation.owl#oppositeTo"
+        },
+        "O": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matrCompound.owl#Clathrate"
+        },
+        "\u00010": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#TerrestrialRadiation"
+        },
+        "\u0002\u0011": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Sleet"
+        },
+        "\u0002p": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matrCompound.owl#Perchlorate"
+        },
+        "\u0003Q": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/reprSpaceGeometry.owl#Cluster"
+        },
+        "\u00042": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#quantityKind"
+        },
+        "\u0005\u0013": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matr.owl#hasChemical_4"
+        },
+        "\u0002h": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#SolarRadiation"
+        },
+        "\u0003I": {
+            "@id": "http://purl.org/ontology/ao/core#LikeableAssociation"
+        },
+        "\u0004*": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#hasHeight"
+        },
+        "\u0005\u000b": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#Ridge"
+        },
+        "i": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/under"
+        },
+        "\u0001J": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/over"
+        },
+        "\u0002+": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOf"
+        },
+        "\u0003\f": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#CellCluster"
+        },
+        "<": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#Inertia"
+        },
+        "\u0001\u001d": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#attachedSystem"
+        },
+        "k": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Organism"
+        },
+        "\u0001L": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#InformationRealization"
+        },
+        "\u0002-": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"
+        },
+        "\u0003\u000e": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/savedEnergyOf"
+        },
+        "\u0001i": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#HighLevelThunderstorm"
+        },
+        "\u0002J": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#follows"
+        },
+        "\u0003+": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matr.owl#hasChemical_3"
+        },
+        "\u0004\f": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/forStatus"
+        },
+        "b": {
+            "@id": "http://purl.org/dc/terms/ProvenanceStatement"
+        },
+        "\u0001C": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#members"
+        },
+        "\u0002$": {
+            "@id": "http://spitfire-project.eu/ontology/ns/SensorTemporalProperty"
+        },
+        "\u0003\u0005": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matrCompound.owl#Compound"
+        },
+        "\u0005e": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Actuator"
+        },
+        "\u0006F": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Lateral"
+        },
+        ".": {
+            "@id": "http://spitfire-project.eu/ontology/ns/FlatModel"
+        },
+        "\u0001\u000f": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#Airspeed"
+        },
+        "r": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#GowkStorm"
+        },
+        "\u0001S": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sameTime"
+        },
+        "\u00024": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Activity"
+        },
+        "\u0003\u0015": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#CollectiveAgent"
+        },
+        "\u0006x": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#GroundSpeed"
+        },
+        "{": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#TypeCollection"
+        },
+        "\u0001\\": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#inCondition"
+        },
+        "\u0002=": {
+            "@id": "http://purl.org/dc/terms/LinguisticSystem"
+        },
+        "\u0003\u001e": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "y": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/bibliographicCitation"
+        },
+        "\u0001Z": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#realizesInformationAbout"
+        },
+        "\u0002;": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#LandLash"
+        },
+        "\u0003\u001c": {
+            "@id": "http://purl.org/dc/elements/1.1/creator"
+        },
+        "\u0006d": {
+            "@id": "http://purl.org/dc/terms/SizeOrDuration"
+        },
+        "\u0001k": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Undulation"
+        },
+        "\u0002L": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#actsThrough"
+        },
+        "\u0003-": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Bearing"
+        },
+        "\u0004\u000e": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#FluidPhenomena"
+        },
+        "\u0002m": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Sensitivity"
+        },
+        "\u0003N": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/actuate"
+        },
+        "\u0004/": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+        },
+        "\u0005\u0010": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.w3.org/2002/07/owl#minQualifiedCardinality"
+        },
+        "\u0003n": {
+            "@id": "http://www.w3.org/2002/07/owl#InverseFunctionalProperty"
+        },
+        "\u0004O": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#Drift"
+        },
+        "\u00050": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Mood"
+        },
+        "\u0006\u0011": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#deployedSystem"
+        },
+        "\u0006{": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/savedEnergy"
+        },
+        ";": {
+            "@id": "http://spitfire-project.eu/ontology/ns/CoreLayer"
+        },
+        "\u0001\u001c": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#quantityValue"
+        },
+        "\u0003i": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Container"
+        },
+        "\u0004J": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/repr.owl#LogarithmicScale"
+        },
+        "\u0005+": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matrWater.owl#LiquidWater"
+        },
+        "\u0006\f": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/contributor"
+        },
+        "\u0001\u0012": {
+            "@id": "http://purl.org/dc/terms/references"
+        },
+        ",": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        "\u0001\r": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenFluidInstability.owl#KelvinHelmholtzInstability"
+        },
+        "}": {
+            "@id": "http://www.w3.org/2002/07/owl#AllDifferent"
+        },
+        "\u0001^": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#InertialWave"
+        },
+        "\u0002?": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprMath.owl#Vector_3D"
+        },
+        "\u0003 ": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergy.owl#Energy"
+        },
+        "\u0004\u0001": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/tsMapOf"
+        },
+        "\u0005q": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#hasDefaultUnit"
+        },
+        "\u0006R": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#LaminarFlow"
+        },
+        "\u0001\u0011": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://www.w3.org/2002/07/owl#bottomDataProperty"
+        },
+        "\u0005l": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#Acoustic"
+        },
+        "\u0006M": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#Luminance"
+        },
+        "g": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.3/relaSci.owl#hasQuantity"
+        },
+        "\u0001H": {
+            "@id": "http://purl.org/dc/dcam/VocabularyEncodingScheme"
+        },
+        "\u0002)": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#GoslingBlast"
+        },
+        "\u0003\n": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#onDataRange"
+        },
+        "\u0004t": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#HurricaneBand"
+        },
+        "\u0005U": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#endTime"
+        },
+        "\u00066": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/conformsTo"
+        },
+        "X": {
+            "@id": "http://spitfire-project.eu/ontology/ns/SensorNetwork"
+        },
+        "\u00019": {
+            "@id": "http://purl.org/dc/terms/FileFormat"
+        },
+        "\u0002\u001a": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/repr.owl#Measurement"
+        },
+        "l": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#UnitDerivedByRaisingToPower"
+        },
+        "\u0001M": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#Speed"
+        },
+        "\u0002.": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson"
+        },
+        "\u0003\u000f": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprMath.owl#hasOperand"
+        },
+        "\u0003r": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Method"
+        },
+        "\u0004S": {
+            "@id": "http://purl.org/dc/terms/tableOfContents"
+        },
+        "\u00054": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+        },
+        "\u0006\u0015": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isAgentIncludedIn"
+        },
+        "\u0001a": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#CloudForcing"
+        },
+        "\u0002B": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#inDeployment"
+        },
+        "\u0003#": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phen.owl#Phenomena"
+        },
+        "\u0004\u0004": {
+            "@id": "http://www.w3.org/2002/07/owl#backwardCompatibleWith"
+        },
+        "N": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#IonVelocity"
+        },
+        "\u0001/": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#BaseUnit"
+        },
+        "\u0002\u0010": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Concept"
+        },
+        "[": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#VerticalVelocity"
+        },
+        "\u0001<": {
+            "@id": "http://www.w3.org/2001/XMLSchema#UnitOfMeasurement"
+        },
+        "\u0002\u001d": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Green"
+        },
+        "u": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#differentFrom"
+        },
+        "\u0001V": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/procPhysical.owl#Motion"
+        },
+        "\u00027": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#DetectionLimit"
+        },
+        "\u0003\u0018": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Pattern"
+        },
+        "\u0002l": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SocialPerson"
+        },
+        "\u0003M": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observationResultTime"
+        },
+        "\u0004.": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Attitude"
+        },
+        "\u0005\u000f": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasPrecondition"
+        },
+        "\u0003v": {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+        },
+        "\u0004W": {
+            "@id": "http://purl.org/dc/terms/AgentClass"
+        },
+        "\u00058": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#hasReferenceDepth"
+        },
+        "\u0006\u0019": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#GravityWave"
+        },
+        "\u0004b": {
+            "@id": "http://www.w3.org/2002/07/owl#Restriction"
+        },
+        "\u0005C": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Process"
+        },
+        "\u0006$": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isConstraintFor"
+        },
+        "\u0007\u0005": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability"
+        },
+        "\u0001~": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#InertiaWave"
+        },
+        "\u0002_": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#DynamicTopography"
+        },
+        "\u0003@": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasInput"
+        },
+        "\u0004!": {
+            "@id": "http://spitfire-project.eu/ontology/ns/SensorProjectTopic"
+        },
+        "\u0005\u0002": {
+            "@id": "http://purl.org/dc/terms/BibliographicResource"
+        },
+        "A": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#LakeEffect"
+        },
+        "\u0001\"": {
+            "@id": "http://www.w3.org/2002/07/owl#priorVersion"
+        },
+        "\u0002\u0003": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@id": "http://spitfire-project.eu/ontology/ns/priorityLevel"
+        },
+        "\u0004h": {
+            "@type": "http://www.w3.org/2001/XMLSchema#double",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#hasShiftingNumber"
+        },
+        "\u0005I": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observationResult"
+        },
+        "\u0006*": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#LogarithmicUnit"
+        },
+        "\u0007\u000b": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Accuracy"
+        },
+        "\u0005d": {
+            "@id": "http://spitfire-project.eu/ontology/ns/LinkQuality"
+        },
+        "\u0006E": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matr.owl#hasSubstance"
+        },
+        "\u0001q": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#SupercellConvectiveStorm"
+        },
+        "\u0002R": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#rangeOf"
+        },
+        "\u00033": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenFluidTransport.owl#Buoyancy"
+        },
+        "\u0004\u0014": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/energyOutcomes"
+        },
+        "\u0003s": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmo.owl#hasMeteorologicalPhenomena"
+        },
+        "\u0004T": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SensorInput"
+        },
+        "\u00055": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#HeatFlux"
+        },
+        "\u0006\u0016": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Radial"
+        },
+        "\u0006}": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Observation"
+        },
+        "\u0003}": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#definesTask"
+        },
+        "\u0004^": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#IncidenceAngle"
+        },
+        "\u0005?": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart"
+        },
+        "\u0006 ": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#SurfaceWave"
+        },
+        "\u0007\u0001": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#WindSpeed"
+        },
+        "\u0001o": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.3/relaSpace.owl#clusterOf"
+        },
+        "\u0002P": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/nearby"
+        },
+        "\u00031": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#HeavyRainfall"
+        },
+        "\u0004\u0012": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#MagnetohydrodynamicWave"
+        },
+        "\u0006z": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Set"
+        },
+        "\u000b": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Diagnosis"
+        },
+        "\u001e": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/coverage"
+        },
+        "\u0005\u007f": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#onClass"
+        },
+        "\u0006`": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Incoming"
+        },
+        "\u0002r": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isUnifiedBy"
+        },
+        "\u0003S": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#HighPressure"
+        },
+        "\u00044": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/seeAlsoLink"
+        },
+        "\u0005\u0015": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isRealizedBy"
+        },
+        "\u0005w": {
+            "@id": "http://spitfire-project.eu/ontology/ns/SavedEnergy"
+        },
+        "\u0006X": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Substance"
+        },
+        "#": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Mechanical"
+        },
+        "\u0001\u0004": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/issued"
+        },
+        "h": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/hasLayer"
+        },
+        "\u0001I": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#intersectionOf"
+        },
+        "\u0002*": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/containedIn"
+        },
+        "\u0003\u000b": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#onDatatype"
+        },
+        "\u0003j": {
+            "@id": "http://spitfire-project.eu/ontology/ns/LinkReview"
+        },
+        "\u0004K": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#SignificantHeight"
+        },
+        "\u0005,": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#unit"
+        },
+        "\u0006\r": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting"
+        },
+        "\u000e": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#unifies"
+        },
+        "\u0004z": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#GeopotentialHeight"
+        },
+        "\u0005[": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/describesNetwork"
+        },
+        "\u0006<": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#PointVortex"
+        },
+        "\u007f": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Organization"
+        },
+        "\u0001`": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#TopographicWave"
+        },
+        "\u0002A": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/stateRoleImpact.owl#hasImpact"
+        },
+        "\u0003\"": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SocialRelation"
+        },
+        "\u0004\u0003": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#HeightRange"
+        },
+        "I": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#sourceIndividual"
+        },
+        "\u0001*": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Altitude"
+        },
+        "\u0002\u000b": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"
+        },
+        "\u0005i": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matr.owl#hasChemical_2"
+        },
+        "\u0006J": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "\u0004n": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Height"
+        },
+        "\u0005O": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToDescription"
+        },
+        "\u00060": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform"
+        },
+        "\u0003t": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#Acceleration"
+        },
+        "\u0004U": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Classification"
+        },
+        "\u00056": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+        },
+        "\u0006\u0017": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#System"
+        },
+        "\u001f": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://spitfire-project.eu/ontology/ns/message"
+        },
+        "\u0001\u0000": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#distinctMembers"
+        },
+        "\u0001\u0013": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#datatypeComplementOf"
+        },
+        "\u0005r": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#sameAs"
+        },
+        "\u0006S": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#LocalStorm"
+        },
+        "\u001a": {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@id": "http://spitfire-project.eu/ontology/ns/tStart"
+        },
+        "\u0005t": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#Vortex"
+        },
+        "\u0006U": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanStatistics.owl#hasAverage"
+        },
+        "\u0006l": {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+        },
+        "\u0004o": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/publisher"
+        },
+        "\u0005P": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenSystem.owl#Oscillation"
+        },
+        "\u00061": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#RayleighWave"
+        },
+        "\u0003b": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Kelsher"
+        },
+        "\u0004C": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasDeployment"
+        },
+        "\u0005$": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isCharacterizedBy"
+        },
+        "\u0006\u0005": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/realm.owl#PlanetarySurfaceLevel"
+        },
+        "\u0002t": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasOperatingRange"
+        },
+        "\u0003U": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/dateCopyrighted"
+        },
+        "\u00046": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Rainband"
+        },
+        "\u0005\u0017": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/hasLink"
+        },
+        "m": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#SplittingConvectiveStorm"
+        },
+        "\u0001N": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#StandingWave"
+        },
+        "\u0002/": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/inputEnergy"
+        },
+        "\u0003\u0010": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#NonSupercellTornado"
+        },
+        " ": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#UnitOfMeasure"
+        },
+        "\u0001\u0001": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#WaterSpout"
+        },
+        "\u0004x": {
+            "@id": "http://www.w3.org/2002/07/owl#OntologyProperty"
+        },
+        "\u0005Y": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/procPhysical.owl#CoriolisForce"
+        },
+        "\u0006:": {
+            "@id": "http://purl.org/dc/terms/hasFormat"
+        },
+        "W": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"
+        },
+        "\u00018": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
+        },
+        "\u0002\u0019": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#LocalConcept"
+        },
+        "\u0006e": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#DopplerVelocity"
+        },
+        "\u0005k": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#AzimuthalDirection"
+        },
+        "\u0006L": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Task"
+        },
+        "^": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprMath.owl#hasSecondOperand"
+        },
+        "\u0001?": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#AlfvenWave"
+        },
+        "\u0002 ": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sameLocation"
+        },
+        "\u0003\u0001": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#TravelingWave"
+        },
+        "\u0003g": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isExpandedIn"
+        },
+        "\u0004H": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasConstraint"
+        },
+        "\u0005)": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasParameter"
+        },
+        "\u0006\n": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isSubordinatedTo"
+        },
+        "\\": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Platform"
+        },
+        "\u0001=": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#ScaleHeight"
+        },
+        "\u0002\u001e": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matrWater.owl#Snow"
+        },
+        "\u0003h": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Thermal"
+        },
+        "\u0004I": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Norm"
+        },
+        "\u0005*": {
+            "@id": "http://spitfire-project.eu/ontology/ns/EnergySource"
+        },
+        "\u0006\u000b": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Depth"
+        },
+        "+": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#DampingDepth"
+        },
+        "\u0001\f": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpeed.owl#ProperMotion"
+        },
+        "\n": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/spatial"
+        },
+        "\u001b": {
+            "@id": "http://purl.org/dc/terms/MediaTypeOrExtent"
+        },
+        "\u0002c": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPressure.owl#Cyclone"
+        },
+        "\u0003D": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#startTime"
+        },
+        "\u0004%": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/accrualMethod"
+        },
+        "\u0005\u0006": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/energyRate"
+        },
+        "\u0003x": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem"
+        },
+        "\u0004Y": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#Acoustics"
+        },
+        "\u0005:": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/phenFluidDynamics.owl#Cell"
+        },
+        "\u0006\u001b": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/owns"
+        },
+        "\u0003\u007f": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#OperatingPowerRange"
+        },
+        "\u0004`": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Theory"
+        },
+        "\u0005A": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.3/rela.owl#hasState"
+        },
+        "\u0006\"": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkActivityValue"
+        },
+        "\u0007\u0003": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/instructionalMethod"
+        },
+        "\u0002u": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkOf"
+        },
+        "\u0003V": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#FormalEntity"
+        },
+        "\u00047": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observes"
+        },
+        "\u0005\u0018": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"
+        },
+        "$": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#Intensity"
+        },
+        "\u0001\u0005": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Geoid"
+        },
+        "D": {
+            "@id": "http://www.w3.org/2002/07/owl#DataRange"
+        },
+        "\u0001%": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Transition"
+        },
+        "\u0002\u0006": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isPartOf"
+        },
+        "\u0018": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#EstimatedCeiling"
+        },
+        "\u0005x": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprSciUnits.owl#UnitDerivedByShifting"
+        },
+        "\u0006Y": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#HelmholtzWave"
+        },
+        "o": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#describes"
+        },
+        "\u0001P": {
+            "@id": "http://www.w3.org/2002/07/owl#AllDisjointProperties"
+        },
+        "\u00021": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/reprMathOperation.owl#Difference"
+        },
+        "\u0003\u0012": {
+            "@id": "http://xmlns.com/foaf/0.1/Agent"
+        },
+        "\u0001y": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+        },
+        "\u0002Z": {
+            "@id": "http://sweet.jpl.nasa.gov/2.3/reprSpaceGeometry.owl#Depression"
+        },
+        "\u0003;": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#FamilyOfTornadoes"
+        },
+        "\u0004\u001c": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"
+        },
+        "\u0002d": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenWave.owl#ShallowWaterWave"
+        },
+        "\u0003E": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/wornBy"
+        },
+        "\u0004&": {
+            "@id": "http://www.w3.org/2002/07/owl#TransitiveProperty"
+        },
+        "\u0005\u0007": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#BiologicalObject"
+        },
+        "c": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Deployment"
+        },
+        "\u0001D": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Object"
+        },
+        "\u0002%": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#usesConcept"
+        },
+        "\u0003\u0006": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#SeaLevel"
+        },
+        "\u0004s": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/uom"
+        },
+        "\u0005T": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#HeavySnowfall"
+        },
+        "\u00065": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/extent"
+        },
+        "\u0001b": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#VerticalDirection"
+        },
+        "\u0002C": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#mappableTo"
+        },
+        "\u0003$": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SensorDataSheet"
+        },
+        "\u0004\u0005": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#valueForQuantity"
+        },
+        "\u0003e": {
+            "@id": "http://purl.org/dc/terms/MethodOfAccrual"
+        },
+        "\u0004F": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanEnergyFlux.owl#Insolation"
+        },
+        "\u0005'": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Topography"
+        },
+        "\u0006\b": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#Rain"
+        },
+        "\u0002j": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalPlace"
+        },
+        "\u0003K": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"
+        },
+        "\u0004,": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#MesocycloneSignature"
+        },
+        "\u0005\r": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#FreezingRain"
+        },
+        "\u0002i": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#OperatingProperty"
+        },
+        "\u0003J": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isComponentOf"
+        },
+        "\u0004+": {
+            "@id": "http://www.w3.org/2002/07/owl#ObjectProperty"
+        },
+        "\u0005\f": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenFluidInstability.owl#StaticStability"
+        },
+        "\u0001r": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"
+        },
+        "\u0002S": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#hasDepth"
+        },
+        "\u00034": {
+            "@id": "http://spitfire-project.eu/ontology/ns/NetworkProperty"
+        },
+        "\u0004\u0015": {
+            "@id": "http://spitfire-project.eu/ontology/ns/NetworkTopology"
+        },
+        "\u0005": {
+            "@id": "http://spitfire-project.eu/ontology/ns/SensorRole"
+        },
+        "\u0001u": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.w3.org/2002/07/owl#maxCardinality"
+        },
+        "\u0002V": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#OperatingRange"
+        },
+        "\u00037": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PlanExecution"
+        },
+        "\u0004\u0018": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#propertyChainAxiom"
+        },
+        "\u0001|": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenFluidTransport.owl#Convection"
+        },
+        "\u0002]": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#EventType"
+        },
+        "\u0003>": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasMember"
+        },
+        "\u0004\u001f": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasQuality"
+        },
+        "\u0005\u0000": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+        },
+        "\u0003c": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#annotatedProperty"
+        },
+        "\u0004D": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quan.owl#FluidProperty"
+        },
+        "\u0005%": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#DepthRange"
+        },
+        "\u0006\u0006": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"
+        },
+        "\u0005o": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#onProperties"
+        },
+        "\u0006P": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceDirection.owl#Tilt"
+        },
+        "\u0002s": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/rightsHolder"
+        },
+        "\u0003T": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isAgentInvolvedIn"
+        },
+        "\u00045": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasCommonBoundary"
+        },
+        "\u0005\u0016": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isObservableAt"
+        },
+        "@": {
+            "@id": "http://purl.org/dc/terms/created"
+        },
+        "\u0001!": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#Freeboard"
+        },
+        "\u0002\u0002": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#TopographicProminence"
+        },
+        "\u0002~": {
+            "@type": "@vocab",
+            "@id": "http://sweet.jpl.nasa.gov/2.2/matr.owl#hasChemical_1"
+        },
+        "\u0003_": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#BarometricAltitude"
+        },
+        "\u0004@": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/layerOf"
+        },
+        "\u0005!": {
+            "@id": "http://purl.org/dc/terms/isReferencedBy"
+        },
+        "\u0006\u0002": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/phenAtmoPrecipitation.owl#MulticellConvectiveStorm"
+        },
+        "\u0006q": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Narrative"
+        },
+        ">": {
+            "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+        },
+        "\u0001\u001f": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isPostconditionOf"
+        },
+        "\u0002\u0000": {
+            "@id": "http://sweet.jpl.nasa.gov/2.2/quanSpaceHeight.owl#MixingHeight"
+        },
+        "\u0002": {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@id": "http://spitfire-project.eu/ontology/ns/tEnd"
+        },
+        "\u0004e": {
+            "@id": "http://purl.org/dc/terms/isRequiredBy"
+        },
+        "\u0005F": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Transducer"
+        },
+        "\u0006'": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#isProxyFor"
+        },
+        "\u0007\b": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#satisfies"
+        },
+        "\u0001t": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#concretelyExpresses"
+        },
+        "\u0002U": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasIntervalDate"
+        },
+        "\u00036": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#InformationEntity"
+        },
+        "\u0004\u0017": {
+            "@id": "http://spitfire-project.eu/ontology/ns/OV"
+        }
+    }
+}

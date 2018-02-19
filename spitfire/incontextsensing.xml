@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:dul="http://www.loa-cnr.it/ontologies/DUL.owl#"
+   xmlns:qudt="http://qudt.org/schema/qudt#"
+   xmlns:ns1="http://purl.oclc.org/NET/ssnx/ssn#"
+   xmlns:ns2="http://spitfire-project.eu/ontology/ns/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N6557b63e4ec548f9a69b03ee0dd4ee93">
+    <owl:onProperty rdf:resource="http://spitfire-project.eu/cc/spitfireCC_n3.owl#hasMinimumValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:hasValue>1</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nee3b9e8576a14c0581d5e182ab85ae51">
+    <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
+    <owl:someValuesFrom rdf:nodeID="N34c4278fee3148b88308bbffea104052"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spitfire-project.eu/sensor_stimulus/silver_expansion">
+    <ns1:isProxyFor rdf:resource="http://spitfire-project.eu/property/Temperature"/>
+    <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Stimulus"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc0a90184daba42e99238e947d79db151">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:oneOf rdf:resource="http://spitfire-project.eu/uom/Fahrenheit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N34c4278fee3148b88308bbffea104052">
+    <owl:intersectionOf rdf:nodeID="N27d923bda84143f988ead92d2b27004f"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N6557b63e4ec548f9a69b03ee0dd4ee93"/>
+    <owl:intersectionOf rdf:nodeID="N23926a5d6b8a4a4db2566be48c5392da"/>
+    <owl:intersectionOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#MeasurementRange"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N26944826588b4bce8139bfbbe0774821">
+    <owl:hasValue>-35</owl:hasValue>
+    <owl:onProperty rdf:resource="http://spitfire-project.eu/cc/spitfireCC_n3.owl#hasMaximumValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spitfire-project.eu/uom/Fahrenheit">
+    <qudt:symbol>F</qudt:symbol>
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt#Unit"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6af77dd02e784cbda92fb4c213b6eeb1">
+    <owl:intersectionOf rdf:nodeID="N6d335887d94a4656afd4f45fb3d7af12"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#MeasurementRange"/>
+    <owl:intersectionOf rdf:nodeID="Nb2b86e9d9b7e46a0952508c27d2eac3c"/>
+    <owl:intersectionOf rdf:nodeID="N26944826588b4bce8139bfbbe0774821"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spitfire-project.eu/foi/Room_12">
+    <rdf:type rdf:resource="http://spitfire-project.eu/foi/Room"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf0d24151998e457bb344b148e1adb448">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:nodeID="N6af77dd02e784cbda92fb4c213b6eeb1"/>
+    <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spitfire-project.eu/sensor/sensor1234/capabilities_sensor1234">
+    <rdf:type rdf:resource="http://spitfire-project.eu/sensor/sensor1234/capabilities"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6b89ef0bffc74740b78a5195efec00bd">
+    <owl:someValuesFrom rdf:nodeID="Nf25e384ec2b443f7815790d8a5224dfa"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N23926a5d6b8a4a4db2566be48c5392da">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#unit"/>
+    <owl:someValuesFrom rdf:nodeID="N0fd8809926da477499346e80ae1e02b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0fd8809926da477499346e80ae1e02b1">
+    <owl:oneOf rdf:resource="http://spitfire-project.eu/uom/month"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spitfire-project.eu/sensor/sensor1234">
+    <dcterms:date>12-04-02T12:48Z</dcterms:date>
+    <dul:hasDataValue>10.2</dul:hasDataValue>
+    <ns2:uom rdf:resource="http://spitfire-project.eu/uom/Centigrade"/>
+    <ns1:detects rdf:resource="http://spitfire-project.eu/sensor_stimulus/silver_expansion"/>
+    <ns1:observedProperty rdf:resource="http://spitfire-project.eu/property/Temperature"/>
+    <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+    <ns1:hasMeasurementCapability rdf:resource="http://spitfire-project.eu/sensor/sensor1234/capabilities_sensor1234"/>
+    <ns1:featureOfInterest rdf:resource="http://spitfire-project.eu/foi/Room_12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spitfire-project.eu/uom/Centigrade">
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt#Unit"/>
+    <qudt:symbol>C</qudt:symbol>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf25e384ec2b443f7815790d8a5224dfa">
+    <owl:intersectionOf rdf:resource="http://spitfire-project.eu/property/Battery_Life_Time"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="Nee3b9e8576a14c0581d5e182ab85ae51"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6d335887d94a4656afd4f45fb3d7af12">
+    <owl:onProperty rdf:resource="http://spitfire-project.eu/cc/spitfireCC_n3.owl#hasMinimumValue"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:hasValue>-40</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spitfire-project.eu/property/Battery_Life_Time">
+    <qudt:unit rdf:resource="http://spitfire-project.eu/uom/month"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N27d923bda84143f988ead92d2b27004f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://spitfire-project.eu/cc/spitfireCC_n3.owl#hasMaximumValue"/>
+    <owl:hasValue>2</owl:hasValue>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spitfire-project.eu/uom/month">
+    <rdf:type rdf:resource="http://qudt.org/schema/qudt#Unit"/>
+    <qudt:symbol>m</qudt:symbol>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb2b86e9d9b7e46a0952508c27d2eac3c">
+    <owl:onProperty rdf:resource="http://qudt.org/schema/qudt#unit"/>
+    <owl:someValuesFrom rdf:nodeID="Nc0a90184daba42e99238e947d79db151"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N884ed720b66542a7b7fe5ef62a9275c4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:resource="http://spitfire-project.eu/property/Temperature"/>
+    <owl:intersectionOf rdf:nodeID="Nf0d24151998e457bb344b148e1adb448"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spitfire-project.eu/sensor/sensor1234/capabilities">
+    <rdfs:subClassOf rdf:nodeID="N6b89ef0bffc74740b78a5195efec00bd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N582a8f2f7f384507bf2d131d94dd4c4f">
+    <owl:someValuesFrom rdf:nodeID="N884ed720b66542a7b7fe5ef62a9275c4"/>
+    <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#inCondition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://spitfire-project.eu/property/Temperature">
+    <qudt:unit rdf:resource="http://spitfire-project.eu/uom/Fahrenheit"/>
+    <qudt:unit rdf:resource="http://spitfire-project.eu/uom/Centigrade"/>
+    <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+  </rdf:Description>
+</rdf:RDF>

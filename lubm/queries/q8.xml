@@ -17,10 +17,10 @@
 				<ub:subOrganizationOf rdf:resource="http://www.University0.edu"/>
 			</sparql:QueryVariable>
 		</ub:memberOf>
-		<ub:emailAddress>
+		<!-- <ub:emailAddress>
 			<sparql:QueryVariable sparql:name="Z">
 			</sparql:QueryVariable>
-		</ub:emailAddress>
+		</ub:emailAddress> -->
     </sparql:QueryVariable>
     
 </sparql:Query>

@@ -1,0 +1,2839 @@
+{
+    "@context": {
+        "\u0012a": { "@id": "http://www.w3.org/2002/07/owl#Class" },
+        "\u0012b": { "@id": "http://qudt.org/schema/qudt#Unit" },
+        "\u0012c": { "@id": "http://spitfire-project.eu/cc/spitfireCC_n3.owl#hasMaximumValue" },
+        "\u0012d": { "@id": "http://spitfire-project.eu/cc/spitfireCC_n3.owl#hasMinimumValue" },
+        "\u0012e": { "@id": "http://spitfire-project.eu/uom/Fahrenheit" },
+        "\u0012f": { "@id": "http://spitfire-project.eu/uom/Centigrade" },
+        "\u0012g": { "@id": "http://spitfire-project.eu/uom/month" },
+        "\u0012h": { "@id": "http://spitfire-project.eu/property/Temperature" },
+        "\u0012i": { "@id": "http://spitfire-project.eu/property/Battery_Life_Time" },
+        "\u0012j": { "@id": "http://spitfire-project.eu/foi/Room" },
+        "\u0012k": { "@id": "http://spitfire-project.eu/sensor_stimulus/silver_expansion" },
+        "\u0012l": { "@id": "http://purl.org/dc/terms/date" },
+        "0": {
+            "@id": "http://qudt.org/schema/qudt#PowerPerElectricChargeUnit"
+        },
+        "1": {
+            "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+        },
+        "2": {
+            "@id": "http://purl.org/dc/terms/created"
+        },
+        "3": {
+            "@id": "http://qudt.org/schema/qudt#ThermalConductivityUnit"
+        },
+        "4": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/mood"
+        },
+        "5": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#systemBaseQuantityKind"
+        },
+        "6": {
+            "@id": "http://qudt.org/schema/qudt#TimeAreaUnit"
+        },
+        "7": {
+            "@id": "http://qudt.org/schema/qudt#HeartRateUnit"
+        },
+        "8": {
+            "@id": "http://www.w3.org/2002/07/owl#DataRange"
+        },
+        "9": {
+            "@id": "http://www.w3.org/2002/07/owl#DeprecatedProperty"
+        },
+        "\u0000": {
+            "@id": "http://www.w3.org/2002/07/owl#versionIRI"
+        },
+        "T": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isConcretelyExpressedBy"
+        },
+        "\u00015": {
+            "@id": "http://qudt.org/schema/qudt#SolidAngleUnit"
+        },
+        "\u0002\u0016": {
+            "@id": "http://purl.org/dc/terms/LinguisticSystem"
+        },
+        "\u0004d": {
+            "@id": "http://qudt.org/schema/qudt#GravitationalAttractionUnit"
+        },
+        "\u0005E": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#valueQuantity"
+        },
+        "\u0006&": {
+            "@id": "http://qudt.org/schema/qudt#CurrencyUnit"
+        },
+        "\u0002n": {
+            "@id": "http://qudt.org/schema/qudt#PhysicalUnit"
+        },
+        "\u0003O": {
+            "@id": "http://www.w3.org/2002/07/owl#backwardCompatibleWith"
+        },
+        "\u00040": {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@id": "http://qudt.org/schema/qudt#exactConstant"
+        },
+        "\u0005\u0011": {
+            "@id": "http://www.linkedmodel.org/schema/vaem#usesNonImportedResource"
+        },
+        "\u0002a": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Renewable"
+        },
+        "\u0003B": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem"
+        },
+        "\u0004#": {
+            "@id": "http://spitfire-project.eu/ontology/ns/EnergyLabel"
+        },
+        "\u0005\u0004": {
+            "@id": "http://qudt.org/schema/qudt#KinematicViscosityUnit"
+        },
+        "d": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#WorkflowExecution"
+        },
+        "\u0001E": {
+            "@id": "http://www.linkedmodel.org/schema/vaem#lastUpdated"
+        },
+        "\u0002&": {
+            "@id": "http://qudt.org/schema/qudt#ExposureUnit"
+        },
+        "\u0003\u0007": {
+            "@id": "http://qudt.org/schema/qudt#negativeDeltaLimit"
+        },
+        "n": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#distinctMembers"
+        },
+        "\u0001O": {
+            "@id": "http://qudt.org/schema/qudt#MolarConcentrationUnit"
+        },
+        "\u00020": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isMemberOf"
+        },
+        "\u0003\u0011": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/wornBy"
+        },
+        "\u0001\u001a": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#allValuesFrom"
+        },
+        "\u0005u": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy"
+        },
+        "\u0002q": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#coherentUnitOfSystem"
+        },
+        "\u0003R": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion"
+        },
+        "\u00043": {
+            "@id": "http://purl.org/dc/elements/1.1/source"
+        },
+        "\u0005\u0014": {
+            "@id": "http://qudt.org/schema/qudt#DerivedUnit"
+        },
+        "K": {
+            "@id": "http://purl.org/dc/terms/license"
+        },
+        "\u0001,": {
+            "@id": "http://purl.org/dc/dcam/VocabularyEncodingScheme"
+        },
+        "\u0002\r": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Activity"
+        },
+        "\u0002b": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#CollectiveAgent"
+        },
+        "\u0003C": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Quantity"
+        },
+        "\u0004$": {
+            "@id": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "\u0005\u0005": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isQualityOf"
+        },
+        "]": {
+            "@id": "http://qudt.org/schema/qudt#MolarHeatCapacityUnit"
+        },
+        "\u0001>": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#inCondition"
+        },
+        "\u0002\u001f": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#introduces"
+        },
+        "\u0003\u0000": {
+            "@id": "http://qudt.org/schema/qudt#MicrobialFormationUnit"
+        },
+        "z": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent"
+        },
+        "\u0001[": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        "\u0002<": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Sensitivity"
+        },
+        "\u0003\u001d": {
+            "@id": "http://qudt.org/schema/qudt#TemperaturePerTimeUnit"
+        },
+        "w": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://www.w3.org/2002/07/owl#topDataProperty"
+        },
+        "\u0001X": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#inverseOf"
+        },
+        "\u00029": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalPlace"
+        },
+        "\u0003\u001a": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isSuperordinatedTo"
+        },
+        "\u0001\u0014": {
+            "@id": "http://qudt.org/schema/qudt#BaseUnit"
+        },
+        "'": {
+            "@id": "http://spitfire-project.eu/ontology/ns/FlatModel"
+        },
+        "\u0001\b": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#attachedSystem"
+        },
+        "\u0013": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#farFrom"
+        },
+        "\r": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/dateAccepted"
+        },
+        "\u0002}": {
+            "@id": "http://spitfire-project.eu/ontology/ns/NetworkProperty"
+        },
+        "\u0003^": {
+            "@id": "http://spitfire-project.eu/ontology/ns/OV"
+        },
+        "\u0004?": {
+            "@id": "http://qudt.org/schema/qudt#SpaceAndTimeUnit"
+        },
+        "\u0005 ": {
+            "@id": "http://qudt.org/schema/qudt#abbreviation"
+        },
+        "\u0006\u0001": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Region"
+        },
+        "\u0002\u007f": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PlanExecution"
+        },
+        "\u0003`": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#propertyChainAxiom"
+        },
+        "\u0004A": {
+            "@id": "http://purl.org/dc/terms/LicenseDocument"
+        },
+        "\u0005\"": {
+            "@id": "http://www.w3.org/2002/07/owl#NegativePropertyAssertion"
+        },
+        "\u0006\u0003": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "\u0005c": {
+            "@id": "http://qudt.org/schema/qudt#LogarithmicUnit"
+        },
+        "\u0001v": {
+            "@id": "http://qudt.org/schema/qudt#RadiometryUnit"
+        },
+        "\u0002W": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#onDatatype"
+        },
+        "\u00038": {
+            "@id": "http://qudt.org/schema/qudt#LinearEnergyTransferUnit"
+        },
+        "\u0004\u0019": {
+            "@id": "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+        },
+        "s": {
+            "@id": "http://qudt.org/schema/qudt#ElectricFluxDensityUnit"
+        },
+        "\u0001T": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue"
+        },
+        "\u00025": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/medium"
+        },
+        "\u0003\u0016": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval"
+        },
+        "\u0001x": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Green"
+        },
+        "\u0002Y": {
+            "@id": "http://spitfire-project.eu/ontology/ns/NotRenewable"
+        },
+        "\u0003:": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isAbout"
+        },
+        "\u0004\u001b": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Drift"
+        },
+        ")": {
+            "@id": "http://purl.org/dc/terms/isVersionOf"
+        },
+        "\u0001\n": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#derivedUnitOfSystem"
+        },
+        "=": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#includesAgent"
+        },
+        "\u0001\u001e": {
+            "@id": "http://qudt.org/schema/qudt#ThermalResistanceUnit"
+        },
+        "\u0004m": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasParameter"
+        },
+        "\u0005N": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#deployedSystem"
+        },
+        "\u0006/": {
+            "@id": "http://qudt.org/schema/qudt#PressureOrStressRateUnit"
+        },
+        "`": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sensed"
+        },
+        "\u0001A": {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@id": "http://spitfire-project.eu/ontology/ns/activityEnd"
+        },
+        "\u0002\"": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Event"
+        },
+        "\u0003\u0003": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#quantity"
+        },
+        "\"": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#disjointUnionOf"
+        },
+        "\u0001\u0003": {
+            "@id": "http://purl.org/dc/terms/isReplacedBy"
+        },
+        "!": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Stimulus"
+        },
+        "\u0001\u0002": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#assertionProperty"
+        },
+        "\u0004y": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#onProperty"
+        },
+        "\u0005Z": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn"
+        },
+        "*": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isTaskOf"
+        },
+        "\u0001\u000b": {
+            "@id": "http://www.w3.org/2002/07/owl#priorVersion"
+        },
+        "%": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2000/01/rdf-schema#range"
+        },
+        "\u0001\u0006": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.w3.org/2002/07/owl#minCardinality"
+        },
+        "\u0003y": {
+            "@id": "http://qudt.org/schema/qudt#LuminousIntensityUnit"
+        },
+        "\u0004Z": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observedProperty"
+        },
+        "\u0005;": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#hasKey"
+        },
+        "\u0006\u001c": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#realizes"
+        },
+        "\u0005s": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#systemCoherentDerivedUnit"
+        },
+        "\u0004j": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/accessRights"
+        },
+        "\u0005K": {
+            "@id": "http://purl.org/dc/elements/1.1/contributor"
+        },
+        "\u0006,": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#ChemicalObject"
+        },
+        "\u0001s": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#referenceUnit"
+        },
+        "\u0002T": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasTask"
+        },
+        "\u00035": {
+            "@id": "http://qudt.org/schema/qudt#typePrefix"
+        },
+        "\u0004\u0016": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Norm"
+        },
+        "\u0002w": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+        },
+        "\u0003X": {
+            "@id": "http://qudt.org/schema/qudt#ComputingUnit"
+        },
+        "\u00049": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/publisher"
+        },
+        "\u0005\u001a": {
+            "@id": "http://qudt.org/schema/qudt#CurrentPerAngleUnit"
+        },
+        "\u0005p": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Configuration"
+        },
+        "\u0001\u0015": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalBody"
+        },
+        "\u0003~": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Parameter"
+        },
+        "\u0004_": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/hasLink"
+        },
+        "\u0005@": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#directlyPrecedes"
+        },
+        "\u0006!": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Narrative"
+        },
+        "f": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#systemDerivedQuantityKind"
+        },
+        "\u0001G": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Community"
+        },
+        "\u0002(": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#exactMatch"
+        },
+        "\u0003\t": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasInput"
+        },
+        "\u0003|": {
+            "@id": "http://qudt.org/schema/qudt#AccelerationUnit"
+        },
+        "\u0004]": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isRealizedBy"
+        },
+        "\u0005>": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#onClass"
+        },
+        "\u0006\u001f": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/temporal"
+        },
+        "\u0001j": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Electrical"
+        },
+        "\u0002K": {
+            "@id": "http://org.semanticweb.owlapi/error#Error3"
+        },
+        "\u0003,": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#detects"
+        },
+        "\u0004\r": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/layerOf"
+        },
+        "\u0001\u0019": {
+            "@id": "http://purl.org/dc/terms/hasVersion"
+        },
+        "e": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/bibliographicCitation"
+        },
+        "\u0001F": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SurvivalRange"
+        },
+        "\u0002'": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/nearby"
+        },
+        "\u0003\b": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasMember"
+        },
+        "\u0004~": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isRegionFor"
+        },
+        "\u0005_": {
+            "@id": "http://www.w3.org/2002/07/owl#imports"
+        },
+        "\u0003u": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Place"
+        },
+        "\u0004V": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.w3.org/2002/07/owl#minQualifiedCardinality"
+        },
+        "\u00057": {
+            "@id": "http://qudt.org/schema/qudt#ElectrochemistryUnit"
+        },
+        "\u0006\u0018": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#prefixUnitOfSystem"
+        },
+        "\u0001m": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.w3.org/2002/07/owl#qualifiedCardinality"
+        },
+        "\u0002N": {
+            "@id": "http://qudt.org/schema/qudt#AmountOfSubstanceUnit"
+        },
+        "\u0003/": {
+            "@id": "http://qudt.org/schema/qudt#AngularMassUnit"
+        },
+        "\u0004\u0010": {
+            "@id": "http://qudt.org/schema/qudt#MagneticFieldStrengthUnit"
+        },
+        "Q": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Deployment"
+        },
+        "\u00012": {
+            "@id": "http://www.w3.org/2002/07/owl#AllDisjointProperties"
+        },
+        "\u0002\u0013": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementProperty"
+        },
+        "\u0005z": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sameContext"
+        },
+        "\u0005g": {
+            "@id": "http://www.w3.org/2002/07/owl#AsymmetricProperty"
+        },
+        "\u0002{": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isIntroducedBy"
+        },
+        "\u0003\\": {
+            "@id": "http://spitfire-project.eu/ontology/ns/NetworkTopology"
+        },
+        "\u0004=": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://www.w3.org/2002/07/owl#targetValue"
+        },
+        "\u0005\u001e": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/describesNetwork"
+        },
+        "\u0004g": {
+            "@id": "http://purl.org/dc/terms/isReferencedBy"
+        },
+        "\u0005H": {
+            "@id": "http://qudt.org/schema/qudt#ForceUnit"
+        },
+        "\u0006)": {
+            "@id": "http://purl.org/dc/dcmitype/Collection"
+        },
+        "\u0003m": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Goal"
+        },
+        "\u0004N": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#BiologicalObject"
+        },
+        "\u0005/": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/isLayerOf"
+        },
+        "\u0006\u0010": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isCoveredBy"
+        },
+        "\u0005b": {
+            "@id": "http://qudt.org/schema/qudt#PermittivityUnit"
+        },
+        "\u0001f": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#characterizes"
+        },
+        "\u0002G": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkQuality"
+        },
+        "\u0003(": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#covers"
+        },
+        "\u0004\t": {
+            "@id": "http://qudt.org/schema/qudt#CountingUnit"
+        },
+        "\u0015": {
+            "@id": "http://purl.org/dc/terms/MediaTypeOrExtent"
+        },
+        "|": {
+            "@id": "http://qudt.org/schema/qudt#SpecificHeatPressureUnit"
+        },
+        "\u0001]": {
+            "@id": "http://spitfire-project.eu/ontology/ns/AccessLayer"
+        },
+        "\u0002>": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#MeasurementProperty"
+        },
+        "\u0003\u001f": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#FormalEntity"
+        },
+        "\u0004\u0000": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/seeAlsoLink"
+        },
+        "~": {
+            "@id": "http://purl.org/dc/terms/references"
+        },
+        "\u0001_": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/obs"
+        },
+        "\u0002@": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isUnifiedBy"
+        },
+        "\u0003!": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#dimensionInverse"
+        },
+        "\u0004\u0002": {
+            "@id": "http://qudt.org/schema/qudt#PlaneAngleUnit"
+        },
+        "q": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasOperatingProperty"
+        },
+        "\u0001R": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion"
+        },
+        "\u00023": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+        },
+        "\u0003\u0014": {
+            "@id": "http://purl.org/ontology/ao/core#LikeableAssociation"
+        },
+        "\u000f": {
+            "@id": "http://qudt.org/schema/qudt#SpecificEnergyUnit"
+        },
+        "\u0003p": {
+            "@id": "http://qudt.org/schema/qudt#symbol"
+        },
+        "\u0004Q": {
+            "@id": "http://purl.org/dc/terms/modified"
+        },
+        "\u00052": {
+            "@id": "http://qudt.org/schema/qudt#ElectricCurrentUnit"
+        },
+        "\u0006\u0013": {
+            "@id": "http://qudt.org/schema/qudt#ElectricChargeVolumeDensityUnit"
+        },
+        "\u0003o": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/accrualMethod"
+        },
+        "\u0004P": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isPreconditionOf"
+        },
+        "\u00051": {
+            "@id": "http://spitfire-project.eu/ontology/ns/NetworkQuality"
+        },
+        "\u0006\u0012": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/belongsToNetwork"
+        },
+        "L": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SocialAgent"
+        },
+        "\u0001-": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#intersectionOf"
+        },
+        "\u0002\u000e": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.w3.org/2002/07/owl#maxQualifiedCardinality"
+        },
+        "\u0002f": {
+            "@id": "http://www.linkedmodel.org/schema/vaem#hasDisciplineScope"
+        },
+        "\u0003G": {
+            "@id": "http://qudt.org/schema/qudt#RadiantIntensityUnit"
+        },
+        "\u0004(": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#unitOfSystem"
+        },
+        "\u0005\t": {
+            "@id": "http://qudt.org/schema/qudt#SIBaseUnit"
+        },
+        "\u0004": {
+            "@id": "http://spitfire-project.eu/ontology/ns/SensorRole"
+        },
+        "\u0017": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Situation"
+        },
+        "\u0003w": {
+            "@id": "http://qudt.org/schema/qudt#QuantityKindCategory"
+        },
+        "\u0004X": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/from"
+        },
+        "\u00059": {
+            "@id": "http://spitfire-project.eu/ontology/ns/SavedEnergy"
+        },
+        "\u0006\u001a": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/format"
+        },
+        "\u0001l": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Concept"
+        },
+        "\u0002M": {
+            "@id": "http://qudt.org/schema/qudt#PressureOrStressUnit"
+        },
+        "\u0003.": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/networkRole"
+        },
+        "\u0004\u000f": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasDeployment"
+        },
+        "p": {
+            "@id": "http://spitfire-project.eu/ontology/ns/DistributionLayer"
+        },
+        "\u0001Q": {
+            "@id": "http://qudt.org/schema/qudt#VelocityUnit"
+        },
+        "\u00022": {
+            "@id": "http://qudt.org/schema/qudt#AngularAccelerationUnit"
+        },
+        "\u0003\u0013": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#implementedBy"
+        },
+        "\u0001{": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isConstituentOf"
+        },
+        "\u0002\\": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#baseDimensionEnumeration"
+        },
+        "\u0003=": {
+            "@id": "http://qudt.org/schema/qudt#AtomicPhysicsUnit"
+        },
+        "\u0004\u001e": {
+            "@id": "http://purl.org/dc/terms/tableOfContents"
+        },
+        "/": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+        },
+        "\u0001\u0010": {
+            "@id": "http://www.w3.org/2002/07/owl#FunctionalProperty"
+        },
+        "\u0003z": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+        },
+        "\u0004[": {
+            "@id": "http://qudt.org/schema/qudt#VolumeUnit"
+        },
+        "\u0005<": {
+            "@id": "http://spitfire-project.eu/ontology/ns/DeviceRole"
+        },
+        "\u0006\u001d": {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+        },
+        "\u0003f": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/bytes"
+        },
+        "\u0004G": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalProperty"
+        },
+        "\u0005(": {
+            "@id": "http://qudt.org/schema/qudt#PowerPerAreaUnit"
+        },
+        "\u0006\t": {
+            "@id": "http://qudt.org/schema/qudt#InductanceUnit"
+        },
+        "\u0003l": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        },
+        "\u0004M": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/energyRate"
+        },
+        "\u0005.": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.w3.org/2002/07/owl#cardinality"
+        },
+        "\u0006\u000f": {
+            "@id": "http://purl.org/dc/elements/1.1/description"
+        },
+        "\u0004q": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability"
+        },
+        "\u0005R": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#System"
+        },
+        "\u00063": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Sensor"
+        },
+        "\u0005h": {
+            "@id": "http://qudt.org/schema/qudt#SerumOrPlasmaLevelUnit"
+        },
+        "\u0004i": {
+            "@id": "http://www.linkedmodel.org/schema/vaem#hasDomainScope"
+        },
+        "\u0005J": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isSubordinatedTo"
+        },
+        "\u0006+": {
+            "@id": "http://qudt.org/schema/qudt#BinaryPrefixUnit"
+        },
+        "j": {
+            "@id": "http://www.w3.org/2002/07/owl#AllDifferent"
+        },
+        "\u0001K": {
+            "@id": "http://qudt.org/schema/qudt#MagnetomotiveForceUnit"
+        },
+        "\u0002,": {
+            "@id": "http://qudt.org/schema/qudt#PrefixUnit"
+        },
+        "\u0003\r": {
+            "@id": "http://qudt.org/schema/qudt#ThermalEnergyLengthUnit"
+        },
+        "-": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2000/01/rdf-schema#member"
+        },
+        "\u0001\u000e": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasOutput"
+        },
+        "\u0005a": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation"
+        },
+        "\u0003d": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"
+        },
+        "\u0004E": {
+            "@id": "http://qudt.org/schema/qudt#AngleUnit"
+        },
+        "\u0005&": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Actuator"
+        },
+        "\u0006\u0007": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#sensingMethodUsed"
+        },
+        "\u0001w": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Location"
+        },
+        "\u0002X": {
+            "@id": "http://qudt.org/schema/qudt#InverseAmountOfSubstanceUnit"
+        },
+        "\u00039": {
+            "@id": "http://qudt.org/schema/qudt#CoefficientOfHeatTransferUnit"
+        },
+        "\u0004\u001a": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sameAsLink"
+        },
+        "\u0005|": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Magnetic"
+        },
+        "\u0004p": {
+            "@id": "http://qudt.org/schema/qudt#TemperatureUnit"
+        },
+        "\u0005Q": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isAgentIncludedIn"
+        },
+        "\u00062": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability"
+        },
+        "x": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isTaskDefinedIn"
+        },
+        "\u0001Y": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+        },
+        "\u0002:": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#someValuesFrom"
+        },
+        "\u0003\u001b": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isRoleOf"
+        },
+        "\u0001e": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isPartOf"
+        },
+        "\u0002F": {
+            "@id": "http://www.w3.org/2004/02/skos/core#closeMatch"
+        },
+        "\u0003'": {
+            "@id": "http://qudt.org/schema/qudt#DecimalPrefixUnit"
+        },
+        "\u0004\b": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#classifies"
+        },
+        "G": {
+            "@id": "http://qudt.org/schema/qudt#EnergyPerAreaUnit"
+        },
+        "\u0001(": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy"
+        },
+        "\u0002\t": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/inputEnergy"
+        },
+        "\u0001z": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sameLocation"
+        },
+        "\u0002[": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#coherentDerivedUnitOfSystem"
+        },
+        "\u0003<": {
+            "@id": "http://qudt.org/schema/qudt#AngularMomentumUnit"
+        },
+        "\u0004\u001d": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAgent"
+        },
+        "\u0005{": {
+            "@id": "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        },
+        "\u0002v": {
+            "@id": "http://qudt.org/schema/qudt#ThermodynamicsUnit"
+        },
+        "\u0003W": {
+            "@type": "http://spitfire-project.eu/ontology/ns/context-types#Status",
+            "@id": "http://spitfire-project.eu/ontology/ns/forSTatus"
+        },
+        "\u00048": {
+            "@id": "http://qudt.org/schema/qudt#VolumePerTimeSquaredUnit"
+        },
+        "\u0005\u0019": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Condition"
+        },
+        "\u0001": {
+            "@id": "http://www.w3.org/2001/XMLSchema#float"
+        },
+        "J": {
+            "@id": "http://purl.org/dc/terms/RightsStatement"
+        },
+        "\u0001+": {
+            "@id": "http://www.w3.org/2002/07/owl#hasValue"
+        },
+        "\u0002\f": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#referenceThing"
+        },
+        "\u0005}": {
+            "@id": "http://qudt.org/schema/qudt#literal"
+        },
+        "\u0004}": {
+            "@id": "http://qudt.org/schema/qudt#SystemOfUnits"
+        },
+        "\u0005^": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isConstraintFor"
+        },
+        "\u0004{": {
+            "@id": "http://qudt.org/schema/qudt#DynamicViscosityUnit"
+        },
+        "\u0005\\": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkActivityValue"
+        },
+        "v": {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+        },
+        "\u0001W": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn"
+        },
+        "\u00028": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#OperatingProperty"
+        },
+        "\u0003\u0019": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/actuate"
+        },
+        "\u0003q": {
+            "@id": "http://www.w3.org/2002/07/owl#TransitiveProperty"
+        },
+        "\u0004R": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#systemDerivedUnit"
+        },
+        "\u00053": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#sameAs"
+        },
+        "\u0006\u0014": {
+            "@id": "http://qudt.org/schema/qudt#MassAmountOfSubstanceTemperatureUnit"
+        },
+        "\u0005m": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/conformsTo"
+        },
+        "\u0004f": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#madeObservation"
+        },
+        "\u0005G": {
+            "@id": "http://qudt.org/schema/qudt#MassPerLengthUnit"
+        },
+        "\u0006(": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/savedEnergy"
+        },
+        "M": {
+            "@id": "http://qudt.org/schema/qudt#AreaUnit"
+        },
+        "\u0001.": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/over"
+        },
+        "\u0002\u000f": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#equivalentProperty"
+        },
+        "(": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Unit"
+        },
+        "\u0001\t": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isPostconditionOf"
+        },
+        "\u0003a": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#includesObject"
+        },
+        "\u0004B": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#coherentUnitSystem"
+        },
+        "\u0005#": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/layer"
+        },
+        "\u0006\u0004": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Power"
+        },
+        "\u0001g": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/obsBy"
+        },
+        "\u0002H": {
+            "@id": "http://qudt.org/schema/qudt#SIDerivedUnit"
+        },
+        "\u0003)": {
+            "@id": "http://qudt.org/schema/qudt#SpecificHeatCapacityUnit"
+        },
+        "\u0004\n": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#coparticipatesWith"
+        },
+        "\u0004v": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+        },
+        "\u0005W": {
+            "@id": "http://purl.org/dc/terms/requires"
+        },
+        "\u00068": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"
+        },
+        "S": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/accrualPeriodicity"
+        },
+        "\u00014": {
+            "@id": "http://spitfire-project.eu/ontology/ns/ModelLayer"
+        },
+        "\u0002\u0015": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Chemical"
+        },
+        "Y": {
+            "@id": "http://www.linkedmodel.org/schema/vaem#dateCreated"
+        },
+        "\u0001:": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasEventDate"
+        },
+        "\u0002\u001b": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isConceptUsedIn"
+        },
+        "\u0010": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isExecutedIn"
+        },
+        "\u0001c": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@id": "http://spitfire-project.eu/ontology/ns/priorityLevel"
+        },
+        "\u0002D": {
+            "@id": "http://qudt.org/schema/qudt#AngularVelocityUnit"
+        },
+        "\u0003%": {
+            "@id": "http://spitfire-project.eu/ontology/ns/LinkProperty"
+        },
+        "\u0004\u0006": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Workflow"
+        },
+        "?": {
+            "@id": "http://qudt.org/schema/qudt#positiveDeltaLimit"
+        },
+        "\u0001 ": {
+            "@type": "http://www.w3.org/2001/XMLSchema#double",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkQualityValue"
+        },
+        "\u0002\u0001": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOf"
+        },
+        "\u0002|": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#expressesConcept"
+        },
+        "\u0003]": {
+            "@id": "http://purl.org/dc/terms/Standard"
+        },
+        "\u0004>": {
+            "@id": "http://qudt.org/schema/qudt#DoseEquivalentUnit"
+        },
+        "\u0005\u001f": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Output"
+        },
+        "\u0006\u0000": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#MeasurementRange"
+        },
+        "\u0001n": {
+            "@id": "http://purl.org/dc/terms/isFormatOf"
+        },
+        "\u0002O": {
+            "@id": "http://qudt.org/schema/qudt#uneceCommonCode"
+        },
+        "\u00030": {
+            "@id": "http://purl.org/dc/terms/MethodOfAccrual"
+        },
+        "\u0004\u0011": {
+            "@id": "http://qudt.org/schema/qudt#BiomedicalUnit"
+        },
+        "\u0004a": {
+            "@id": "http://www.linkedmodel.org/schema/vaem#hasCatalogEntry"
+        },
+        "\u0005B": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/language"
+        },
+        "\u0006#": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+        },
+        "Z": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/outOf"
+        },
+        "\u0001;": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#realizesInformationAbout"
+        },
+        "\u0002\u001c": {
+            "@id": "http://qudt.org/schema/qudt#PermeabilityUnit"
+        },
+        "H": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Amount"
+        },
+        "\u0001)": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"
+        },
+        "\u0002\n": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#unitSystem"
+        },
+        "\u0001p": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#systemCoherentUnit"
+        },
+        "\u0002Q": {
+            "@id": "http://qudt.org/schema/qudt#TimeSquaredUnit"
+        },
+        "\u00032": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isExpandedIn"
+        },
+        "\u0004\u0013": {
+            "@id": "http://www.linkedmodel.org/schema/vaem#hasAspectScope"
+        },
+        "\u0001\u0018": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOfInformationRealizedBy"
+        },
+        "\u0005y": {
+            "@id": "http://qudt.org/schema/qudt#ElectricChargeDensityUnit"
+        },
+        "\u0005n": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/alternative"
+        },
+        "\u0005f": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/available"
+        },
+        "\u0004r": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasParameterDataValue"
+        },
+        "\u0005S": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasComponent"
+        },
+        "\u00064": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/educationLevel"
+        },
+        "\u0005j": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Action"
+        },
+        "\u0002k": {
+            "@type": "http://www.w3.org/2001/XMLSchema#double",
+            "@id": "http://qudt.org/schema/qudt#relativeStandardUncertainty"
+        },
+        "\u0003L": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#BatteryLifetime"
+        },
+        "\u0004-": {
+            "@type": "http://www.w3.org/2001/XMLSchema#double",
+            "@id": "http://qudt.org/schema/qudt#conversionMultiplier"
+        },
+        "\u0005\u000e": {
+            "@id": "http://qudt.org/schema/qudt#AreaTimeTemperatureUnit"
+        },
+        "\u0006": {
+            "@id": "http://www.w3.org/2002/07/owl#SymmetricProperty"
+        },
+        "\u0011": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SystemLifetime"
+        },
+        "\u0001\u0016": {
+            "@id": "http://www.w3.org/2003/g/data-view#namespaceTransformation"
+        },
+        "E": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"
+        },
+        "\u0001&": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#members"
+        },
+        "\u0002\u0007": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"
+        },
+        "\u0001}": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#usesConcept"
+        },
+        "\u0002^": {
+            "@id": "http://qudt.org/schema/qudt#LengthUnit"
+        },
+        "\u0003?": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Method"
+        },
+        "\u0004 ": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Classification"
+        },
+        "\u0005\u0001": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart"
+        },
+        "\u0001\u007f": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/projectTopic"
+        },
+        "\u0002`": {
+            "@id": "http://qudt.org/schema/qudt#AreaThermalExpansionUnit"
+        },
+        "\u0003A": {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+        },
+        "\u0004\"": {
+            "@id": "http://purl.org/dc/terms/AgentClass"
+        },
+        "\u0005\u0003": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Process"
+        },
+        "\u0002o": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Energy"
+        },
+        "\u0003P": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#valueForQuantity"
+        },
+        "\u00041": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant"
+        },
+        "\u0005\u0012": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToDescription"
+        },
+        "\u0004k": {
+            "@id": "http://spitfire-project.eu/ontology/ns/LinkActivity"
+        },
+        "\u0005L": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting"
+        },
+        "\u0006-": {
+            "@id": "http://www.w3.org/2002/07/owl#Ontology"
+        },
+        "R": {
+            "@id": "http://qudt.org/schema/qudt#TurbidityUnit"
+        },
+        "\u00013": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isTimeIncludedIn"
+        },
+        "\u0002\u0014": {
+            "@id": "http://qudt.org/schema/qudt#ResourceUnit"
+        },
+        "C": {
+            "@id": "http://qudt.org/schema/qudt#EventUnit"
+        },
+        "\u0001$": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasRegionDataValue"
+        },
+        "\u0002\u0005": {
+            "@id": "http://qudt.org/schema/qudt#ElectricChargeAreaDensityUnit"
+        },
+        "\u0003{": {
+            "@id": "http://qudt.org/schema/qudt#EnergyDensityUnit"
+        },
+        "\u0004\\": {
+            "@id": "http://qudt.org/schema/qudt#AtomicChargeUnit"
+        },
+        "\u0005=": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isRoleDefinedIn"
+        },
+        "\u0006\u001e": {
+            "@id": "http://qudt.org/schema/qudt#ElectricDipoleMomentUnit"
+        },
+        "\u0004\u007f": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/projectTopicOf"
+        },
+        "\u0005`": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#isProxyFor"
+        },
+        "F": {
+            "@id": "http://spitfire-project.eu/ontology/ns/SensorNetwork"
+        },
+        "\u0001'": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Object"
+        },
+        "\u0002\b": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson"
+        },
+        "\u0004l": {
+            "@id": "http://qudt.org/schema/qudt#ForcePerLengthUnit"
+        },
+        "\u0005M": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#definesRole"
+        },
+        "\u0006.": {
+            "@type": "http://www.w3.org/2001/XMLSchema#double",
+            "@id": "http://qudt.org/schema/qudt#standardUncertainty"
+        },
+        "\u0002e": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.linkedmodel.org/schema/vaem#specificity"
+        },
+        "\u0003F": {
+            "@id": "http://qudt.org/schema/qudt#CurvatureUnit"
+        },
+        "\u0004'": {
+            "@id": "http://qudt.org/schema/qudt#MomentumUnit"
+        },
+        "\u0005\b": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#DesignedArtifact"
+        },
+        "\u0002z": {
+            "@id": "http://spitfire-project.eu/ontology/ns/NetworkLink"
+        },
+        "\u0003[": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/energyOutcomes"
+        },
+        "\u0004<": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/uom"
+        },
+        "\u0005\u001d": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkQualityOf"
+        },
+        "\u0004w": {
+            "@id": "http://qudt.org/schema/qudt#LuminanceUnit"
+        },
+        "\u0005X": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkActivity"
+        },
+        "\u0007": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn"
+        },
+        "\b": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/spatial"
+        },
+        "\u0004u": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#isPropertyOf"
+        },
+        "\u0005V": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/owns"
+        },
+        "\u00067": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Accuracy"
+        },
+        "\u0003": {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@id": "http://spitfire-project.eu/ontology/ns/tEnd"
+        },
+        "\u0005v": {
+            "@id": "http://www.w3.org/2002/07/owl#incompatibleWith"
+        },
+        "B": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#hasSelf"
+        },
+        "\u0001#": {
+            "@id": "http://qudt.org/schema/qudt#MolalConcentrationUnit"
+        },
+        "\u0002\u0004": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#systemDefinedUnit"
+        },
+        "\u0004|": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Entity"
+        },
+        "\u0005]": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#actsFor"
+        },
+        "\u0004c": {
+            "@id": "http://spitfire-project.eu/ontology/ns/MeshModel"
+        },
+        "\u0005D": {
+            "@id": "http://qudt.org/schema/qudt#ConductanceUnit"
+        },
+        "\u0006%": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/isLinkOf"
+        },
+        "\u0012": {
+            "@id": "http://purl.org/dc/terms/abstract"
+        },
+        "\u0014": {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@id": "http://spitfire-project.eu/ontology/ns/tStart"
+        },
+        "\u0002y": {
+            "@type": "@vocab",
+            "@id": "http://voag.linkedmodel.org/schema/voag#hasLicenseType"
+        },
+        "\u0003Z": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"
+        },
+        "\u0004;": {
+            "@id": "http://qudt.org/schema/qudt#DataRateUnit"
+        },
+        "\u0005\u001c": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#basisElement"
+        },
+        "a": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/outputEnergy"
+        },
+        "\u0001B": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasRole"
+        },
+        "\u0002#": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#follows"
+        },
+        "\u0003\u0004": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#systemAllowedUnit"
+        },
+        "\f": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#unifies"
+        },
+        "\u0016": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#annotatedSource"
+        },
+        "\u0001h": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"
+        },
+        "\u0002I": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasPostcondition"
+        },
+        "\u0003*": {
+            "@id": "http://qudt.org/schema/qudt#UsedWithSIUnit"
+        },
+        "\u0004\u000b": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/out"
+        },
+        "\u0019": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://spitfire-project.eu/ontology/ns/message"
+        },
+        "\u0003k": {
+            "@id": "http://spitfire-project.eu/ontology/ns/SensorProjectTopic"
+        },
+        "\u0004L": {
+            "@id": "http://qudt.org/schema/qudt#CommunicationsUnit"
+        },
+        "\u0005-": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Acoustic"
+        },
+        "\u0006\u000e": {
+            "@id": "http://purl.org/dc/terms/PeriodOfTime"
+        },
+        "\t": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Diagnosis"
+        },
+        "_": {
+            "@id": "http://qudt.org/schema/qudt#EnergyAndWorkPerMassAmountOfSubstance"
+        },
+        "\u0001@": {
+            "@id": "http://qudt.org/schema/qudt#LengthTemperatureUnit"
+        },
+        "\u0002!": {
+            "@id": "http://qudt.org/schema/qudt#LinearMomentumUnit"
+        },
+        "\u0003\u0002": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+        },
+        "\u0001\u0017": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"
+        },
+        "&": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject"
+        },
+        "\u0001\u0007": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#quantityValue"
+        },
+        "\u001c": {
+            "@id": "http://www.w3.org/2002/07/owl#Annotation"
+        },
+        "\u0002x": {
+            "@id": "http://qudt.org/schema/qudt#RF-PowerUnit"
+        },
+        "\u0003Y": {
+            "@id": "http://qudt.org/schema/qudt#AreaAngleUnit"
+        },
+        "\u0004:": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isExpressedBy"
+        },
+        "\u0005\u001b": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#quantityKindOfSystem"
+        },
+        "P": {
+            "@id": "http://purl.org/dc/terms/ProvenanceStatement"
+        },
+        "\u00011": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isConceptExpressedBy"
+        },
+        "\u0002\u0012": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SocialObjectAttribute"
+        },
+        "\u0005~": {
+            "@id": "http://qudt.org/schema/qudt#AmountOfSubstanceTemperatureUnit"
+        },
+        "t": {
+            "@id": "http://qudt.org/schema/qudt#MassPerVolumeUnit"
+        },
+        "\u0001U": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#concretelyExpresses"
+        },
+        "\u00026": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Person"
+        },
+        "\u0003\u0017": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isSpecializedBy"
+        },
+        "\u0002g": {
+            "@id": "http://qudt.org/schema/qudt#ElectricChargeLineDensityUnit"
+        },
+        "\u0003H": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#definesTask"
+        },
+        "\u0004)": {
+            "@id": "http://qudt.org/schema/qudt#NotUsedWithSIUnit"
+        },
+        "\u0005\n": {
+            "@id": "http://www.w3.org/2002/07/owl#AnnotationProperty"
+        },
+        "\u001d": {
+            "@id": "http://qudt.org/schema/qudt#LuminousEnergyUnit"
+        },
+        "V": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/under"
+        },
+        "\u00017": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sameTime"
+        },
+        "\u0002\u0018": {
+            "@id": "http://qudt.org/schema/qudt#EnergyPerElectricChargeUnit"
+        },
+        "U": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/hasLayer"
+        },
+        "\u00016": {
+            "@id": "http://qudt.org/schema/qudt#ActivityUnit"
+        },
+        "\u0002\u0017": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#allowedUnitOfSystem"
+        },
+        "\u0001d": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/energyUsedIn"
+        },
+        "\u0002E": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observedBy"
+        },
+        "\u0003&": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#ResponseTime"
+        },
+        "\u0004\u0007": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#forProperty"
+        },
+        ":": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#onPlatform"
+        },
+        "\u0001\u001b": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#targetIndividual"
+        },
+        "O": {
+            "@id": "http://qudt.org/schema/qudt#EnergyAndWorkUnit"
+        },
+        "\u00010": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#InformationRealization"
+        },
+        "\u0002\u0011": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#DetectionLimit"
+        },
+        "\u0002p": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SocialRelation"
+        },
+        "\u0003Q": {
+            "@id": "http://purl.org/dc/terms/PhysicalMedium"
+        },
+        "\u00042": {
+            "@id": "http://purl.org/dc/terms/isRequiredBy"
+        },
+        "\u0005\u0013": {
+            "@id": "http://qudt.org/schema/qudt#AtomicMassUnit"
+        },
+        "\u0002h": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#element"
+        },
+        "\u0003I": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isActionIncludedIn"
+        },
+        "\u0004*": {
+            "@type": "http://www.w3.org/2001/XMLSchema#double",
+            "@id": "http://qudt.org/schema/qudt#conversionOffset"
+        },
+        "\u0005\u000b": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observationResult"
+        },
+        "i": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#TypeCollection"
+        },
+        "\u0001J": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#complementOf"
+        },
+        "\u0002+": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy"
+        },
+        "\u0003\f": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/valid"
+        },
+        "<": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#sourceIndividual"
+        },
+        "\u0001\u001d": {
+            "@id": "http://purl.org/dc/terms/FileFormat"
+        },
+        "k": {
+            "@id": "http://purl.org/dc/terms/MediaType"
+        },
+        "\u0001L": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#DeploymentRelatedProcess"
+        },
+        "\u0002-": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasProperty"
+        },
+        "\u0003\u000e": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#startTime"
+        },
+        "\u0001i": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#systemPrefixUnit"
+        },
+        "\u0002J": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#MaintenanceSchedule"
+        },
+        "\u0003+": {
+            "@id": "http://qudt.org/schema/qudt#MolarEnergyUnit"
+        },
+        "\u0004\f": {
+            "@id": "http://qudt.org/schema/qudt#MassTemperatureUnit"
+        },
+        "b": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#differentFrom"
+        },
+        "\u0001C": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/tsMap"
+        },
+        "\u0002$": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#actsThrough"
+        },
+        "\u0003\u0005": {
+            "@id": "http://qudt.org/schema/qudt#ThermalEnergyUnit"
+        },
+        "\u0005e": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Device"
+        },
+        ".": {
+            "@id": "http://spitfire-project.eu/ontology/ns/CoreLayer"
+        },
+        "\u0001\u000f": {
+            "@id": "http://qudt.org/schema/qudt#CapacitanceUnit"
+        },
+        "r": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/issued"
+        },
+        "\u0001S": {
+            "@id": "http://qudt.org/schema/qudt#SpecificHeatVolumeUnit"
+        },
+        "\u00024": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#defines"
+        },
+        "\u0003\u0015": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isComponentOf"
+        },
+        "{": {
+            "@id": "http://qudt.org/schema/qudt#MechanicsUnit"
+        },
+        "\u0001\\": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact"
+        },
+        "\u0002=": {
+            "@id": "http://www.linkedmodel.org/schema/vaem#acronym"
+        },
+        "\u0003\u001e": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/dateCopyrighted"
+        },
+        "y": {
+            "@id": "http://qudt.org/schema/qudt#AbsorbedDoseUnit"
+        },
+        "\u0001Z": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+        },
+        "\u0002;": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SocialPerson"
+        },
+        "\u0003\u001c": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isAgentInvolvedIn"
+        },
+        "\u0001k": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"
+        },
+        "\u0002L": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Relation"
+        },
+        "\u0003-": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#annotatedProperty"
+        },
+        "\u0004\u000e": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Project"
+        },
+        "\u0002m": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "\u0003N": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#definedUnitOfSystem"
+        },
+        "\u0004/": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/dateSubmitted"
+        },
+        "\u0005\u0010": {
+            "@id": "http://qudt.org/schema/qudt#ThrustToMassRatioUnit"
+        },
+        "\u0003n": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Plan"
+        },
+        "\u0004O": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+        },
+        "\u00050": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#onProperties"
+        },
+        "\u0006\u0011": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalRange"
+        },
+        ";": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy"
+        },
+        "\u0001\u001c": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Class"
+        },
+        "\u0003i": {
+            "@id": "http://qudt.org/schema/qudt#LuminousFluxUnit"
+        },
+        "\u0004J": {
+            "@id": "http://purl.org/dc/terms/BibliographicResource"
+        },
+        "\u0005+": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/energyLabel"
+        },
+        "\u0006\f": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isParameterFor"
+        },
+        "\u0001\u0012": {
+            "@id": "http://qudt.org/schema/qudt#LengthTemperatureTimeUnit"
+        },
+        ",": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#withRestrictions"
+        },
+        "\u0001\r": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Transition"
+        },
+        "}": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://www.w3.org/2002/07/owl#bottomDataProperty"
+        },
+        "\u0001^": {
+            "@id": "http://qudt.org/schema/qudt#FinancialUnit"
+        },
+        "\u0002?": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note"
+        },
+        "\u0003 ": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#unitFor"
+        },
+        "\u0004\u0001": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasCommonBoundary"
+        },
+        "\u0005q": {
+            "@id": "http://purl.org/dc/terms/hasFormat"
+        },
+        "\u0001\u0011": {
+            "@id": "http://qudt.org/schema/qudt#ThermalDiffusivityUnit"
+        },
+        "\u0005l": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/extent"
+        },
+        "g": {
+            "@id": "http://qudt.org/schema/qudt#HumanUnit"
+        },
+        "\u0001H": {
+            "@id": "http://qudt.org/schema/qudt#ElectricityAndMagnetismUnit"
+        },
+        "\u0002)": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasIntervalDate"
+        },
+        "\u0003\n": {
+            "@id": "http://qudt.org/schema/qudt#RespiratoryRateUnit"
+        },
+        "\u0004t": {
+            "@id": "http://purl.org/dc/elements/1.1/date"
+        },
+        "\u0005U": {
+            "@id": "http://qudt.org/schema/qudt#VolumePerMassUnit"
+        },
+        "\u00066": {
+            "@id": "http://qudt.org/schema/qudt#RadianceUnit"
+        },
+        "X": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Organism"
+        },
+        "\u00019": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#includesAction"
+        },
+        "\u0002\u001a": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#mappableTo"
+        },
+        "l": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Organization"
+        },
+        "\u0001M": {
+            "@id": "http://qudt.org/schema/qudt#TimeUnit"
+        },
+        "\u0002.": {
+            "@id": "http://qudt.org/schema/qudt#PowerUnit"
+        },
+        "\u0003\u000f": {
+            "@id": "http://qudt.org/schema/qudt#ForcePerElectricChargeUnit"
+        },
+        "\u0003r": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#elementKind"
+        },
+        "\u0004S": {
+            "@type": "http://www.w3.org/2001/XMLSchema#double",
+            "@id": "http://qudt.org/schema/qudt#conversionCoefficient"
+        },
+        "\u00054": {
+            "@id": "http://www.linkedmodel.org/schema/dtype#Enumeration"
+        },
+        "\u0006\u0015": {
+            "@id": "http://purl.org/dc/terms/SizeOrDuration"
+        },
+        "\u0001a": {
+            "@type": "http://www.w3.org/2001/XMLSchema#double",
+            "@id": "http://qudt.org/schema/qudt#numericValue"
+        },
+        "\u0002B": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#hasOperatingRange"
+        },
+        "\u0003#": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#involvesAgent"
+        },
+        "\u0004\u0004": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://www.linkedmodel.org/schema/vaem#intent"
+        },
+        "N": {
+            "@id": "http://qudt.org/schema/qudt#SystemOfNaturalUnits"
+        },
+        "\u0001/": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime"
+        },
+        "\u0002\u0010": {
+            "@id": "http://qudt.org/schema/qudt#ElectricCurrentDensityUnit"
+        },
+        "[": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#describes"
+        },
+        "\u0001<": {
+            "@id": "http://qudt.org/schema/qudt#InformationEntropyUnit"
+        },
+        "\u0002\u001d": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Light"
+        },
+        "u": {
+            "@id": "http://qudt.org/schema/qudt#integerPercentage"
+        },
+        "\u0001V": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://www.w3.org/2002/07/owl#maxCardinality"
+        },
+        "\u00027": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/energyConsumed"
+        },
+        "\u0003\u0018": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observationResultTime"
+        },
+        "\u0002l": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#annotatedTarget"
+        },
+        "\u0003M": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/tsMapOf"
+        },
+        "\u0004.": {
+            "@id": "http://www.w3.org/2002/07/owl#Restriction"
+        },
+        "\u0005\u000f": {
+            "@id": "http://qudt.org/schema/qudt#VolumeThermalExpansionUnit"
+        },
+        "\u0003v": {
+            "@id": "http://www.w3.org/2002/07/owl#ObjectProperty"
+        },
+        "\u0004W": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/provenance"
+        },
+        "\u00058": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+        },
+        "\u0006\u0019": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy"
+        },
+        "\u0004b": {
+            "@id": "http://www.w3.org/2002/07/owl#DeprecatedClass"
+        },
+        "\u0005C": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sameDomain"
+        },
+        "\u0006$": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#systemDimension"
+        },
+        "\u0001~": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Resolution"
+        },
+        "\u0002_": {
+            "@id": "http://xmlns.com/foaf/0.1/Agent"
+        },
+        "\u0003@": {
+            "@id": "http://spitfire-project.eu/ontology/ns/HierarchicalModel"
+        },
+        "\u0004!": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        },
+        "\u0005\u0002": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Latency"
+        },
+        "A": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#specializes"
+        },
+        "\u0001\"": {
+            "@id": "http://qudt.org/schema/qudt#EnumeratedValue"
+        },
+        "\u0002\u0003": {
+            "@id": "http://qudt.org/schema/qudt#LinearAccelerationUnit"
+        },
+        "\u0004h": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isCharacterizedBy"
+        },
+        "\u0005I": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Group"
+        },
+        "\u0006*": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Observation"
+        },
+        "\u0005d": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion"
+        },
+        "\u0001q": {
+            "@id": "http://qudt.org/schema/qudt#MassPerTimeUnit"
+        },
+        "\u0002R": {
+            "@id": "http://qudt.org/schema/qudt#ElectricChargePerAmountOfSubstanceUnit"
+        },
+        "\u00033": {
+            "@id": "http://qudt.org/schema/qudt#floatPercentage"
+        },
+        "\u0004\u0014": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasConstraint"
+        },
+        "\u0003s": {
+            "@id": "http://www.w3.org/2002/07/owl#IrreflexiveProperty"
+        },
+        "\u0004T": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Frequency"
+        },
+        "\u00055": {
+            "@id": "http://www.linkedmodel.org/schema/vaem#revisionNumber"
+        },
+        "\u0006\u0016": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://www.linkedmodel.org/schema/vaem#namespacePrefix"
+        },
+        "\u0003}": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#quantityKind"
+        },
+        "\u0004^": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isObservableAt"
+        },
+        "\u0005?": {
+            "@id": "http://qudt.org/schema/qudt#ElectricFluxUnit"
+        },
+        "\u0006 ": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/accrualPolicy"
+        },
+        "\u0001o": {
+            "@id": "http://qudt.org/schema/qudt#ConcentrationUnit"
+        },
+        "\u0002P": {
+            "@id": "http://qudt.org/schema/qudt#LuminousEfficacyUnit"
+        },
+        "\u00031": {
+            "@id": "http://purl.org/dc/terms/PhysicalResource"
+        },
+        "\u0004\u0012": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest"
+        },
+        "\u000b": {
+            "@id": "http://qudt.org/schema/qudt#OpticsUnit"
+        },
+        "\u001e": {
+            "@id": "http://org.semanticweb.owlapi/error#Error4"
+        },
+        "\u0005\u007f": {
+            "@id": "http://qudt.org/schema/qudt#code"
+        },
+        "\u0002r": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SensorDataSheet"
+        },
+        "\u0003S": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Input"
+        },
+        "\u00044": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/actuatedBy"
+        },
+        "\u0005\u0015": {
+            "@id": "http://qudt.org/schema/qudt#FrequencyUnit"
+        },
+        "\u0005w": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#default"
+        },
+        "#": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
+        },
+        "\u0001\u0004": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject"
+        },
+        "h": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf"
+        },
+        "\u0001I": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/energySource"
+        },
+        "\u0002*": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#OperatingRange"
+        },
+        "\u0003\u000b": {
+            "@id": "http://org.semanticweb.owlapi/error#Error5"
+        },
+        "\u0003j": {
+            "@id": "http://qudt.org/schema/qudt#MagneticFluxUnit"
+        },
+        "\u0004K": {
+            "@id": "http://spitfire-project.eu/ontology/ns/TemporalProperty"
+        },
+        "\u0005,": {
+            "@id": "http://qudt.org/schema/qudt#IlluminanceUnit"
+        },
+        "\u0006\r": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/belongsToLayer"
+        },
+        "\u000e": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Design"
+        },
+        "\u0004z": {
+            "@id": "http://qudt.org/schema/qudt#ScienceAndEngineeringUnit"
+        },
+        "\u0005[": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Right"
+        },
+        "\u007f": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#datatypeComplementOf"
+        },
+        "\u0001`": {
+            "@id": "http://qudt.org/schema/qudt#ResistanceUnit"
+        },
+        "\u0002A": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/rightsHolder"
+        },
+        "\u0003\"": {
+            "@id": "http://qudt.org/schema/qudt#BendingMomentOrTorqueUnit"
+        },
+        "\u0004\u0003": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#observes"
+        },
+        "I": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Platform"
+        },
+        "\u0001*": {
+            "@id": "http://qudt.org/schema/qudt#PhotometryUnit"
+        },
+        "\u0002\u000b": {
+            "@id": "http://qudt.org/schema/qudt#MassPerAreaUnit"
+        },
+        "\u0005i": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform"
+        },
+        "\u0004n": {
+            "@id": "http://spitfire-project.eu/ontology/ns/EnergySource"
+        },
+        "\u0005O": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/to"
+        },
+        "\u00060": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SurvivalProperty"
+        },
+        "\u0003t": {
+            "@id": "http://qudt.org/schema/qudt#HeatCapacityAndEntropyUnit"
+        },
+        "\u0004U": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasPrecondition"
+        },
+        "\u00056": {
+            "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+            "@id": "http://www.linkedmodel.org/schema/vaem#namespace"
+        },
+        "\u0006\u0017": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"
+        },
+        "\u001f": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#equivalentClass"
+        },
+        "\u0001\u0000": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#specialization"
+        },
+        "\u0001\u0013": {
+            "@id": "http://qudt.org/schema/qudt#ChemistryUnit"
+        },
+        "\u0005r": {
+            "@id": "http://qudt.org/schema/qudt#MassAmountOfSubstanceUnit"
+        },
+        "\u001a": {
+            "@id": "http://qudt.org/schema/qudt#VolumePerTimeUnit"
+        },
+        "\u0005t": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Electromagnetic"
+        },
+        "\u0004o": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#unit"
+        },
+        "\u0005P": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/mediator"
+        },
+        "\u00061": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/instructionalMethod"
+        },
+        "\u0003b": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        "\u0004C": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#propertyDisjointWith"
+        },
+        "\u0005$": {
+            "@id": "http://qudt.org/schema/qudt#SignalDetectionThresholdUnit"
+        },
+        "\u0006\u0005": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Task"
+        },
+        "\u0002t": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Role"
+        },
+        "\u0003U": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/forStatus"
+        },
+        "\u00046": {
+            "@id": "http://spitfire-project.eu/ontology/ns/NotGreen"
+        },
+        "\u0005\u0017": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Selectivity"
+        },
+        "m": {
+            "@id": "http://qudt.org/schema/qudt#LinearVelocityUnit"
+        },
+        "\u0001N": {
+            "@id": "http://spitfire-project.eu/ontology/ns/PlatformTemporalProperty"
+        },
+        "\u0002/": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Personification"
+        },
+        "\u0003\u0010": {
+            "@id": "http://qudt.org/schema/qudt#VideoFrameRateUnit"
+        },
+        " ": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Mechanical"
+        },
+        "\u0001\u0001": {
+            "@id": "http://qudt.org/schema/qudt#AbsorbedDoseRateUnit"
+        },
+        "\u0004x": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+        },
+        "\u0005Y": {
+            "@id": "http://qudt.org/schema/qudt#HeatFlowRateUnit"
+        },
+        "W": {
+            "@id": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "\u00018": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Motion"
+        },
+        "\u0002\u0019": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#inDeployment"
+        },
+        "\u0005k": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes"
+        },
+        "^": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#ofFeature"
+        },
+        "\u0001?": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#FunctionalSubstance"
+        },
+        "\u0002 ": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkActivityOf"
+        },
+        "\u0003\u0001": {
+            "@id": "http://spitfire-project.eu/ontology/ns/LinkAssociation"
+        },
+        "\u0003g": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasQuality"
+        },
+        "\u0004H": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+        },
+        "\u0005)": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#expands"
+        },
+        "\u0006\n": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Substance"
+        },
+        "\\": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes"
+        },
+        "\u0001=": {
+            "@id": "http://qudt.org/schema/qudt#currencyExponent"
+        },
+        "\u0002\u001e": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#bottomObjectProperty"
+        },
+        "\u0003h": {
+            "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasProxy"
+        },
+        "\u0004I": {
+            "@id": "http://spitfire-project.eu/ontology/ns/TSMap"
+        },
+        "\u0005*": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#systemUnit"
+        },
+        "\u0006\u000b": {
+            "@id": "http://qudt.org/schema/qudt#MagneticFluxDensityUnit"
+        },
+        "+": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasConstituent"
+        },
+        "\u0001\f": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isTimeOfObservationOf"
+        },
+        "\n": {
+            "@id": "http://www.w3.org/2002/07/owl#Axiom"
+        },
+        "\u001b": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#UnitOfMeasure"
+        },
+        "\u0002c": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#directlyFollows"
+        },
+        "\u0003D": {
+            "@id": "http://qudt.org/schema/qudt#QuantityKind"
+        },
+        "\u0004%": {
+            "@id": "http://www.w3.org/2002/07/owl#ReflexiveProperty"
+        },
+        "\u0005\u0006": {
+            "@id": "https://linked-data-api.googlecode.com/svn/trunk/vocab/api.ttl#endpoint"
+        },
+        "\u0003x": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Abstract"
+        },
+        "\u0004Y": {
+            "@id": "http://qudt.org/schema/qudt#string1024"
+        },
+        "\u0005:": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/sensedBy"
+        },
+        "\u0006\u001b": {
+            "@id": "http://purl.org/dc/terms/MethodOfInstruction"
+        },
+        "\u0003\u007f": {
+            "@id": "http://qudt.org/schema/qudt#MassUnit"
+        },
+        "\u0004`": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"
+        },
+        "\u0005A": {
+            "@id": "http://qudt.org/schema/qudt#ElectricFieldStrengthUnit"
+        },
+        "\u0006\"": {
+            "@id": "http://purl.org/dc/terms/LocationPeriodOrJurisdiction"
+        },
+        "\u0002u": {
+            "@id": "http://qudt.org/schema/qudt#NonSIUnit"
+        },
+        "\u0003V": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#generalization"
+        },
+        "\u00047": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#DesignedSubstance"
+        },
+        "\u0005\u0018": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#endTime"
+        },
+        "$": {
+            "@id": "http://qudt.org/schema/qudt#QuantityValue"
+        },
+        "\u0001\u0005": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#baseQuantityKindOfSystem"
+        },
+        "D": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToConcept"
+        },
+        "\u0001%": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#precedes"
+        },
+        "\u0002\u0006": {
+            "@type": "@vocab",
+            "@id": "http://voag.linkedmodel.org/schema/voag#withAttributionTo"
+        },
+        "\u0018": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/coverage"
+        },
+        "\u0005x": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"
+        },
+        "o": {
+            "@id": "http://qudt.org/schema/qudt#ElectricChargeUnit"
+        },
+        "\u0001P": {
+            "@id": "http://qudt.org/schema/qudt#RateOfReturnUnit"
+        },
+        "\u00021": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#EventType"
+        },
+        "\u0003\u0012": {
+            "@id": "http://qudt.org/schema/qudt#ThermalInsulanceUnit"
+        },
+        "\u0001y": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Sensing"
+        },
+        "\u0002Z": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/savedEnergyOf"
+        },
+        "\u0003;": {
+            "@id": "http://www.w3.org/2002/07/owl#InverseFunctionalProperty"
+        },
+        "\u0004\u001c": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "\u0002d": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Pattern"
+        },
+        "\u0003E": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn"
+        },
+        "\u0004&": {
+            "@id": "http://purl.org/dc/elements/1.1/title"
+        },
+        "\u0005\u0007": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Transducer"
+        },
+        "c": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor"
+        },
+        "\u0001D": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#baseUnitOfSystem"
+        },
+        "\u0002%": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#overlaps"
+        },
+        "\u0003\u0006": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#systemBaseUnit"
+        },
+        "\u0004s": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Mood"
+        },
+        "\u0005T": {
+            "@id": "http://qudt.org/schema/qudt#ThermalExpansionUnit"
+        },
+        "\u00065": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#satisfies"
+        },
+        "\u0001b": {
+            "@id": "http://qudt.org/schema/qudt#RadiologyUnit"
+        },
+        "\u0002C": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/linkOf"
+        },
+        "\u0003$": {
+            "@id": "http://purl.org/dc/elements/1.1/rights"
+        },
+        "\u0004\u0005": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#derivedQuantityKindOfSystem"
+        },
+        "\u0003e": {
+            "@id": "http://qudt.org/schema/qudt#vectorMagnitude"
+        },
+        "\u0004F": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#nearTo"
+        },
+        "\u0005'": {
+            "@type": "@vocab",
+            "@id": "http://purl.org/dc/terms/audience"
+        },
+        "\u0006\b": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#disjointWith"
+        },
+        "\u0002j": {
+            "@id": "http://purl.org/dc/elements/1.1/creator"
+        },
+        "\u0003K": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#OperatingPowerRange"
+        },
+        "\u0004,": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Theory"
+        },
+        "\u0005\r": {
+            "@id": "http://purl.org/dc/terms/Policy"
+        },
+        "\u0002i": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#expresses"
+        },
+        "\u0003J": {
+            "@id": "http://qudt.org/schema/qudt#DimensionlessUnit"
+        },
+        "\u0004+": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/link"
+        },
+        "\u0005\f": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Collective"
+        },
+        "\u0001r": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Contract"
+        },
+        "\u0002S": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/wears"
+        },
+        "\u00034": {
+            "@id": "http://spitfire-project.eu/ontology/ns/Thermal"
+        },
+        "\u0004\u0015": {
+            "@id": "http://qudt.org/schema/qudt#LinearThermalExpansionUnit"
+        },
+        "\u0005": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#Precision"
+        },
+        "\u0001u": {
+            "@id": "http://qudt.org/schema/qudt#AreaTemperatureUnit"
+        },
+        "\u0002V": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#onDataRange"
+        },
+        "\u00037": {
+            "@id": "http://spitfire-project.eu/ontology/ns/LinkReview"
+        },
+        "\u0004\u0018": {
+            "@id": "http://purl.org/dc/terms/Jurisdiction"
+        },
+        "\u0001|": {
+            "@id": "http://spitfire-project.eu/ontology/ns/SensorTemporalProperty"
+        },
+        "\u0002]": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/ownedBy"
+        },
+        "\u0003>": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Description"
+        },
+        "\u0004\u001f": {
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#SensorInput"
+        },
+        "\u0005\u0000": {
+            "@id": "http://purl.org/dc/terms/replaces"
+        },
+        "\u0003c": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAttribute"
+        },
+        "\u0004D": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#oneOf"
+        },
+        "\u0005%": {
+            "@id": "http://spitfire-project.eu/ontology/ns/LinkQuality"
+        },
+        "\u0006\u0006": {
+            "@id": "http://qudt.org/schema/qudt#SIUnit"
+        },
+        "\u0005o": {
+            "@id": "http://qudt.org/schema/qudt#ThermalResistivityUnit"
+        },
+        "\u0002s": {
+            "@id": "http://www.w3.org/2002/07/owl#NamedIndividual"
+        },
+        "\u0003T": {
+            "@id": "http://www.w3.org/2002/07/owl#deprecated"
+        },
+        "\u00045": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+        },
+        "\u0005\u0016": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+        },
+        "@": {
+            "@id": "http://qudt.org/schema/qudt#CatalyticActivityUnit"
+        },
+        "\u0001!": {
+            "@id": "http://www.w3.org/2001/XMLSchema#UnitOfMeasurement"
+        },
+        "\u0002\u0002": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        },
+        "\u0002~": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#InformationEntity"
+        },
+        "\u0003_": {
+            "@type": "@vocab",
+            "@id": "http://qudt.org/schema/qudt#systemQuantityKind"
+        },
+        "\u0004@": {
+            "@id": "http://www.w3.org/2002/07/owl#OntologyProperty"
+        },
+        "\u0005!": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#includesTime"
+        },
+        "\u0006\u0002": {
+            "@type": "@vocab",
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#executesTask"
+        },
+        ">": {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@id": "http://spitfire-project.eu/ontology/ns/activityStart"
+        },
+        "\u0001\u001f": {
+            "@id": "http://www.w3.org/2002/07/owl#Nothing"
+        },
+        "\u0002\u0000": {
+            "@type": "@vocab",
+            "@id": "http://spitfire-project.eu/ontology/ns/containedIn"
+        },
+        "\u0002": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#implements"
+        },
+        "\u0004e": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#unionOf"
+        },
+        "\u0005F": {
+            "@type": "@vocab",
+            "@id": "http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"
+        },
+        "\u0006'": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Set"
+        },
+        "\u0001t": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#LocalConcept"
+        },
+        "\u0002U": {
+            "@id": "http://www.loa-cnr.it/ontologies/DUL.owl#Quality"
+        },
+        "\u00036": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Container"
+        },
+        "\u0004\u0017": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://qudt.org/schema/qudt#order"
+        }
+    }
+}

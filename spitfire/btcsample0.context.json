@@ -1,0 +1,902 @@
+{
+    "@context": {
+        "0": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#reply_of"
+        },
+        "1": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/workInfoHomepage"
+        },
+        "2": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+        },
+        "3": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#next_by_date"
+        },
+        "4": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://xmlns.com/foaf/0.1/icqChatID"
+        },
+        "5": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#feed"
+        },
+        "6": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_part"
+        },
+        "7": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#container_of"
+        },
+        "8": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_function"
+        },
+        "9": {
+            "@id": "http://www.geonames.org/ontology#RDFData"
+        },
+        "\u0000": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#value8"
+        },
+        "T": {
+            "@id": "http://purl.org/dc/terms/requires"
+        },
+        "…": {
+            "@id": "http://xmlns.com/foaf/0.1/Person"
+        },
+        "à": {
+            "@id": "http://schema.org/Place"
+        },
+        "¬": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#value5"
+        },
+        "d": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#parentFeature"
+        },
+        "n": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/format"
+        },
+        "¯": {
+            "@id": "http://xmlns.com/foaf/0.1/sha1"
+        },
+        "K": {
+            "@type": "@id",
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#page"
+        },
+        " ": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#value1"
+        },
+        "]": {
+            "@id": "http://purl.org/dc/terms/hasFormat"
+        },
+        "Ž": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "z": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#function_of"
+        },
+        "w": {
+            "@id": "http://www.w3.org/2004/02/skos/core#Collection"
+        },
+        "'": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"
+        },
+        "\u0013": {
+            "@id": "http://purl.org/dc/terms/Frequency"
+        },
+        "—": {
+            "@id": "http://xmlns.com/foaf/0.1/givenName"
+        },
+        "\r": {
+            "@id": "http://purl.org/dc/terms/BibliographicResource"
+        },
+        "‹": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#featureClass"
+        },
+        "»": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#childrenFeatures"
+        },
+        "½": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#addressed_to"
+        },
+        "þ": {
+            "@type": "@id",
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#type"
+        },
+        "s": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/accrualPolicy"
+        },
+        ")": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://xmlns.com/foaf/0.1/plan"
+        },
+        "=": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/audience"
+        },
+        "é": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#displayUnit"
+        },
+        "`": {
+            "@id": "http://www.geonames.org/ontology#alternateName"
+        },
+        "“": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#attachment"
+        },
+        "\"": {
+            "@type": "@id",
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#object6"
+        },
+        "!": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/logo"
+        },
+        "õ": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        },
+        "*": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#BuiltinType"
+        },
+        "%": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+        },
+        "Ö": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"
+        },
+        "æ": {
+            "@id": "http://www.w3.org/2004/02/skos/core#editorialNote"
+        },
+        "Œ": {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#wikiPageModificationDate"
+        },
+        "µ": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#NAryType"
+        },
+        "Û": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Datatype"
+        },
+        "f": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+        },
+        "Ù": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://rdfs.org/sioc/ns#content"
+        },
+        "e": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept"
+        },
+        "ú": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#link"
+        },
+        "Ò": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/depicts"
+        },
+        "Q": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/mediator"
+        },
+        "¹": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://rdfs.org/sioc/ns#last_activity_date"
+        },
+        "ã": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition"
+        },
+        "Ê": {
+            "@id": "http://purl.org/dc/terms/PhysicalMedium"
+        },
+        "ý": {
+            "@id": "http://purl.org/dc/elements/1.1/source"
+        },
+        "\u0015": {
+            "@id": "http://xmlns.com/wot/0.1/assurance"
+        },
+        "|": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/educationLevel"
+        },
+        "~": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"
+        },
+        "q": {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+        },
+        "\u000f": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#earlier_version"
+        },
+        "€": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#parentCountry"
+        },
+        "Í": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://rdfs.org/sioc/ns#subject"
+        },
+        "Ì": {
+            "@id": "http://xmlns.com/foaf/0.1/OnlineAccount"
+        },
+        "L": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#sourceSite"
+        },
+        "¤": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/fundedBy"
+        },
+        "\u0004": {
+            "@id": "http://purl.org/dc/terms/publisher"
+        },
+        "\u0017": {
+            "@id": "http://org.semanticweb.owlapi/error#Error2"
+        },
+        "Ô": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2000/01/rdf-schema#domain"
+        },
+        "p": {
+            "@id": "http://purl.org/dc/terms/MethodOfInstruction"
+        },
+        "„": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/medium"
+        },
+        "/": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2004/02/skos/core#broader"
+        },
+        "×": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#later_version"
+        },
+        "Ã": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#Container"
+        },
+        "É": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://xmlns.com/foaf/0.1/dnaChecksum"
+        },
+        "í": {
+            "@id": "http://xmlns.com/foaf/0.1/Project"
+        },
+        "å": {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@id": "http://www.geonames.org/ontology#population"
+        },
+        "j": {
+            "@id": "http://purl.org/dc/terms/description"
+        },
+        "-": {
+            "@id": "http://purl.org/dc/terms/Policy"
+        },
+        "ü": {
+            "@id": "http://purl.org/dc/terms/isRequiredBy"
+        },
+        "Á": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://xmlns.com/foaf/0.1/firstName"
+        },
+        "ì": {
+            "@id": "http://rdfs.org/sioc/ns#UserAccount"
+        },
+        "x": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#value3"
+        },
+        "G": {
+            "@id": "http://www.geonames.org/ontology#Code"
+        },
+        "´": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://xmlns.com/foaf/0.1/skypeID"
+        },
+        "\u0001": {
+            "@type": "@id",
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#object8"
+        },
+        "J": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://rdfs.org/sioc/ns#num_views"
+        },
+        "ù": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#value2"
+        },
+        "÷": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://rdfs.org/sioc/ns#first_name"
+        },
+        "v": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#locationMap"
+        },
+        "Î": {
+            "@id": "http://purl.org/dc/terms/Standard"
+        },
+        "ž": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#avatar"
+        },
+        "â": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+        },
+        "M": {
+            "@id": "http://xmlns.com/foaf/0.1/Group"
+        },
+        "(": {
+            "@id": "http://purl.org/dc/terms/replaces"
+        },
+        "’": {
+            "@id": "http://xmlns.com/foaf/0.1/Agent"
+        },
+        "¾": {
+            "@id": "http://purl.org/dc/terms/MethodOfAccrual"
+        },
+        "ò": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+        },
+        "S": {
+            "@id": "http://www.geonames.org/ontology#historicalName"
+        },
+        "\ufffd": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch"
+        },
+        "Y": {
+            "@id": "http://rdfs.org/sioc/ns#Item"
+        },
+        "\u0010": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+        },
+        "?": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/theme"
+        },
+        "º": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_space"
+        },
+        "Ý": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://rdfs.org/sioc/ns#last_name"
+        },
+        "Z": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/extent"
+        },
+        "ˆ": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/rightsHolder"
+        },
+        "H": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://xmlns.com/foaf/0.1/family_name"
+        },
+        "ƒ": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+        },
+        "†": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/based_near"
+        },
+        "î": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#nearbyFeatures"
+        },
+        "©": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#neighbouringFeatures"
+        },
+        "\u0006": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://rdfs.org/sioc/ns#email_sha1"
+        },
+        "‰": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2004/02/skos/core#closeMatch"
+        },
+        "\u0011": {
+            "@id": "http://purl.org/dc/terms/modified"
+        },
+        "E": {
+            "@id": "http://xmlns.com/foaf/0.1/givenname"
+        },
+        "\u00ad": {
+            "@id": "http://schema.org/CreativeWork"
+        },
+        "ç": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_owner"
+        },
+        "R": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://xmlns.com/foaf/0.1/msnChatID"
+        },
+        "C": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+        },
+        "Ø": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#administrator_of"
+        },
+        "û": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/dateSubmitted"
+        },
+        "F": {
+            "@id": "http://xmlns.com/foaf/0.1/Document"
+        },
+        "è": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#parentADM3"
+        },
+        "£": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/topic_interest"
+        },
+        "¸": {
+            "@id": "http://xmlns.com/foaf/0.1/nick"
+        },
+        "ó": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#reference"
+        },
+        "\u0007": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#latest_version"
+        },
+        "\b": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_host"
+        },
+        "ñ": {
+            "@id": "http://purl.org/dc/terms/Jurisdiction"
+        },
+        "\u0003": {
+            "@id": "http://xmlns.com/wot/0.1/src_assurance"
+        },
+        "B": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#space_of"
+        },
+        "ø": {
+            "@id": "http://purl.org/dc/terms/title"
+        },
+        "ß": {
+            "@id": "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount"
+        },
+        "\u0012": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2004/02/skos/core#broadMatch"
+        },
+        "\u0014": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/provenance"
+        },
+        "·": {
+            "@id": "http://rdfs.org/sioc/ns#Usergroup"
+        },
+        "a": {
+            "@id": "http://xmlns.com/foaf/0.1/workplaceHomepage"
+        },
+        "\f": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_parent"
+        },
+        "\u0016": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#moderator_of"
+        },
+        "™": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#host_of"
+        },
+        "\u0019": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"
+        },
+        "È": {
+            "@type": "@id",
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#object9"
+        },
+        "\t": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#value4"
+        },
+        "_": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_usergroup"
+        },
+        "&": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive"
+        },
+        "\u001c": {
+            "@id": "http://www.w3.org/ns/adms#relatedDocumentation"
+        },
+        "¶": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_creator"
+        },
+        "P": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_moderator"
+        },
+        "t": {
+            "@id": "http://purl.org/dc/terms/LocationPeriodOrJurisdiction"
+        },
+        "¥": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://xmlns.com/foaf/0.1/surname"
+        },
+        "\u001d": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#locatedIn"
+        },
+        "š": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://rdfs.org/sioc/ns#name"
+        },
+        "V": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#ConversionFactor"
+        },
+        "U": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_container"
+        },
+        ":": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/openid"
+        },
+        "O": {
+            "@id": "http://purl.org/dc/terms/contributor"
+        },
+        "®": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#parentADM4"
+        },
+        "¦": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/valid"
+        },
+        "i": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+        },
+        "<": {
+            "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+            "@id": "http://rdfs.org/sioc/ns#num_items"
+        },
+        "k": {
+            "@id": "http://purl.org/dc/terms/SizeOrDuration"
+        },
+        "b": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "•": {
+            "@id": "http://purl.org/dc/terms/creator"
+        },
+        "”": {
+            "@id": "http://schema.org/ImageObject"
+        },
+        ".": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/accountServiceHomepage"
+        },
+        "r": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/temporal"
+        },
+        "{": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/instructionalMethod"
+        },
+        "y": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#topic"
+        },
+        "«": {
+            "@id": "http://www.geonames.org/ontology#geonamesID"
+        },
+        "Ë": {
+            "@id": "http://www.w3.org/2002/07/owl#deprecated"
+        },
+        ";": {
+            "@type": "@id",
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#object4"
+        },
+        "Æ": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#modifier"
+        },
+        ",": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#account_of"
+        },
+        "}": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#owner_of"
+        },
+        "œ": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#previous_by_date"
+        },
+        "g": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#next_version"
+        },
+        "ð": {
+            "@id": "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+        },
+        "X": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_administrator"
+        },
+        "l": {
+            "@id": "http://purl.org/vocab/vann/preferredNamespaceUri"
+        },
+        "Ï": {
+            "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix"
+        },
+        "‚": {
+            "@id": "http://www.w3.org/2004/03/trix/rdfg-1/Graph"
+        },
+        "N": {
+            "@id": "http://xmlns.com/foaf/0.1/LabelProperty"
+        },
+        "[": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/conformsTo"
+        },
+        "Ÿ": {
+            "@id": "http://rdfs.org/sioc/ns#Role"
+        },
+        "u": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+        },
+        "ª": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/weblog"
+        },
+        "Ó": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#neighbour"
+        },
+        "Þ": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#related_to"
+        },
+        "A": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://rdfs.org/sioc/ns#ip_address"
+        },
+        "ä": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/knows"
+        },
+        "ÿ": {
+            "@id": "http://www.w3.org/2004/02/skos/core#changeNote"
+        },
+        "Ð": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://rdfs.org/sioc/ns#last_item_date"
+        },
+        "‡": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note"
+        },
+        "Ú": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#scope_of"
+        },
+        "\u000b": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+        },
+        "\u001e": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/accessRights"
+        },
+        "°": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/dateCopyrighted"
+        },
+        "–": {
+            "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        "#": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#unit"
+        },
+        "h": {
+            "@id": "http://purl.org/dc/terms/PeriodOfTime"
+        },
+        "Ç": {
+            "@type": "@id",
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#conversionFactor"
+        },
+        "\u000e": {
+            "@id": "http://rdfs.org/sioc/ns#Site"
+        },
+        "ö": {
+            "@id": "http://purl.org/dc/terms/AgentClass"
+        },
+        "\u007f": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#parentADM2"
+        },
+        "I": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/language"
+        },
+        "ê": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#value6"
+        },
+        "Ñ": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2004/02/skos/core#memberList"
+        },
+        "\u001f": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#modifier_of"
+        },
+        "Š": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://xmlns.com/foaf/0.1/jabberID"
+        },
+        "\u001a": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf"
+        },
+        "ë": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive"
+        },
+        "¿": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#Subject"
+        },
+        "²": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/rights"
+        },
+        "m": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_discussion"
+        },
+        " ": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://rdfs.org/sioc/ns#created_at"
+        },
+        "ô": {
+            "@id": "http://purl.org/dc/terms/tableOfContents"
+        },
+        "W": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/available"
+        },
+        "‘": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/tipjar"
+        },
+        "^": {
+            "@id": "http://id.loc.gov/vocabulary/relators/dtm"
+        },
+        "Ä": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/currentProject"
+        },
+        "\\": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/alternative"
+        },
+        "Å": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/identifier"
+        },
+        "+": {
+            "@type": "@id",
+            "@id": "http://www.geonames.org/ontology#wikipediaArticle"
+        },
+        "\n": {
+            "@id": "http://purl.org/dc/terms/LicenseDocument"
+        },
+        "\u001b": {
+            "@id": "http://purl.org/dc/terms/isReferencedBy"
+        },
+        "¡": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://xmlns.com/foaf/0.1/geekcode"
+        },
+        "Õ": {
+            "@type": "@id",
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#baseProperty"
+        },
+        "Ü": {
+            "@type": "@id",
+            "@id": "http://purl.org/dc/terms/accrualMethod"
+        },
+        "³": {
+            "@id": "http://org.semanticweb.owlapi/error#Error1"
+        },
+        "$": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://purl.org/dc/terms/date"
+        },
+        "D": {
+            "@id": "http://xmlns.com/foaf/0.1/Image"
+        },
+        "\u0018": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/interest"
+        },
+        "o": {
+            "@id": "http://xmlns.com/foaf/0.1/PersonalProfileDocument"
+        },
+        "¢": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#value"
+        },
+        "c": {
+            "@type": "@id",
+            "@id": "http://rdfs.org/sioc/ns#has_modifier"
+        },
+        "›": {
+            "@id": "http://www.geonames.org/ontology#postalCode"
+        },
+        "ï": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#CustomType"
+        },
+        "Â": {
+            "@id": "http://www.geonames.org/ontology#shortName"
+        },
+        "¨": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://rdfs.org/sioc/ns#modified_at"
+        },
+        "§": {
+            "@id": "http://xmlns.com/foaf/0.1/membershipClass"
+        },
+        "\u0005": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/pastProject"
+        },
+        "À": {
+            "@id": "http://purl.org/dc/terms/PhysicalResource"
+        },
+        "±": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#value7"
+        },
+        "@": {
+            "@type": "@id",
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#object2"
+        },
+        "¼": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://xmlns.com/foaf/0.1/status"
+        },
+        "˜": {
+            "@id": "http://semantic-mediawiki.org/swivt/1.0#UnitType"
+        },
+        ">": {
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+        },
+        "\u0002": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/phone"
+        },
+        "á": {
+            "@type": "@id",
+            "@id": "http://xmlns.com/foaf/0.1/account"
+        }
+    }
+}

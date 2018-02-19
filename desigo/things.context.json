@@ -1,0 +1,1549 @@
+{
+    "@context": {
+        "\u00800": "http://json-schema.org/ns#",
+        "\u00801": {
+            "@id": "http://json-schema.org/ns#maximum"
+        },
+        "\u00802": {
+            "@id": "http://json-schema.org/ns#minimum"
+        },
+        "\u00803": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#viewType"
+        },
+        "\u00804": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasDescription"
+        },
+        "\u00805": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasValueType",
+            "@type": "@vocab"
+        },
+        "\u00806": "https://si-ra.github.io/ontologies/ccba.owl#",
+        "\u00807": "https://si-ra.github.io/ontologies/cc.owl#",
+        "\u00808": "http://iot.linkeddata.es/def/wot#",
+        "\u00809": "http://uri.etsi.org/m2m/saref#",
+        "0": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MeasureCumulated"
+        },
+        "1": {
+            "@id": "http://uri.etsi.org/m2m/saref#MeteringFunction"
+        },
+        "2": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_TRNDLOG_10"
+        },
+        "3": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#AutomaticDetector"
+        },
+        "4": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MonitorMode"
+        },
+        "5": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Hcrv"
+        },
+        "6": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#TextGroup"
+        },
+        "7": {
+            "@type": "@vocab",
+            "@id": "http://iot.linkeddata.es/def/wot#describes"
+        },
+        "8": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasTextGroupElement"
+        },
+        "9": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#EefOpti1"
+        },
+        "\u0000": {
+            "@id": "http://uri.etsi.org/m2m/saref#Drying"
+        },
+        "T": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#DmpShof"
+        },
+        "\u00015": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#ErcRo"
+        },
+        "\u0002\u0016": {
+            "@id": "http://uri.etsi.org/m2m/saref#WellBeing"
+        },
+        "\u0002n": {
+            "@id": "http://uri.etsi.org/m2m/saref#WashingMachine"
+        },
+        "\u0003O": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#MultiLanguageText"
+        },
+        "\u0002a": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Fan1St"
+        },
+        "\u0003B": {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@id": "http://uri.etsi.org/m2m/saref#isFlexible"
+        },
+        "d": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#PuMdlt"
+        },
+        "\u0001E": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasChildNode"
+        },
+        "\u0002&": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SensorTemperature"
+        },
+        "\u0003\u0007": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://uri.etsi.org/m2m/saref#hasSpaceType"
+        },
+        "n": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Tx2MxeCho"
+        },
+        "\u0001O": {
+            "@type": "@id",
+            "@id": "http://iot.linkeddata.es/def/wot#href"
+        },
+        "\u00020": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SetpointFlow"
+        },
+        "\u0003\u0011": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "http://iot.linkeddata.es/def/wot#defaultValue"
+        },
+        "\u0001\u001a": {
+            "@id": "http://uri.etsi.org/m2m/saref#OnState"
+        },
+        "\u0002q": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasUnit"
+        },
+        "\u0003R": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasDefaultProperty"
+        },
+        "K": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#TEefCtl"
+        },
+        "\u0001,": {
+            "@id": "http://uri.etsi.org/m2m/saref#SetLevelCommand"
+        },
+        "\u0002\r": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasRelatedItem"
+        },
+        "\u0002b": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_Hvac_TPhiHx_10"
+        },
+        "\u0003C": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#TFlCtlHC"
+        },
+        "]": {
+            "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+            "@id": "http://uri.etsi.org/m2m/saref#hasTargetURL"
+        },
+        "\u0001>": {
+            "@id": "http://uri.etsi.org/m2m/saref#LevelControlFunction"
+        },
+        "\u0002\u001f": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#TechnicalZone"
+        },
+        "\u0003\u0000": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#SemanticTag"
+        },
+        "z": {
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+        },
+        "\u0001[": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#ObjectSubtype"
+        },
+        "\u0002<": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#PreHcl"
+        },
+        "\u0003\u001d": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SetpointHumidity"
+        },
+        "w": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://uri.etsi.org/m2m/saref#hasMeterReadingType"
+        },
+        "\u0001X": {
+            "@id": "http://uri.etsi.org/m2m/saref#StartState"
+        },
+        "\u00029": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_RX_GoOc_10"
+        },
+        "\u0003\u001a": {
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+        },
+        "\u0001\u0014": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#CMxCrt"
+        },
+        "'": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_AO_RED_10"
+        },
+        "\u0001\b": {
+            "@type": "@id",
+            "@id": "http://iot.linkeddata.es/def/wot#baseURI"
+        },
+        "\u0013": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#ManagedType"
+        },
+        "\r": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasPrice"
+        },
+        "\u0002}": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+        },
+        "\u0002\u007f": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_RX_GoHSp_10"
+        },
+        "\u0001v": {
+            "@id": "http://uri.etsi.org/m2m/saref#CloseState"
+        },
+        "\u0002W": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#isMeasuredIn"
+        },
+        "\u00038": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://uri.etsi.org/m2m/saref#hasDescription"
+        },
+        "s": {
+            "@id": "http://iot.linkeddata.es/def/wot#DataSchema"
+        },
+        "\u0001T": {
+            "@id": "http://uri.etsi.org/m2m/saref#Water"
+        },
+        "\u00025": {
+            "@id": "http://uri.etsi.org/m2m/saref#DoorSwitch"
+        },
+        "\u0003\u0016": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasFunctionMapper"
+        },
+        "\u0001x": {
+            "@id": "http://iot.linkeddata.es/def/wot#Security"
+        },
+        "\u0002Y": {
+            "@id": "http://uri.etsi.org/m2m/saref#FunctionCategory"
+        },
+        "\u0003:": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Area"
+        },
+        ")": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_Ctrl_Rot8_10"
+        },
+        "\u0001\n": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#InputChannel"
+        },
+        "=": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#PropertyMap"
+        },
+        "\u0001\u001e": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomRad01"
+        },
+        "`": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#ValveBinary"
+        },
+        "\u0001A": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasTextGroup"
+        },
+        "\u0002\"": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_Ctrl_Filter_10"
+        },
+        "\u0003\u0003": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Swi2ph"
+        },
+        "\"": {
+            "@id": "http://uri.etsi.org/m2m/saref#TotalEnergy"
+        },
+        "\u0001\u0003": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasIdentifier"
+        },
+        "!": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_BVAL_10"
+        },
+        "\u0001\u0002": {
+            "@id": "http://uri.etsi.org/m2m/saref#GetMeterDataCommand"
+        },
+        "*": {
+            "@id": "http://uri.etsi.org/m2m/saref#SmokeSensor"
+        },
+        "\u0001\u000b": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MotMdlt"
+        },
+        "%": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://uri.etsi.org/m2m/saref#hasModel"
+        },
+        "\u0001\u0006": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#AutomaticZone"
+        },
+        "\u0001s": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GasDetector"
+        },
+        "\u0002T": {
+            "@id": "http://uri.etsi.org/m2m/saref#TemperatureSensor"
+        },
+        "\u00035": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_RX_GoBls_10"
+        },
+        "\u0002w": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasSensingRange"
+        },
+        "\u0003X": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_RX_GoHToa_10"
+        },
+        "\u0001\u0015": {
+            "@id": "http://uri.etsi.org/m2m/saref#Multimedia"
+        },
+        "f": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_EVTLOG_10"
+        },
+        "\u0001G": {
+            "@id": "http://uri.etsi.org/m2m/saref#BuildingObject"
+        },
+        "\u0002(": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomFpb05"
+        },
+        "\u0003\t": {
+            "@id": "http://uri.etsi.org/m2m/saref#State"
+        },
+        "\u0001j": {
+            "@type": "@vocab",
+            "@id": "http://iot.linkeddata.es/def/wot#isProvidedOverProtocol"
+        },
+        "\u0002K": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_AVar_10"
+        },
+        "\u0003,": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#ManagementViewRoot"
+        },
+        "\u0001\u0019": {
+            "@id": "http://uri.etsi.org/m2m/saref#Operation"
+        },
+        "e": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasText"
+        },
+        "\u0001F": {
+            "@id": "http://uri.etsi.org/m2m/saref#OpenCommand"
+        },
+        "\u0002'": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_CI_ACC_10"
+        },
+        "\u0003\b": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#KickFnct"
+        },
+        "\u0001m": {
+            "@id": "http://uri.etsi.org/m2m/saref#Safety"
+        },
+        "\u0002N": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MultiState"
+        },
+        "\u0003/": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasMethod"
+        },
+        "Q": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MonitorTemperature"
+        },
+        "\u00012": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasProperty"
+        },
+        "\u0002\u0013": {
+            "@id": "http://uri.etsi.org/m2m/saref#OffCommand"
+        },
+        "\u0002{": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_Time_EvtDat_10"
+        },
+        "\u0003\\": {
+            "@id": "http://uri.etsi.org/m2m/saref#Sensor"
+        },
+        "\u0001f": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#ExtendedMapper"
+        },
+        "\u0002G": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_BI_RED_10"
+        },
+        "\u0003(": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomClc02"
+        },
+        "\u0015": {
+            "@type": "@vocab",
+            "@id": "http://www.wurvoc.org/vocabularies/om-1.8/singular_unit"
+        },
+        "|": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MtrH1"
+        },
+        "\u0001]": {
+            "@id": "http://uri.etsi.org/m2m/saref#LightingEnergy"
+        },
+        "\u0002>": {
+            "@id": "http://uri.etsi.org/m2m/saref#GetMeterHistoryCommand"
+        },
+        "\u0003\u001f": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+        },
+        "~": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#PltCtl"
+        },
+        "\u0001_": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#HCGrp01"
+        },
+        "\u0002@": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasPropertyMap"
+        },
+        "\u0003!": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#PwrCTrnd"
+        },
+        "q": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_Time_DatTi_10"
+        },
+        "\u0001R": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://iot.linkeddata.es/def/wot#name"
+        },
+        "\u00023": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#PropertyConfiguration"
+        },
+        "\u0003\u0014": {
+            "@id": "http://uri.etsi.org/m2m/saref#Function"
+        },
+        "\u000f": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#View"
+        },
+        "L": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomFnc04"
+        },
+        "\u0001-": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MeasureEnergy"
+        },
+        "\u0002\u000e": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MonitorPressure"
+        },
+        "\u0002f": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#managedType"
+        },
+        "\u0003G": {
+            "@id": "http://purl.org/dc/elements/1.1/description"
+        },
+        "\u0004": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#IsUsedFor"
+        },
+        "\u0017": {
+            "@id": "http://uri.etsi.org/m2m/saref#EnergyUnit"
+        },
+        "\u0001l": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#HCMxCrt10"
+        },
+        "\u0002M": {
+            "@id": "http://uri.etsi.org/m2m/saref#Command"
+        },
+        "\u0003.": {
+            "@id": "http://uri.etsi.org/m2m/saref#ToggleCommand"
+        },
+        "p": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#ValveVariable"
+        },
+        "\u0001Q": {
+            "@id": "http://uri.etsi.org/m2m/saref#Energy"
+        },
+        "\u00022": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_AVAL_10"
+        },
+        "\u0003\u0013": {
+            "@id": "http://uri.etsi.org/m2m/saref#OnOffFunction"
+        },
+        "\u0001{": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MonitorFlame"
+        },
+        "\u0002\\": {
+            "@id": "http://uri.etsi.org/m2m/saref#Smoke"
+        },
+        "\u0003=": {
+            "@id": "http://uri.etsi.org/m2m/saref#Power"
+        },
+        "/": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#VntCtl1"
+        },
+        "\u0001\u0010": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SensorAirDeltaPressure"
+        },
+        "j": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomVav01"
+        },
+        "\u0001K": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasSmoothing"
+        },
+        "\u0002,": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#CommandConfiguration"
+        },
+        "\u0003\r": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#Resource"
+        },
+        "-": {
+            "@id": "http://purl.org/dc/terms/license"
+        },
+        "\u0001\u000e": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_RX_GoHCho_10"
+        },
+        "\u0001w": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_CI_10"
+        },
+        "\u0002X": {
+            "@id": "http://purl.org/dc/terms/publisher"
+        },
+        "\u00039": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#SmoothingConfiguration"
+        },
+        "x": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomInt17"
+        },
+        "\u0001Y": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#AQualCtl"
+        },
+        "\u0002:": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Ahu01"
+        },
+        "\u0003\u001b": {
+            "@id": "http://uri.etsi.org/m2m/saref#BuildingSpace"
+        },
+        "\u0001e": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#XCasCtl"
+        },
+        "\u0002F": {
+            "@id": "http://uri.etsi.org/m2m/saref#Washing"
+        },
+        "\u0003'": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SpSupply"
+        },
+        "G": {
+            "@id": "http://iot.linkeddata.es/def/wot#interactionName"
+        },
+        "\u0001(": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MonitorAirDeltaPressure"
+        },
+        "\u0002\t": {
+            "@id": "http://uri.etsi.org/m2m/saref#Pressure"
+        },
+        "\u0001z": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#AlarmConfiguration"
+        },
+        "\u0002[": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#ErcMon"
+        },
+        "\u0003<": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SensorRoomQuality"
+        },
+        "\u0002v": {
+            "@id": "http://uri.etsi.org/m2m/saref#BuildingRelated"
+        },
+        "\u0003W": {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@id": "http://iot.linkeddata.es/def/wot#isRequired"
+        },
+        "\u0001": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_RX_GoLgt_10"
+        },
+        "J": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_RX_GoHEmg_10"
+        },
+        "\u0001+": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Ahu35"
+        },
+        "\u0002\f": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_Hvac_HxTPhi_10"
+        },
+        "v": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#AreaPropagation"
+        },
+        "\u0001W": {
+            "@id": "http://uri.etsi.org/m2m/saref#Electricity"
+        },
+        "\u00028": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasConsumption"
+        },
+        "\u0003\u0019": {
+            "@id": "http://uri.etsi.org/m2m/saref#Currency"
+        },
+        "M": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#EefCtl1"
+        },
+        "\u0001.": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SpRCalc1"
+        },
+        "\u0002\u000f": {
+            "@id": "http://uri.etsi.org/m2m/saref#Network"
+        },
+        "(": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#CommandDigital"
+        },
+        "\u0001\t": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SensorRoomHumidity"
+        },
+        "\u0001g": {
+            "@id": "http://uri.etsi.org/m2m/saref#Door"
+        },
+        "\u0002H": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasFunction"
+        },
+        "\u0003)": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasConversion"
+        },
+        "S": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Char"
+        },
+        "\u00014": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Measure"
+        },
+        "\u0002\u0015": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_LOADCTL_10"
+        },
+        "Y": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#ManualCallPoint"
+        },
+        "\u0001:": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_MVAL_10"
+        },
+        "\u0002\u001b": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasDatapointItem"
+        },
+        "\u0010": {
+            "@id": "http://www.w3.org/2006/time#DateTimeDescription"
+        },
+        "\u0001c": {
+            "@id": "http://uri.etsi.org/m2m/saref#OpenCloseFunction"
+        },
+        "\u0002D": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#BoCtl"
+        },
+        "\u0003%": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#StSwi"
+        },
+        "?": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#CNSNode"
+        },
+        "\u0001 ": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SensorAirHumidity"
+        },
+        "\u0002\u0001": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#NgtCEvl1"
+        },
+        "\u0002|": {
+            "@id": "http://purl.org/dc/elements/1.1/date"
+        },
+        "\u0001n": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#FilMon2"
+        },
+        "\u0002O": {
+            "@type": "http://www.w3.org/2001/XMLSchema#unsignedInt",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasPropertyID"
+        },
+        "\u00030": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#CasCtr"
+        },
+        "Z": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MonitorLevel"
+        },
+        "\u0001;": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SensorAirTemperature"
+        },
+        "\u0002\u001c": {
+            "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix"
+        },
+        "H": {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+        },
+        "\u0001)": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MeasurePower"
+        },
+        "\u0002\n": {
+            "@id": "http://uri.etsi.org/m2m/saref#EnergyRelated"
+        },
+        "\u0001p": {
+            "@type": "@vocab",
+            "@id": "http://iot.linkeddata.es/def/wot#implementsSecurity"
+        },
+        "\u0002Q": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#HGen01"
+        },
+        "\u00032": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SensorOutsideTemperature"
+        },
+        "\u0001\u0018": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MxCrt"
+        },
+        "\u0002k": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasLink"
+        },
+        "\u0003L": {
+            "@id": "http://uri.etsi.org/m2m/saref#MinimunEnergy"
+        },
+        "\u0006": {
+            "@id": "http://uri.etsi.org/m2m/saref#Switch"
+        },
+        "\u0011": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_TrigAna_10"
+        },
+        "\u0001\u0016": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_MI_10"
+        },
+        "E": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasMeterReadingValue"
+        },
+        "\u0001&": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MonitorStatus"
+        },
+        "\u0002\u0007": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#isRepresentedByNode"
+        },
+        "\u0001}": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#PdlLdGrp"
+        },
+        "\u0002^": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasInputParameter"
+        },
+        "\u0003?": {
+            "@id": "http://uri.etsi.org/m2m/saref#Task"
+        },
+        "\u0001\u007f": {
+            "@id": "http://uri.etsi.org/m2m/saref#StopState"
+        },
+        "\u0002`": {
+            "@id": "http://uri.etsi.org/m2m/saref#Load"
+        },
+        "\u0003A": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_Ctrl_BckLash_10"
+        },
+        "\u0002o": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#CmnAlarm"
+        },
+        "\u0003P": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#DamperVariable"
+        },
+        "R": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#FnctController"
+        },
+        "\u00013": {
+            "@id": "http://uri.etsi.org/m2m/saref#PowerUnit"
+        },
+        "\u0002\u0014": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Section"
+        },
+        "C": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasMax"
+        },
+        "\u0001$": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#HuEefCtl"
+        },
+        "\u0002\u0005": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MonitorFlow"
+        },
+        "F": {
+            "@id": "http://purl.org/dc/terms/issued"
+        },
+        "\u0001'": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#isRelatedItemOf"
+        },
+        "\u0002\b": {
+            "@id": "http://uri.etsi.org/m2m/saref#MicroRenewable"
+        },
+        "\u0002e": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_Ctrl_Cont4St_10"
+        },
+        "\u0003F": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#PrdvHCtl"
+        },
+        "\u0002z": {
+            "@id": "http://uri.etsi.org/m2m/saref#TemperatureUnit"
+        },
+        "\u0003[": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SchedAnyStatus"
+        },
+        "\u0007": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SpField"
+        },
+        "\b": {
+            "@id": "http://iot.linkeddata.es/def/wot#thingName"
+        },
+        "\u0003": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasSystemIdentifier"
+        },
+        "B": {
+            "@id": "http://iot.linkeddata.es/def/wot#MediaType"
+        },
+        "\u0001#": {
+            "@id": "http://uri.etsi.org/m2m/saref#Light"
+        },
+        "\u0002\u0004": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_MI_RED_10"
+        },
+        "\u0012": {
+            "@id": "http://uri.etsi.org/m2m/saref#Meter"
+        },
+        "\u0014": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomInt15"
+        },
+        "\u0002y": {
+            "@id": "http://uri.etsi.org/m2m/saref#MultiLevelState"
+        },
+        "\u0003Z": {
+            "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasIcon"
+        },
+        "a": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#VerificationElem"
+        },
+        "\u0001B": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_Mgmt_AsSta_10"
+        },
+        "\u0002#": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasAlarm"
+        },
+        "\u0003\u0004": {
+            "@id": "http://uri.etsi.org/m2m/saref#StartStopFunction"
+        },
+        "\f": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://uri.etsi.org/m2m/saref#hasManufacturer"
+        },
+        "\u0016": {
+            "@id": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+        },
+        "\u0001h": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasOutputParameter"
+        },
+        "\u0002I": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#AqEefCtl"
+        },
+        "\u0003*": {
+            "@id": "http://uri.etsi.org/m2m/saref#EnergyMeter"
+        },
+        "\u0019": {
+            "@id": "http://uri.etsi.org/m2m/saref#Cleaning"
+        },
+        "\t": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasSingularUnit"
+        },
+        "_": {
+            "@id": "http://uri.etsi.org/m2m/saref#PressureUnit"
+        },
+        "\u0001@": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#CommandVariable"
+        },
+        "\u0002!": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#PwrCtl"
+        },
+        "\u0003\u0002": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#ObjectType"
+        },
+        "\u0001\u0017": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SetpointLimit"
+        },
+        "&": {
+            "@id": "http://uri.etsi.org/m2m/saref#Lighting"
+        },
+        "\u0001\u0007": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SolPos"
+        },
+        "\u001c": {
+            "@id": "http://uri.etsi.org/m2m/saref#Commodity"
+        },
+        "\u0002x": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomInt11"
+        },
+        "\u0003Y": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Monitor"
+        },
+        "P": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#SemanticFunction"
+        },
+        "\u00011": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#isAccomplishedBy"
+        },
+        "\u0002\u0012": {
+            "@id": "http://uri.etsi.org/m2m/saref#OpenCloseState"
+        },
+        "t": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RPnl"
+        },
+        "\u0001U": {
+            "@id": "http://uri.etsi.org/m2m/saref#GetCurrentMeterValueCommand"
+        },
+        "\u00026": {
+            "@id": "http://uri.etsi.org/m2m/saref#SetAbsoluteLevelCommand"
+        },
+        "\u0003\u0017": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasParentNode"
+        },
+        "\u0002g": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomClc08"
+        },
+        "\u0003H": {
+            "@id": "http://uri.etsi.org/m2m/saref#Time"
+        },
+        "\u001d": {
+            "@id": "http://purl.org/dc/terms/created"
+        },
+        "V": {
+            "@id": "http://uri.etsi.org/m2m/saref#OffState"
+        },
+        "\u00017": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#DmpMx"
+        },
+        "\u0002\u0018": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MonitorElectrical"
+        },
+        "U": {
+            "@id": "http://www.w3.org/2006/time#TemporalUnit"
+        },
+        "\u00016": {
+            "@id": "http://xmlns.com/foaf/0.1/based_near"
+        },
+        "\u0002\u0017": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SetpointAirQuality"
+        },
+        "\u0001d": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#TCasCtl2"
+        },
+        "\u0002E": {
+            "@id": "http://uri.etsi.org/m2m/saref#Property"
+        },
+        "\u0003&": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MonitorAirFrost"
+        },
+        ":": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SwitchMultistate"
+        },
+        "\u0001\u001b": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_BI_10"
+        },
+        "O": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#UserViewRoot"
+        },
+        "\u00010": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_Block_10"
+        },
+        "\u0002\u0011": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MonitorError"
+        },
+        "\u0002p": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#isCommandOf"
+        },
+        "\u0003Q": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasObjectType"
+        },
+        "\u0002h": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#CGrp01"
+        },
+        "\u0003I": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#isLocatedIn"
+        },
+        "i": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#PWMCtl"
+        },
+        "\u0001J": {
+            "@id": "http://uri.etsi.org/m2m/saref#HVAC"
+        },
+        "\u0002+": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasRootNode"
+        },
+        "\u0003\f": {
+            "@id": "http://iot.linkeddata.es/def/wot#InteractionPattern"
+        },
+        "<": {
+            "@id": "http://www.w3.org/2006/time#DurationDescription"
+        },
+        "\u0001\u001d": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#FunctionalMapper"
+        },
+        "k": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomFnc08"
+        },
+        "\u0001L": {
+            "@id": "http://uri.etsi.org/m2m/saref#MaximumEnergy"
+        },
+        "\u0002-": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasMeterReadingTime"
+        },
+        "\u0003\u000e": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomFnc20"
+        },
+        "\u0001i": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_MO_10"
+        },
+        "\u0002J": {
+            "@id": "http://purl.org/dc/elements/1.1/title"
+        },
+        "\u0003+": {
+            "@id": "http://uri.etsi.org/m2m/saref#OpenState"
+        },
+        "b": {
+            "@id": "http://uri.etsi.org/m2m/saref#Generator"
+        },
+        "\u0001C": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_AI_RED_10"
+        },
+        "\u0002$": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasSiblingDatapoint"
+        },
+        "\u0003\u0005": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasState"
+        },
+        ".": {
+            "@id": "http://iot.linkeddata.es/def/wot#Link"
+        },
+        "\u0001\u000f": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Ossc"
+        },
+        "r": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasProduction"
+        },
+        "\u0001S": {
+            "@id": "http://uri.etsi.org/m2m/saref#OnOffState"
+        },
+        "\u00024": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://iot.linkeddata.es/def/wot#hasMediaType"
+        },
+        "\u0003\u0015": {
+            "@id": "http://iot.linkeddata.es/def/wot#isAccessibleThrough"
+        },
+        "{": {
+            "@id": "http://uri.etsi.org/m2m/saref#Appliance"
+        },
+        "\u0001\\": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasTarget"
+        },
+        "\u0002=": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomInt07"
+        },
+        "\u0003\u001e": {
+            "@id": "http://uri.etsi.org/m2m/saref#Target"
+        },
+        "y": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#AreaSoundersOff"
+        },
+        "\u0001Z": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#ObserverEE"
+        },
+        "\u0002;": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#represents"
+        },
+        "\u0003\u001c": {
+            "@id": "http://uri.etsi.org/m2m/saref#IlluminanceUnit"
+        },
+        "\u0001k": {
+            "@id": "http://uri.etsi.org/m2m/saref#StepDownCommand"
+        },
+        "\u0002L": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasThreshold"
+        },
+        "\u0003-": {
+            "@id": "http://uri.etsi.org/m2m/saref#StartCommand"
+        },
+        "\u0002m": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SensorFlow"
+        },
+        "\u0003N": {
+            "@type": "@vocab",
+            "@id": "http://iot.linkeddata.es/def/wot#isDescribedBy"
+        },
+        ";": {
+            "@id": "http://www.w3.org/2006/time#DayOfWeek"
+        },
+        "\u0001\u001c": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasCommand"
+        },
+        "\u0001\u0012": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomInt06"
+        },
+        ",": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasMin"
+        },
+        "\u0001\r": {
+            "@type": "@vocab",
+            "@id": "http://iot.linkeddata.es/def/wot#providedBy"
+        },
+        "}": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasSemanticTag"
+        },
+        "\u0001^": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasTime"
+        },
+        "\u0002?": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasCategory"
+        },
+        "\u0003 ": {
+            "@id": "http://uri.etsi.org/m2m/saref#Service"
+        },
+        "\u0001\u0011": {
+            "@id": "http://uri.etsi.org/m2m/saref#OnCommand"
+        },
+        "g": {
+            "@type": "@vocab",
+            "@id": "http://iot.linkeddata.es/def/wot#providesInteractionPattern"
+        },
+        "\u0001H": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SetpointAnalog"
+        },
+        "\u0002)": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+        },
+        "\u0003\n": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Ccl"
+        },
+        "X": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#belongsToView"
+        },
+        "\u00019": {
+            "@id": "http://uri.etsi.org/m2m/saref#HVACEnergy"
+        },
+        "\u0002\u001a": {
+            "@id": "http://uri.etsi.org/m2m/saref#HotWaterEnergy"
+        },
+        "l": {
+            "@id": "http://uri.etsi.org/m2m/saref#Motion"
+        },
+        "\u0001M": {
+            "@type": "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasEquivalentValueType"
+        },
+        "\u0002.": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasConfiguration"
+        },
+        "\u0003\u000f": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#LGT01"
+        },
+        "\u0001a": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasSensingTime"
+        },
+        "\u0002B": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#HCMxCrt20"
+        },
+        "\u0003#": {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@id": "http://iot.linkeddata.es/def/wot#isWritable"
+        },
+        "N": {
+            "@id": "http://uri.etsi.org/m2m/saref#CloseCommand"
+        },
+        "\u0001/": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_TRNDMLT_10"
+        },
+        "\u0002\u0010": {
+            "@id": "http://iot.linkeddata.es/def/wot#hasInputData"
+        },
+        "[": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomInt10"
+        },
+        "\u0001<": {
+            "@id": "http://uri.etsi.org/m2m/saref#Price"
+        },
+        "\u0002\u001d": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomVav14"
+        },
+        "u": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_RX_GoUs_10"
+        },
+        "\u0001V": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+        },
+        "\u00027": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SwitchBinary"
+        },
+        "\u0003\u0018": {
+            "@id": "http://uri.etsi.org/m2m/saref#Actuator"
+        },
+        "\u0002l": {
+            "@id": "http://uri.etsi.org/m2m/saref#EventFunction"
+        },
+        "\u0003M": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#ManualZone"
+        },
+        "\u0001~": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_BVAL_OP_10"
+        },
+        "\u0002_": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#FanMdlt"
+        },
+        "\u0003@": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_GrpObj_10"
+        },
+        "A": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_AVAL_OP_10"
+        },
+        "\u0001\"": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#BUsROc"
+        },
+        "\u0002\u0003": {
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#alt"
+        },
+        "\u0001q": {
+            "@type": "@vocab",
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#location"
+        },
+        "\u0002R": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#PdlGrpUn"
+        },
+        "\u00033": {
+            "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasDatapointObjectId"
+        },
+        "\u0001o": {
+            "@id": "http://uri.etsi.org/m2m/saref#ActuatingFunction"
+        },
+        "\u0002P": {
+            "@id": "http://uri.etsi.org/m2m/saref#SwitchOnService"
+        },
+        "\u00031": {
+            "@id": "http://uri.etsi.org/m2m/saref#Device"
+        },
+        "\u000b": {
+            "@id": "http://uri.etsi.org/m2m/saref#UnitOfMeasure"
+        },
+        "\u001e": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#RoomInt03"
+        },
+        "\u0002r": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#MonitorAlarm"
+        },
+        "\u0003S": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#ConversionConfiguration"
+        },
+        "#": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#TypeFunction"
+        },
+        "\u0001\u0004": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#contains"
+        },
+        "h": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Swi2p"
+        },
+        "\u0001I": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasOperation"
+        },
+        "\u0002*": {
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+        },
+        "\u0003\u000b": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#LogicalViewRoot"
+        },
+        "\u000e": {
+            "@id": "http://uri.etsi.org/m2m/saref#NotifyCommand"
+        },
+        "\u007f": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        "\u0001`": {
+            "@id": "http://iot.linkeddata.es/def/wot#CommunicationProtocol"
+        },
+        "\u0002A": {
+            "@id": "http://uri.etsi.org/m2m/saref#StopCommand"
+        },
+        "\u0003\"": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#SimpleMapper"
+        },
+        "I": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_BO_RED_10"
+        },
+        "\u0001*": {
+            "@id": "http://iot.linkeddata.es/def/wot#Event"
+        },
+        "\u0002\u000b": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#HGrp01"
+        },
+        "\u001f": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#TextGroupElement"
+        },
+        "\u0001\u0000": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Pu1St"
+        },
+        "\u0001\u0013": {
+            "@id": "http://uri.etsi.org/m2m/saref#StepUpCommand"
+        },
+        "\u001a": {
+            "@id": "http://iot.linkeddata.es/def/wot#DataType"
+        },
+        "\u0002t": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#BuSt"
+        },
+        "\u0003U": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#offers"
+        },
+        "m": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#AreaElements"
+        },
+        "\u0001N": {
+            "@id": "http://purl.org/dc/terms/creator"
+        },
+        "\u0002/": {
+            "@id": "http://uri.etsi.org/m2m/saref#Window"
+        },
+        "\u0003\u0010": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasProfile"
+        },
+        " ": {
+            "@id": "http://uri.etsi.org/m2m/saref#Entertainment"
+        },
+        "\u0001\u0001": {
+            "@id": "http://uri.etsi.org/m2m/saref#AverageEnergy"
+        },
+        "W": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://uri.etsi.org/m2m/saref#hasName"
+        },
+        "\u00018": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasSiblingNode"
+        },
+        "\u0002\u0019": {
+            "@id": "http://www.w3.org/2002/07/owl#deprecated"
+        },
+        "^": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_Hvac_Purge_10"
+        },
+        "\u0001?": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#HvacFull"
+        },
+        "\u0002 ": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SetpointDigital"
+        },
+        "\u0003\u0001": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://uri.etsi.org/m2m/saref#hasSensorType"
+        },
+        "\\": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#isOfferedBy"
+        },
+        "\u0001=": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#HumEl"
+        },
+        "\u0002\u001e": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SensorRoomTemperature"
+        },
+        "+": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_MVAL_OP_10"
+        },
+        "\u0001\f": {
+            "@id": "http://www.w3.org/2006/timezone#TimeZone"
+        },
+        "\n": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#BLS01"
+        },
+        "\u001b": {
+            "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+        },
+        "\u0002c": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#SubDiscipline"
+        },
+        "\u0003D": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_FW_Math_SolFcd_10"
+        },
+        "\u0002u": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_MO_RED_10"
+        },
+        "\u0003V": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#isCategoryOf"
+        },
+        "$": {
+            "@id": "http://uri.etsi.org/m2m/saref#Humidity"
+        },
+        "\u0001\u0005": {
+            "@type": "@vocab",
+            "@id": "http://iot.linkeddata.es/def/wot#hasValueType"
+        },
+        "D": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#FunctionMapper"
+        },
+        "\u0001%": {
+            "@id": "http://uri.etsi.org/m2m/saref#Temperature"
+        },
+        "\u0002\u0006": {
+            "@id": "http://uri.etsi.org/m2m/saref#Method"
+        },
+        "\u0018": {
+            "@id": "http://uri.etsi.org/m2m/saref#Storage"
+        },
+        "o": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#PeakDmdLm01"
+        },
+        "\u0001P": {
+            "@id": "http://uri.etsi.org/m2m/saref#GetSensingDataCommand"
+        },
+        "\u00021": {
+            "@id": "http://uri.etsi.org/m2m/saref#SensingFunction"
+        },
+        "\u0003\u0012": {
+            "@type": "@vocab",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasMappingFunction"
+        },
+        "\u0001y": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#DPIdentifier"
+        },
+        "\u0002Z": {
+            "@id": "http://uri.etsi.org/m2m/saref#Coal"
+        },
+        "\u0003;": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#Hra"
+        },
+        "\u0002d": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#consistsOf"
+        },
+        "\u0003E": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#MixedMapper"
+        },
+        "c": {
+            "@id": "http://uri.etsi.org/m2m/saref#hasValue"
+        },
+        "\u0001D": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://uri.etsi.org/m2m/saref#hasTask"
+        },
+        "\u0002%": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#hasTypicalConsumption"
+        },
+        "\u0003\u0006": {
+            "@id": "http://uri.etsi.org/m2m/saref#DeviceCategory"
+        },
+        "\u0001b": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#HumAw"
+        },
+        "\u0002C": {
+            "@id": "http://uri.etsi.org/m2m/saref#StartStopState"
+        },
+        "\u0003$": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SetpointTemperature"
+        },
+        "\u0002j": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#DamperBinary"
+        },
+        "\u0003K": {
+            "@id": "http://purl.org/vocab/vann/preferredNamespaceUri"
+        },
+        "\u0002i": {
+            "@id": "http://uri.etsi.org/m2m/saref#SetRelativeLevelCommand"
+        },
+        "\u0003J": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_FS20EN_EOT_FI_SubfolderElem"
+        },
+        "\u0001r": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasDiscipline"
+        },
+        "\u0002S": {
+            "@id": "http://uri.etsi.org/m2m/saref#Occupancy"
+        },
+        "\u00034": {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@id": "http://uri.etsi.org/m2m/saref#isInterrupionPossible"
+        },
+        "\u0005": {
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#Discipline"
+        },
+        "\u0001u": {
+            "@id": "http://uri.etsi.org/m2m/saref#GetCommand"
+        },
+        "\u0002V": {
+            "@id": "http://uri.etsi.org/m2m/saref#PauseCommand"
+        },
+        "\u00037": {
+            "@id": "http://uri.etsi.org/m2m/saref#FunctionRelated"
+        },
+        "\u0001|": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "https://si-ra.github.io/ontologies/cc.owl#hasSystemDesignation"
+        },
+        "\u0002]": {
+            "@id": "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+        },
+        "\u0003>": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_AI_10"
+        },
+        "\u0002s": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#NgtC"
+        },
+        "\u0003T": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_AO_10"
+        },
+        "@": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#GMS_desigo_px_EOT_BA_PX_BO_10"
+        },
+        "\u0001!": {
+            "@id": "http://iot.linkeddata.es/def/wot#hasOutputData"
+        },
+        "\u0002\u0002": {
+            "@id": "http://uri.etsi.org/m2m/saref#Profile"
+        },
+        "\u0002~": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SensorOutsideHumidity"
+        },
+        ">": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#accomplishes"
+        },
+        "\u0001\u001f": {
+            "@id": "http://uri.etsi.org/m2m/saref#Gas"
+        },
+        "\u0002\u0000": {
+            "@id": "http://www.w3.org/2006/time#TemporalEntity"
+        },
+        "\u0002": {
+            "@type": "@vocab",
+            "@id": "http://uri.etsi.org/m2m/saref#actsUpon"
+        },
+        "\u0001t": {
+            "@id": "https://si-ra.github.io/ontologies/ccba.owl#SetpointElectrical"
+        },
+        "\u0002U": {
+            "@id": "http://uri.etsi.org/m2m/saref#LightSwitch"
+        },
+        "\u00036": {
+            "@id": "http://iot.linkeddata.es/def/wot#Action"
+        }
+    }
+}
