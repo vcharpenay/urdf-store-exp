@@ -1,0 +1,31 @@
+@prefix : <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ec: <http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix td: <http://www.w3.org/ns/td#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+
+_:pumpControl1 ssn:hasSubSystem _:B113 ;
+    ssn:hasSubSystem _:P101 .
+
+_:pumpControl2 ssn:hasSubSystem _:B114 ;
+    ssn:hasSubSystem _:P101 .
+
+_:P101 rdf:type ec:C_AAD563002-gen ;
+    sosa:madeActuation [
+        sosa:usedProcedure [
+            ssn:implementedBy _:P101 ;
+            td:form [ td:href <coap://192.168.2.198:5683/PumpP101/on> ]
+        ] ;
+        sosa:actsOnProperty _:P101Status
+    ], [
+        sosa:usedProcedure [
+            ssn:implementedBy _:P101 ;
+            td:form [ td:href <coap://192.168.2.198:5683/PumpP101/off> ]
+        ] ;
+        sosa:actsOnProperty _:P101Status
+    ] .

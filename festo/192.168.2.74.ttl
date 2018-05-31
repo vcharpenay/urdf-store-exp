@@ -1,0 +1,34 @@
+@prefix : <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ec: <http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix td: <http://www.w3.org/ns/td#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix saref: <http://uri.etsi.org/m2m/saref#> .
+
+_:E104 rdf:type ec:C_AAB871002-gen .
+_:T101 rdf:type ec:C_AKE989002-gen .
+
+_:E104 rdf:type td:Thing, sosa:Actuator ;
+    td:name "heaterE104" ;
+    sosa:isHostedBy _:T101 ;
+    sosa:madeActuation [
+        sosa:usedProcedure [
+            rdf:type td:Action ;
+            ssn:implementedBy _:E104 ;
+            td:name "on" ;
+            td:form [ td:href <coap://192.168.2.74:5683/TODO/on> ]
+        ]
+    ] ;
+    sosa:madeActuation [
+        sosa:usedProcedure [
+            rdf:type td:Action ;
+            ssn:implementedBy _:E104 ;
+            td:name "off" ;
+            td:form [ td:href <coap://192.168.2.74:5683/TODO/off> ]
+        ]
+    ] .

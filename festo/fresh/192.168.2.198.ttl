@@ -1,0 +1,22 @@
+@prefix : <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ec: <http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix td: <http://www.w3.org/ns/td#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+
+_:circuitAnomaly ssn:hasSubSystem _:P101, _:B102 .
+
+_:pumpControl1 ssn:hasSubSystem _:P101 .
+
+_:pumpControl2 ssn:hasSubSystem _:P101 .
+
+_:valveControl ssn:hasSubSystem _:V106 .
+
+_:waterCirculation1 ssn:hasSubSystem _:P101, _:V106 .
+
+_:waterCirculation2 ssn:hasSubSystem _:P101 .

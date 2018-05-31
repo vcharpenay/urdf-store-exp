@@ -1,0 +1,134 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix ec: <http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#> .
+@prefix ex: <http://example.org/> .
+
+# Notes:
+# Digital sensors and devices are modeled as systems.
+# Physical objects are modeled as platforms, hosting these systems.
+
+# overall systems :
+# water treatment plant 33-05-01-00 C_AAD080002-gen
+# heater control        ?
+# overflow control      ?
+# circuit flow control  ?
+
+ec:C_AAB991003-gen a owl:Class .
+ec:C_AAB871002-gen a owl:Class .
+ec:C_AKE989002-gen a owl:Class .
+ec:C_AAD563002-gen a owl:Class .
+ec:C_AAC016004-gen a owl:Class .
+ec:C_AKE671002-gen a owl:Class .
+ec:C_AKE777003-gen a owl:Class .
+ec:C_AKE773003-gen a owl:Class .
+ec:C_AKE672002-gen a owl:Class .
+
+ex:HeaterControlSystem a owl:Class .
+ex:CircuitAnomalyDetectionSystem a owl:Class .
+ex:PumpControlSystem a owl:Class .
+ex:ValveControlSystem a owl:Class .
+ex:WaterCirculationSystem a owl:Class .
+
+ex:Valve a owl:Class .
+
+# proportional or pneumatic valves
+ec:C_AKE773003-gen rdfs:subClassOf ex:Valve .
+ec:C_AKE777003-gen rdfs:subClassOf ex:Valve .
+
+# heater control by temperature
+[] rdfs:subClassOf ex:HeaterControlSystem ;
+    a owl:Class ;
+    owl:intersectionOf ([
+        a owl:Restriction ;
+        owl:onProperty ssn:hasSubSystem ;
+        owl:someValuesFrom [
+            a owl:Class ;
+            owl:intersectionOf (ec:C_AAB991003-gen [
+                a owl:Restriction ;
+                owl:onProperty sosa:isHostedBy ;
+                owl:someValuesFrom ec:C_AKE989002-gen
+            ])
+        ]
+    ] [
+        a owl:Restriction ;
+        owl:onProperty ssn:hasSubSystem ;
+        owl:someValuesFrom [
+            a owl:Class ;
+            owl:intersectionOf (ec:C_AAB871002-gen [
+                a owl:Restriction ;
+                owl:onProperty sosa:isHostedBy ;
+                owl:someValuesFrom ec:C_AKE989002-gen
+            ])
+        ]
+    ]) .
+
+# anomaly detection by comparing flow and pump status
+[] rdfs:subClassOf ex:CircuitAnomalyDetectionSystem ;
+    a owl:Class ;
+    owl:intersectionOf ([
+        a owl:Restriction ;
+        owl:onProperty ssn:hasSubSystem ;
+        owl:someValuesFrom ec:C_AAD563002-gen
+    ] [
+        a owl:Restriction ;
+        owl:onProperty ssn:hasSubSystem ;
+        owl:someValuesFrom ec:C_AAC016004-gen
+    ]) .
+
+# pump control by water level
+[] rdfs:subClassOf ex:PumpControlSystem ;
+    a owl:Class ;
+    owl:intersectionOf ([
+        a owl:Restriction ;
+        owl:onProperty ssn:hasSubSystem ;
+        owl:someValuesFrom ec:C_AAD563002-gen
+    ] [
+        # FIXME not exactly: two level sensors (min/max)
+        a owl:Restriction ;
+        owl:onProperty ssn:hasSubSystem ;
+        owl:someValuesFrom [
+            a owl:Class ;
+            owl:intersectionOf (ec:C_AKE671002-gen [
+                a owl:Restriction ;
+                owl:onProperty sosa:isHostedBy ;
+                owl:someValuesFrom ec:C_AKE989002-gen
+            ])
+        ]
+    ]) .
+
+# valve control by water level
+[] rdfs:subClassOf ex:ValveControlSystem ;
+    a owl:Class ;
+    owl:intersectionOf ([
+        a owl:Restriction ;
+        owl:onProperty ssn:hasSubSystem ;
+        owl:someValuesFrom ex:Valve
+    ] [
+        a owl:Restriction ;
+        owl:onProperty ssn:hasSubSystem ;
+        owl:someValuesFrom [
+            a owl:Class ;
+            owl:intersectionOf (ec:C_AKE672002-gen [
+                a owl:Restriction ;
+                owl:onProperty sosa:isHostedBy ;
+                owl:someValuesFrom ec:C_AKE989002-gen
+            ])
+        ]
+    ]) .
+
+# water closed circuit (valve/pump)
+[] rdfs:subClassOf ex:WaterCirculationSystem ;
+    a owl:Class ;
+    owl:intersectionOf ([
+        a owl:Restriction ;
+        owl:onProperty ssn:hasSubSystem ;
+        owl:someValuesFrom ec:C_AAD563002-gen
+    ] [
+        a owl:Restriction ;
+        owl:onProperty ssn:hasSubSystem ;
+        owl:someValuesFrom ex:Valve
+    ]) .

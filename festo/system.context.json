@@ -1,0 +1,413 @@
+
+{
+
+    "@context": {
+        "0": {
+            "@id": "http://schema.org/rangeIncludes"
+        },
+        "1": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/hasInput"
+        },
+        "2": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/implementedBy"
+        },
+        "3": {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@id": "http://www.w3.org/ns/td#observable"
+        },
+        "4": {
+            "@id": "http://example.org/WaterCirculationSystem"
+        },
+        "5": {
+            "@id": "http://www.w3.org/ns/td#Form"
+        },
+        "6": {
+            "@id": "http://purl.org/dc/terms/rights"
+        },
+        "7": {
+            "@id": "http://www.w3.org/ns/td#Security"
+        },
+        "8": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/detects"
+        },
+        "9": {
+            "@id": "http://www.w3.org/2006/time#TemporalEntity"
+        },
+        "\u0000": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/implements"
+        },
+        "T": {
+            "@id": "http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#C_AKE989002-gen"
+        },
+        "d": {
+            "@id": "http://www.w3.org/ns/ssn/System"
+        },
+        "n": {
+            "@id": "http://www.w3.org/ns/sosa/Observation"
+        },
+        "K": {
+            "@id": "http://purl.org/dc/elements/1.1/title"
+        },
+        "]": {
+            "@id": "http://www.w3.org/ns/sosa/Actuator"
+        },
+        "'": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/wasOriginatedBy"
+        },
+        "\u0013": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/hasOutput"
+        },
+        "\r": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/td#interaction"
+        },
+        ")": {
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+            "@id": "http://www.w3.org/ns/sosa/resultTime"
+        },
+        "=": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/madeBySampler"
+        },
+        "`": {
+            "@id": "http://www.w3.org/ns/sosa/ObservableProperty"
+        },
+        "\"": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/td#schema"
+        },
+        "!": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/isHostedBy"
+        },
+        "*": {
+            "@id": "http://xmlns.com/foaf/0.1/Agent"
+        },
+        "%": {
+            "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+            "@id": "http://www.w3.org/ns/td#base"
+        },
+        "f": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/deployedOnPlatform"
+        },
+        "e": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/isProxyFor"
+        },
+        "Q": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/hasFeatureOfInterest"
+        },
+        "\u0015": {
+            "@id": "http://www.w3.org/ns/sosa/FeatureOfInterest"
+        },
+        "q": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/isFeatureOfInterestOf"
+        },
+        "\u000f": {
+            "@id": "http://example.org/HeaterControlSystem"
+        },
+        "L": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://www.w3.org/ns/td#rel"
+        },
+        "\u0004": {
+            "@id": "http://purl.org/dc/terms/created"
+        },
+        "\u0017": {
+            "@id": "http://example.org/PumpControlSystem"
+        },
+        "p": {
+            "@id": "http://www.w3.org/ns/sosa/hasSimpleResult"
+        },
+        "/": {
+            "@id": "http://www.w3.org/ns/td#name"
+        },
+        "j": {
+            "@id": "http://purl.org/dc/terms/description"
+        },
+        "-": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/phenomenonTime"
+        },
+        "G": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/hasResult"
+        },
+        "\u0001": {
+            "@id": "http://www.w3.org/ns/ssn/Stimulus"
+        },
+        "J": {
+            "@id": "http://www.w3.org/ns/td#Property"
+        },
+        "M": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/isObservedBy"
+        },
+        "(": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note"
+        },
+        "S": {
+            "@id": "http://example.org/CircuitAnomalyDetectionSystem"
+        },
+        "Y": {
+            "@id": "http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#C_AAD563002-gen"
+        },
+        "\u0010": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/td#security"
+        },
+        "?": {
+            "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix"
+        },
+        "Z": {
+            "@id": "http://www.w3.org/ns/td#InteractionPattern"
+        },
+        "H": {
+            "@id": "http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#C_AKE672002-gen"
+        },
+        "\u0006": {
+            "@id": "http://www.w3.org/2004/02/skos/core#example"
+        },
+        "\u0011": {
+            "@id": "http://www.w3.org/2002/07/owl#Thing"
+        },
+        "E": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/forProperty"
+        },
+        "R": {
+            "@id": "http://www.w3.org/ns/sosa/Sampler"
+        },
+        "C": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/hasSample"
+        },
+        "F": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/hasDeployment"
+        },
+        "\u0007": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/madeActuation"
+        },
+        "\b": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/td#outputSchema"
+        },
+        "\u0003": {
+            "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+        },
+        "B": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition"
+        },
+        "\u0012": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/hosts"
+        },
+        "\u0014": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/actsOnProperty"
+        },
+        "a": {
+            "@id": "http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#C_AKE777003-gen"
+        },
+        "\f": {
+            "@id": "http://www.w3.org/ns/ssn/Deployment"
+        },
+        "\u0016": {
+            "@id": "http://www.w3.org/ns/td#DataSchema"
+        },
+        "\u0019": {
+            "@id": "http://schema.org/domainIncludes"
+        },
+        "\t": {
+            "@id": "http://www.w3.org/ns/sosa/Platform"
+        },
+        "_": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/madeByActuator"
+        },
+        "&": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/hasProperty"
+        },
+        "\u001c": {
+            "@id": "http://www.w3.org/ns/sosa/ActuatableProperty"
+        },
+        "P": {
+            "@type": "http://www.w3.org/2001/XMLSchema#string",
+            "@id": "http://www.w3.org/ns/td#mediaType"
+        },
+        "\u001d": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        "V": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/madeObservation"
+        },
+        "U": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/observedProperty"
+        },
+        ":": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/isResultOf"
+        },
+        "O": {
+            "@id": "http://purl.org/vocommons/voaf#Vocabulary"
+        },
+        "i": {
+            "@id": "http://www.w3.org/ns/sosa/Sampling"
+        },
+        "<": {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@id": "http://www.w3.org/ns/td#writable"
+        },
+        "k": {
+            "@id": "http://example.org/ValveControlSystem"
+        },
+        "b": {
+            "@id": "http://purl.org/dc/terms/contributor"
+        },
+        ".": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/td#href"
+        },
+        ";": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/hasSubSystem"
+        },
+        ",": {
+            "@id": "http://purl.org/dc/terms/creator"
+        },
+        "g": {
+            "@id": "http://www.w3.org/ns/td#Action"
+        },
+        "X": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+        },
+        "l": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/td#inputSchema"
+        },
+        "N": {
+            "@id": "http://purl.org/dc/elements/1.1/publisher"
+        },
+        "[": {
+            "@id": "http://www.w3.org/ns/sosa/Sample"
+        },
+        "A": {
+            "@id": "http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#C_AAC016004-gen"
+        },
+        "\u000b": {
+            "@id": "http://purl.org/dc/terms/license"
+        },
+        "\u001e": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/td#form"
+        },
+        "#": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/inDeployment"
+        },
+        "h": {
+            "@id": "http://www.w3.org/ns/sosa/Actuation"
+        },
+        "\u000e": {
+            "@id": "http://www.w3.org/ns/sosa/Procedure"
+        },
+        "I": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/usedProcedure"
+        },
+        "\u001f": {
+            "@id": "http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#C_AAB991003-gen"
+        },
+        "\u001a": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/isSampleOf"
+        },
+        "m": {
+            "@id": "http://purl.org/vocab/vann/preferredNamespaceUri"
+        },
+        " ": {
+            "@id": "http://www.w3.org/ns/sosa/Result"
+        },
+        "W": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/isPropertyOf"
+        },
+        "^": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment"
+        },
+        "\\": {
+            "@id": "http://www.w3.org/ns/ssn/Output"
+        },
+        "+": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/isActedOnBy"
+        },
+        "\n": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/madeSampling"
+        },
+        "\u001b": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/madeBySensor"
+        },
+        "$": {
+            "@id": "http://www.w3.org/ns/td#Event"
+        },
+        "D": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/sosa/observes"
+        },
+        "\u0018": {
+            "@id": "http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#C_AAB871002-gen"
+        },
+        "o": {
+            "@id": "http://www.w3.org/ns/sosa/Sensor"
+        },
+        "c": {
+            "@type": "@id",
+            "@id": "http://www.w3.org/ns/ssn/deployedSystem"
+        },
+        "\u0005": {
+            "@id": "http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#C_AKE671002-gen"
+        },
+        "@": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+        },
+        ">": {
+            "@id": "http://www.w3.org/ns/ssn/Input"
+        },
+        "\u0002": {
+            "@id": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+        },
+        "\u007b": {
+            "@id": "http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#C_AKE773003-gen"
+        },
+        "\u007c": {
+            "@id": "http://purl.org/goodrelations/v1#ProductOrService"
+        },
+        "\u007d": {
+            "@id": "http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#C_AGZ397003-gen"
+        },
+        "\u007e": {
+            "@id": "http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#C_AKE511003-gen"
+        },
+        "\u007f": {
+            "@id": "http://www.w3.org/ns/td#Thing"
+        }
+    }
+
+}

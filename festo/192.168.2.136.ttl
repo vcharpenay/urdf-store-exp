@@ -1,0 +1,44 @@
+@prefix : <http://example.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ec: <http://www.ebusiness-unibw.org/ontologies/eclass/5.1.4/#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix td: <http://www.w3.org/ns/td#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+
+_:B113 rdf:type ec:C_AKE671002-gen .
+_:B114 rdf:type ec:C_AKE671002-gen .
+_:T101 rdf:type ec:C_AKE989002-gen .
+
+# TODO refine
+_:T101MinLevelStatus a sosa:ObservableProperty ;
+    ssn:isPropertyOf _:T101 . # TODO platform _and_ foi?
+_:T101MaxLevelStatus a sosa:ObservableProperty ;
+    ssn:isPropertyOf _:T101 . # TODO same
+
+_:B113 rdf:type td:Thing, sosa:Sensor ;
+    sosa:isHostedBy _:T101 ;
+    sosa:madeObservation [
+        sosa:usedProcedure [
+            rdf:type td:Property ;
+            ssn:implementedBy _:B113 ;
+            td:name "tank101MinLevelStatus" ;
+            td:form [ td:href <coap://192.168.2.136:5683/B113/tank101MinLevelStatus> ]
+        ] ;
+        sosa:observedProperty _:T101MinLevelStatus
+    ] .
+    
+_:B114 rdf:type td:Thing, sosa:Sensor ;
+    sosa:isHostedBy _:T101 ;
+    sosa:madeObservation [
+        sosa:usedProcedure [
+            rdf:type td:Property ;
+            ssn:implementedBy _:B114 ;
+            td:name "tank101MaxLevelStatus" ;
+            td:form [ td:href <coap://192.168.2.136:5683/B114/tank101Overflowstatus> ]
+        ] ;
+        sosa:observedProperty _:T101MaxLevelStatus
+    ] .
