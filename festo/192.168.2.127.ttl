@@ -8,56 +8,55 @@
 @prefix td: <http://www.w3.org/ns/td#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix schema: <http://schema.org/> .
+@prefix om: <http://www.foodvoc.org/vocabularies/om-1.8/> .
 @prefix saref: <http://uri.etsi.org/m2m/saref#> .
 
-_:B101 rdf:type ec:C_AGZ397003-gen .
-_:B103 rdf:type ec:C_AKE511003-gen .
-_:B104 rdf:type ec:C_AAB991003-gen .
-_:T102 rdf:type ec:C_AKE989002-gen .
-_:T101 rdf:type ec:C_AKE989002-gen .
+<tag:B101> rdf:type ec:C_AGZ397003-gen .
+<tag:B103> rdf:type ec:C_AKE511003-gen .
+<tag:B104> rdf:type ec:C_AAB991003-gen .
+<tag:T102> rdf:type ec:C_AKE989002-gen .
+<tag:T101> rdf:type ec:C_AKE989002-gen .
 
-_:level a sosa:ObservableProperty ;
-    ssn:isPropertyOf _:T102 .
+<tag:T102-level> a sosa:ObservableProperty,
+                   om:Height .
 
-_:pressure a sosa:ObservableProperty .
+<tag:T101-T102-pressure> a sosa:ObservableProperty,
+                           om:Pressure .
 
-_:temperature a sosa:ObservableProperty ;
-    ssn:isPropertyOf _:T101 .
+<tag:T101-temperature> a sosa:ObservableProperty,
+                         om:Temperature .
 
-_:B101 rdf:type td:Thing, sosa:Sensor ;
+<tag:B101> rdf:type td:Thing, sosa:Sensor ;
     td:name "myUltrasonicSensorB101" ;
-    sosa:isHostedBy _:T102 ;
-    sosa:madeObservation [
-        sosa:usedProcedure [
-            rdf:type td:Property ;
-            ssn:implementedBy _:B101 ;
-            td:name "level" ;
-            td:form [ td:href <coap://192.168.2.127:5683/UltrasonicSensorB101/levelvalue> ]
-        ] ;
-        sosa:observedProperty _:level
+    sosa:isHostedBy <tag:T102> ;
+    schema:geospatiallyWithin <tag:T102> ;
+    sosa:observes <tag:T102-level> ;
+    ssn:implements [
+        rdf:type td:Property ;
+        ssn:implementedBy <tag:B101> ;
+        td:name "level" ;
+        td:form [ td:href <coap://192.168.2.127:5683/UltrasonicSensorB101/levelvalue> ]
     ] .
 
-_:B103 rdf:type td:Thing, sosa:Sensor ;
+<tag:B103> rdf:type td:Thing, sosa:Sensor ;
     td:name "B103" ;
-    sosa:madeObservation [
-        sosa:usedProcedure [
-            rdf:type td:Property ;
-            ssn:implementedBy _:B103 ;
-            td:name "pressure" ;
-            td:form [ td:href <coap://192.168.2.127:5683/TODO/pressure> ]
-        ] ;
-        sosa:observedProperty _:pressure
+    sosa:isHostedBy <tag:T101-T102> ;
+    schema:geospatiallyWithin <tag:T101-T102> ; 
+    sosa:observes <tag:T101-T102-pressure> ;
+    ssn:implements [
+        rdf:type td:Property ;
+        td:name "pressure" ;
+        td:form [ td:href <coap://192.168.2.127:5683/TODO/pressure> ]
     ] .
 
-_:B104 rdf:type td:Thing, sosa:Sensor ;
+<tag:B104> rdf:type td:Thing, sosa:Sensor ;
     td:name "B104" ;
-    sosa:isHostedBy _:T101 ;
-    sosa:madeObservation [
-        sosa:usedProcedure [
-            rdf:type td:Property ;
-            ssn:implementedBy _:B104 ;
-            td:name "temperature" ;
-            td:form [ td:href <coap://192.168.2.127:5683/TODO/temperature> ]
-        ] ;
-        sosa:observedProperty _:temperature
+    sosa:isHostedBy <tag:T101> ;
+    schema:geospatiallyWithin <tag:T101> ;
+    sosa:observes <tag:T101-temperature> ;
+    sosa:implements [
+        rdf:type td:Property ;
+        td:name "temperature" ;
+        td:form [ td:href <coap://192.168.2.127:5683/TODO/temperature> ]
     ] .

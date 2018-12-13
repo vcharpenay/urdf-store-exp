@@ -8,37 +8,35 @@
 @prefix td: <http://www.w3.org/ns/td#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix schema: <http://schema.org/> .
+@prefix om: <http://www.foodvoc.org/vocabularies/om-1.8/> .
 
-_:B113 rdf:type ec:C_AKE671002-gen .
-_:B114 rdf:type ec:C_AKE671002-gen .
-_:T101 rdf:type ec:C_AKE989002-gen .
+<tag:B113> rdf:type ec:C_AKE671002-gen .
+<tag:B114> rdf:type ec:C_AKE671002-gen .
+<tag:T101> rdf:type ec:C_AKE989002-gen .
 
-# TODO refine
-_:T101MinLevelStatus a sosa:ObservableProperty ;
-    ssn:isPropertyOf _:T101 . # TODO platform _and_ foi?
-_:T101MaxLevelStatus a sosa:ObservableProperty ;
-    ssn:isPropertyOf _:T101 . # TODO same
+# TODO same remark as 192.168.2.134.ttl (boolean property over numeric values)
+<tag:T101-T101MinLevelStatus> a sosa:ObservableProperty,
+                                om:Height .
+<tag:T101-T101MaxLevelStatus> a sosa:ObservableProperty,
+                                om:Height .
 
-_:B113 rdf:type td:Thing, sosa:Sensor ;
-    sosa:isHostedBy _:T101 ;
-    sosa:madeObservation [
-        sosa:usedProcedure [
-            rdf:type td:Property ;
-            ssn:implementedBy _:B113 ;
-            td:name "tank101MinLevelStatus" ;
-            td:form [ td:href <coap://192.168.2.136:5683/B113/tank101MinLevelStatus> ]
-        ] ;
-        sosa:observedProperty _:T101MinLevelStatus
+<tag:B113> rdf:type td:Thing, sosa:Sensor ;
+    sosa:isHostedBy <tag:T101> ;
+    schema:geospatiallyWithin <tag:T101> ;
+    sosa:observes <tag:T101-T101MinLevelStatus> ;
+    ssn:implements [
+        rdf:type td:Property ;
+        td:name "tank101MinLevelStatus" ;
+        td:form [ td:href <coap://192.168.2.136:5683/B113/tank101MinLevelStatus> ]
     ] .
     
-_:B114 rdf:type td:Thing, sosa:Sensor ;
-    sosa:isHostedBy _:T101 ;
-    sosa:madeObservation [
-        sosa:usedProcedure [
-            rdf:type td:Property ;
-            ssn:implementedBy _:B114 ;
-            td:name "tank101MaxLevelStatus" ;
-            td:form [ td:href <coap://192.168.2.136:5683/B114/tank101Overflowstatus> ]
-        ] ;
-        sosa:observedProperty _:T101MaxLevelStatus
+<tag:B114> rdf:type td:Thing, sosa:Sensor ;
+    sosa:isHostedBy <tag:T101> ;
+    schema:geospatiallyWithin <tag:T101> ;
+    sosa:observes <tag:T101-T101MaxLevelStatus> ;
+    ssn:implements [
+        rdf:type td:Property ;
+        td:name "tank101MaxLevelStatus" ;
+        td:form [ td:href <coap://192.168.2.136:5683/B114/tank101Overflowstatus> ]
     ] .

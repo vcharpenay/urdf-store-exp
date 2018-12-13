@@ -8,27 +8,27 @@
 @prefix td: <http://www.w3.org/ns/td#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix schema: <http://schema.org/> .
+@prefix om: <http://www.foodvoc.org/vocabularies/om-1.8/> .
 @prefix saref: <http://uri.etsi.org/m2m/saref#> .
 
-_:E104 rdf:type ec:C_AAB871002-gen .
-_:T101 rdf:type ec:C_AKE989002-gen .
+<tag:E104> rdf:type ec:C_AAB871002-gen .
+<tag:T101> rdf:type ec:C_AKE989002-gen .
 
-_:E104 rdf:type td:Thing, sosa:Actuator ;
+<tag:T101-temperature> a om:Temperature .
+
+<tag:E104> rdf:type td:Thing, sosa:Actuator ;
     td:name "heaterE104" ;
-    sosa:isHostedBy _:T101 ;
-    sosa:madeActuation [
-        sosa:usedProcedure [
-            rdf:type td:Action ;
-            ssn:implementedBy _:E104 ;
-            td:name "on" ;
-            td:form [ td:href <coap://192.168.2.74:5683/TODO/on> ]
-        ]
+    sosa:isHostedBy <tag:T101> ;
+    schema:geospatiallyWithin <tag:T101> ;
+    sosa:actsOnPropery <tag:T101-temperature> ;
+    ssn:implements [
+        rdf:type td:Action ;
+        td:name "on" ;
+        td:form [ td:href <coap://192.168.2.74:5683/TODO/on> ]
     ] ;
-    sosa:madeActuation [
-        sosa:usedProcedure [
-            rdf:type td:Action ;
-            ssn:implementedBy _:E104 ;
-            td:name "off" ;
-            td:form [ td:href <coap://192.168.2.74:5683/TODO/off> ]
-        ]
+    ssn:implements [
+        rdf:type td:Action ;
+        td:name "off" ;
+        td:form [ td:href <coap://192.168.2.74:5683/TODO/off> ]
     ] .

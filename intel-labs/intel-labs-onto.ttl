@@ -1,0 +1,325 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix phi: <http://example.org/phibase/> .
+@prefix schema: <http://schema.org/> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix om: <http://www.wurvoc.org/vocabularies/om-1.8/> .
+@prefix : <http://db.csail.mit.edu/labdata/> .
+
+# alignment with schema.org geospatial relations and KB for physical bodies
+bot:adjacentZone rdfs:subPropertyOf schema:geospatiallyIntersects .
+bot:adjacentElement rdfs:subPropertyOf schema:geospatiallyIntersects .
+bot:containsElement rdfs:subPropertyOf schema:geospatiallyContains .
+bot:Space rdfs:subClassOf phi:Gas .
+
+:ClosedRoom a owl:Class ;
+    rdfs:subClassOf bot:Space, [
+        a owl:Restriction ;
+        owl:onProperty bot:adjacentElement ;
+        owl:someValuesFrom :Wall
+    ] .
+:OpenSpace  a owl:Class ;
+    rdfs:subClassOf bot:Space .
+
+:Office  a owl:Class ;
+    rdfs:subClassOf :ClosedRoom .
+:ConferenceRoom a owl:Class ;
+    rdfs:subClassOf :ClosedRoom .
+:QuietRoom  a owl:Class ;
+    rdfs:subClassOf :ClosedRoom .
+:PhoneRoom  a owl:Class ;
+    rdfs:subClassOf :ClosedRoom .
+:Kitchen a owl:Class ;
+     rdfs:subClassOf :ClosedRoom .
+
+:Hall a owl:Class ;
+    rdfs:subClassOf :OpenSpace .
+:Side  a owl:Class ;
+    rdfs:subClassOf :OpenSpace .
+:LeftSide  a owl:Class ;
+    rdfs:subClassOf :Side .
+:RightSide  a owl:Class ;
+    rdfs:subClassOf :Side .
+
+:Wall a owl:Class ;
+    rdfs:subClassOf bot:Element .
+:Mote a owl:Class ;
+    rdfs:subClassOf bot:Element, sosa:Sensor, [
+        a owl:Restriction ;
+        owl:onProperty sosa:observes ;
+        owl:someValuesFrom om:Temperature
+    ], [
+        a owl:Restriction ;
+        owl:onProperty sosa:observes ;
+        owl:someValuesFrom om:Illuminance
+    ] .
+
+<tag:conference_left_wall> a :Wall .
+<tag:conference_right_wall> a :Wall .
+<tag:office1_left_wall> a :Wall .
+<tag:office1_2_left_wall> a :Wall .
+<tag:office2_left_wall> a :Wall .
+<tag:kitchen_wall> a :Wall .
+<tag:quiet_right_wall> a :Wall .
+<tag:quite_phone_right_wall> a :Wall .
+<tag:phone_right_wall> a :Wall .
+
+<tag:hall> a :Hall ;
+       bot:adjacentZone <tag:right> ;
+       bot:adjacentZone <tag:left> ;
+       bot:adjacentElement <tag:conference_left_wall> ;
+       bot:adjacentElement <tag:conference_right_wall> .
+
+<tag:left> a :LeftSide ;
+        bot:adjacentElement <tag:office1_left_wall> .
+
+<tag:conference_left> a :ConferenceRoom ;
+                      bot:adjacentElement <tag:conference_left_wall> ;
+                      bot:adjacentElement <tag:office2_left_wall> .
+
+<tag:office1_left> a :Office ;
+                   bot:adjacentElement <tag:office1_left_wall> ;
+                   bot:adjacentElement <tag:office1_2_left_wall> .
+
+<tag:office2_left> a :Office ;
+                   bot:adjacentElement <tag:office1_2_left_wall> ;
+                   bot:adjacentElement <tag:office2_left_wall> .
+
+<tag:kitchen> a :Kitchen ;
+              bot:adjacentElement <tag:kitchen_wall> .
+
+<tag:right> a :RightSide ;
+            bot:adjacentElement <tag:quiet_right_wall> ;
+            bot:adjacentElement <tag:phone_right_wall> .
+
+<tag:conference_right> a :ConferenceRoom ;
+                       bot:adjacentElement <tag:conference_right_wall> ;
+                       bot:adjacentElement <tag:phone_right_wall> .
+
+<tag:quiet_right> a :QuietRoom ;
+                  bot:adjacentElement <tag:quiet_right_wall> ;
+                  bot:adjacentElement <tag:quite_phone_right_wall> .
+
+<tag:phone_right> a :PhoneRoom ;
+                  bot:adjacentElement <tag:phone_right_wall> ;
+                  bot:adjacentElement <tag:quite_phone_right_wall> .
+
+# TODO stating the containment axioms below would require inverse properties
+
+<tag:1> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:1> .
+
+<tag:2> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:2> .
+
+<tag:3> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:3> .
+
+<tag:4> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:4> .
+
+<tag:5> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:5> .
+
+<tag:6> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:6> .
+
+<tag:7> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:7> .
+
+<tag:8> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:8> .
+
+<tag:9> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:9> .
+
+<tag:10> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:10> .
+
+<tag:11> a :Mote ;
+        schema:geospatiallyWithin <tag:conference_right> .
+<tag:conference_right> bot:containsElement <tag:11> .
+
+<tag:12> a :Mote ;
+        schema:geospatiallyWithin <tag:conference_right> .
+<tag:conference_right> bot:containsElement <tag:12> .
+
+<tag:13> a :Mote ;
+        schema:geospatiallyWithin <tag:conference_right> .
+<tag:conference_right> bot:containsElement <tag:13> .
+
+<tag:14> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:14> .
+
+<tag:15> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:15> .
+
+<tag:16> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:16> .
+
+<tag:17> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:17> .
+
+<tag:18> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:18> .
+
+<tag:19> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:19> .
+
+<tag:20> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:20> .
+
+<tag:21> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:21> .
+
+<tag:22> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:22> .
+
+<tag:23> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:23> .
+
+<tag:24> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:24> .
+
+<tag:25> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:25> .
+
+<tag:26> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:26> .
+
+<tag:27> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:27> .
+
+<tag:28> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:28> .
+
+<tag:29> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:29> .
+
+<tag:30> a :Mote ;
+        schema:geospatiallyWithin <tag:right> .
+<tag:right> bot:containsElement <tag:30> .
+
+<tag:31> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:31> .
+
+<tag:32> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:32> .
+
+<tag:33> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:33> .
+
+<tag:34> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:34> .
+
+<tag:35> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:35> .
+
+<tag:36> a :Mote ;
+        schema:geospatiallyWithin <tag:hall> .
+<tag:hall> bot:containsElement <tag:35> .
+
+<tag:37> a :Mote ;
+        schema:geospatiallyWithin <tag:kitchen> .
+<tag:kitchen> bot:containsElement <tag:37> .
+
+<tag:38> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:38> .
+
+<tag:39> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:39> .
+
+<tag:40> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:40> .
+
+<tag:41> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:41> .
+
+<tag:42> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:42> .
+
+<tag:43> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:43> .
+
+<tag:44> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:44> .
+
+<tag:45> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:45> .
+
+<tag:46> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:46> .
+
+<tag:47> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:47> .
+
+<tag:48> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:48> .
+
+<tag:49> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:49> .
+
+<tag:50> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:50> .
+
+<tag:51> a :Mote ;
+        schema:geospatiallyWithin <tag:left> .
+<tag:left> bot:containsElement <tag:51> .
+
+<tag:52> a :Mote ;
+        schema:geospatiallyWithin <tag:conference_left> .
+<tag:conference_left> bot:containsElement <tag:52> .
+
+<tag:53> a :Mote ;
+        schema:geospatiallyWithin <tag:conference_left> .
+<tag:conference_left> bot:containsElement <tag:53> .
+
+<tag:54> a :Mote ;
+        schema:geospatiallyWithin <tag:conference_left> .
+<tag:conference_left> bot:containsElement <tag:54> .

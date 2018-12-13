@@ -8,54 +8,49 @@
 @prefix td: <http://www.w3.org/ns/td#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix schema: <http://schema.org/> .
+@prefix om: <http://www.foodvoc.org/vocabularies/om-1.8/> .
 @prefix saref: <http://uri.etsi.org/m2m/saref#> .
 
-_:V102 rdf:type ec:C_AKE773003-gen .
-_:S111 rdf:type ec:C_AKE672002-gen .
-_:T101 rdf:type ec:C_AKE989002-gen .
+<tag:V102> rdf:type ec:C_AKE773003-gen .
+<tag:S111> rdf:type ec:C_AKE672002-gen .
+<tag:T101> rdf:type ec:C_AKE989002-gen .
 
-# TODO refine
-_:V102Status a sosa:ObservableProperty, sosa:ActuatableProperty .
-_:S111OverflowStatus a sosa:ObservableProperty, sosa:ActuatableProperty .
+# TODO not exactly (see 192.168.2.134.ttl)
+<tag:V102-status> a sosa:ObservableProperty,
+                    sosa:ActuatableProperty,
+                    om:Volumetric_flow_rate .
+<tag:T101-tank101OverflowStatus> a sosa:ObservableProperty,
+                                   sosa:ActuatableProperty,
+                                   om:Height .
 
-_:V102 rdf:type td:Thing ;
+<tag:V102> rdf:type td:Thing, sosa:Sensor, sosa:Actuator ;
     td:name "Valve" ;
-    sosa:madeActuation [
-        sosa:usedProcedure [
-            rdf:type td:Action ;
-            ssn:implementedBy _:V102 ;
-            td:name "OpenPneumaticValve" ;
-            td:form [ td:href <coap://193.168.2.199:5683/open> ]
-        ] ;
-        sosa:actsOnProperty _:V102Status
+    sosa:observes <tag:V102-status> ;
+    sosa:actsOnProperty <tag:V102-status> ;
+    sosa:isHostedBy <tag:T102-T101> ;
+    schema:geospatiallyWithin <tag:T102-T101> ;
+    ssn:implements [
+        rdf:type td:Action ;
+        td:name "OpenPneumaticValve" ;
+        td:form [ td:href <coap://193.168.2.199:5683/open> ]
     ], [
-        sosa:usedProcedure [
-            rdf:type td:Action ;
-            ssn:implementedBy _:V102 ;
-            td:name "ClosePneumaticValve" ;
-            td:form [ td:href <coap://193.168.2.199:5683/close> ]
-        ] ;
-        sosa:actsOnProperty _:V102Status
-    ] ;
-    sosa:madeObservation [
-        sosa:usedProcedure [
-            rdf:type td:Property ;
-            ssn:implementedBy _:V102 ;
-            td:name "Status" ;
-            td:form [ td:href <coap://193.168.2.199:5683/status> ]
-        ] ;
-        sosa:observedProperty _:V102Status
+        rdf:type td:Action ;
+        td:name "ClosePneumaticValve" ;
+        td:form [ td:href <coap://193.168.2.199:5683/close> ]
+    ], [
+        rdf:type td:Property ;
+        td:name "Status" ;
+        td:form [ td:href <coap://193.168.2.199:5683/status> ]
     ] .
     
-_:S111 rdf:type td:Thing, sosa:Sensor ;
+<tag:S111> rdf:type td:Thing, sosa:Sensor ;
     td:name "LevelSwitchS111" ;
-    sosa:isHostedBy _:T101 ;
-    sosa:madeObservation [
-        sosa:usedProcedure [
+    sosa:observes <tag:T101-tank101OverflowStatus> ;
+    sosa:isHostedBy <tag:T101> ;
+    schema:geospatiallyWithin <tag:T101> ;
+    ssn:implements [
             rdf:type td:Property ;
-            ssn:implementedBy _:S111 ;
             td:name "tank101OverflowStatus" ;
             td:form [ td:href <coap://192.168.2.199:5683/LevelSwitchS111/tank101OverflowStatus> ]
-        ] ;
-        sosa:observedProperty _:S111OverflowStatus
     ] .

@@ -8,85 +8,73 @@
 @prefix td: <http://www.w3.org/ns/td#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix schema: <http://schema.org/> .
+@prefix om: <http://www.foodvoc.org/vocabularies/om-1.8/> .
 @prefix saref: <http://uri.etsi.org/m2m/saref#> .
 
-_:P101 rdf:type ec:C_AAD563002-gen .
-_:B102 rdf:type ec:C_AAC016004-gen .
-_:V106 rdf:type ec:C_AKE777003-gen .
-_:T101 rdf:type ec:C_AKE989002-gen .
+<tag:P101> rdf:type ec:C_AAD563002-gen .
+<tag:B102> rdf:type ec:C_AAC016004-gen .
+<tag:V106> rdf:type ec:C_AKE777003-gen .
+<tag:T101> rdf:type ec:C_AKE989002-gen .
 
-# TODO refine
-_:P101Status a sosa:ObservableProperty, sosa:ActuatableProperty .
-_:V106Value a sosa:ObservableProperty, sosa:ActuatableProperty .
-_:B102Flow a sosa:ObservableProperty, sosa:ActuatableProperty .
+# TODO not exactly (see 192.168.2.134.ttl)
+<tag:P101-status> a sosa:ObservableProperty,
+                    sosa:ActuatableProperty,
+                    om:Volumetric_flow_rate .
+<tag:V106-value> a sosa:ObservableProperty,
+                   sosa:ActuatableProperty,
+                   om:Volumetric_flow_rate .
+<tag:B102-flow> a sosa:ObservableProperty,
+                  sosa:ActuatableProperty,
+                  om:Volumetric_flow_rate .
 
-_:P101 rdf:type td:Thing ;
+<tag:P101> rdf:type td:Thing, sosa:Sensor, sosa:Actuator ;
     td:name "Pump" ;
-    sosa:madeActuation [
-        sosa:usedProcedure [
-            rdf:type td:Action ;
-            ssn:implementedBy _:P101 ;
-            td:name "On" ;
-            td:form [ td:href <coap://192.168.2.198:5683/PumpP101/on> ]
-        ] ;
-        sosa:actsOnProperty _:P101Status
+    sosa:observes <tag:P101-status> ;
+    sosa:actsOnProperty <tag:P101-status> ;
+    sosa:isHostedBy <tag:T101-T102> ;
+    schema:geospatiallyWithin <tag:T101-T102> ;
+    ssn:implements [
+        rdf:type td:Action ;
+        td:name "On" ;
+        td:form [ td:href <coap://192.168.2.198:5683/PumpP101/on> ]
     ], [
-        sosa:usedProcedure [
-            rdf:type td:Action ;
-            ssn:implementedBy _:P101 ;
-            td:name "Off" ;
-            td:form [ td:href <coap://192.168.2.198:5683/PumpP101/off> ]
-        ] ;
-        sosa:actsOnProperty _:P101Status
-    ] ;
-    sosa:madeObservation [
-        sosa:usedProcedure [
-            rdf:type td:Property ;
-            ssn:implementedBy _:P101 ;
-            td:name "Status" ;
-            td:form [ td:href <coap://192.168.2.198:5683/PumpP101/status> ]
-        ] ;
-        sosa:observedProperty _:P101Status
-    ] ;
-    sosa:madeObservation [
-        sosa:usedProcedure [
-            rdf:type td:Event ;
-            ssn:implementedBy _:P101 ;
-            td:name "criticalCondition" ;
-            td:form [ td:href <coap://192.168.2.198:5683/PumpP101/criticalCondition> ]
-        ] ;
-        sosa:observedProperty _:P101Status # TODO not exactly
+        rdf:type td:Action ;
+        td:name "Off" ;
+        td:form [ td:href <coap://192.168.2.198:5683/PumpP101/off> ]
+    ], [
+        rdf:type td:Property ;
+        td:name "Status" ;
+        td:form [ td:href <coap://192.168.2.198:5683/PumpP101/status> ]
+    ], [
+        rdf:type td:Event ;
+        td:name "criticalCondition" ;
+        td:form [ td:href <coap://192.168.2.198:5683/PumpP101/criticalCondition> ]
     ] .
 
-_:V106 rdf:type td:Thing ;
+<tag:V106> rdf:type td:Thing, sosa:Sensor, sosa:Actuator ;
     td:name "ProportionalValve" ;
-    sosa:madeActuation [
-        sosa:usedProcedure [
-            rdf:type td:Action ;
-            ssn:implementedBy _:V106 ;
-            td:name "SetProportionalValve" ;
-            td:form [ td:href <coap://193.168.2.198:5683/TODO/set> ]
-        ] ;
-        sosa:actsOnProperty _:V106Value
-    ] ;
-    sosa:madeObservation [
-        sosa:usedProcedure [
-            rdf:type td:Property ;
-            ssn:implementedBy _:V106 ;
-            td:name "GetProportionalValve" ;
-            td:form [ td:href <coap://193.168.2.198:5683/TODO/get> ]
-        ] ;
-        sosa:observedProperty _:V106Value
+    sosa:observes <tag:V106-value> ;
+    sosa:actsOnProperty <tag:V106-value> ;
+    sosa:isHostedBy <tag:T101-T102> ;
+    schema:geospatiallyWithin <tag:T101-T102> ;
+    ssn:implements [
+        rdf:type td:Action ;
+        td:name "SetProportionalValve" ;
+        td:form [ td:href <coap://193.168.2.198:5683/TODO/set> ]
+    ], [
+        rdf:type td:Property ;
+        td:name "GetProportionalValve" ;
+        td:form [ td:href <coap://193.168.2.198:5683/TODO/get> ]
     ] .
 
-_:B102 rdf:type td:Thing, sosa:Sensor ;
+<tag:B102> rdf:type td:Thing, sosa:Sensor ;
     td:name "B102" ;
-    sosa:madeObservation [
-        sosa:usedProcedure [
-            rdf:type td:Property ;
-            ssn:implementedBy _:B102 ;
-            td:name "flow" ;
-            td:form [ td:href <coap://192.168.2.198:5683/TODO/flow> ]
-        ] ;
-        sosa:observedProperty _:B102Flow
+    sosa:observes <tag:B102-flow> ;
+    sosa:isHostedBy <tag:T101-T102> ;
+    schema:geospatiallyWithin <tag:T101-T102> ;
+    ssn:implements [
+        rdf:type td:Property ;
+        td:name "flow" ;
+        td:form [ td:href <coap://192.168.2.198:5683/TODO/flow> ]
     ] .

@@ -8,23 +8,25 @@
 @prefix td: <http://www.w3.org/ns/td#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix schema: <http://schema.org/> .
+@prefix om: <http://www.foodvoc.org/vocabularies/om-1.8/> .
 @prefix saref: <http://uri.etsi.org/m2m/saref#> .
 
-_:S112 rdf:type ec:C_AKE672002-gen .
-_:T102 rdf:type ec:C_AKE989002-gen .
+<tag:S112> rdf:type ec:C_AKE672002-gen .
+<tag:T102> rdf:type ec:C_AKE989002-gen .
 
-_:tank102OverflowStatus a sosa:ObservableProperty ;
-    ssn:isPropertyOf _:T102 .
+# TODO not exactly a height but the boolean relation '> some height'
+<tag:T102-tank102OverflowStatus> a sosa:ObservableProperty,
+                                   om:Height .
 
-_:S112 rdf:type td:Thing, sosa:Sensor ;
+<tag:S112> rdf:type td:Thing, sosa:Sensor ;
     td:name "FloatSwitchS112" ;
-    sosa:isHostedBy _:T102 ;
-    sosa:madeObservation [
-        sosa:usedProcedure [
-            rdf:type td:Property ;
-            ssn:implementedBy _:S112 ;
-            td:name "tank102OverflowStatus" ;
-            td:form [ td:href <coap://192.168.2.134:5683/FloatSwitchS112/tank102OverflowStatus> ]
-        ] ;
-        sosa:observedProperty _:tank102OverflowStatus
+    sosa:isHostedBy <tag:T102> ;
+    schema:geospatiallyWithin <tag:T102> ;
+    sosa:observes <T102-tank102OverflowStatus> ;
+    ssn:implements [
+        rdf:type td:Property ;
+        ssn:implementedBy <tag:S112> ;
+        td:name "tank102OverflowStatus" ;
+        td:form [ td:href <coap://192.168.2.134:5683/FloatSwitchS112/tank102OverflowStatus> ]
     ] .
