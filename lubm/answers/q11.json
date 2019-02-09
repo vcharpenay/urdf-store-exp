@@ -1,0 +1,17 @@
+{
+    "@graph": [
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu"
+            },
+            "@type": [
+                "\u0011"
+            ],
+            "\u0002": [
+                {
+                    "@id": "http://www.University0.edu"
+                }
+            ]
+        }
+    ]
+}

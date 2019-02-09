@@ -1,0 +1,139 @@
+{
+    "@graph": [
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent12"
+            },
+            "@type": [
+                "\u001d"
+            ],
+            "\u000b": [
+                {
+                    "@id": {
+                        "@id": "http://www.Department0.University0.edu/FullProfessor0"
+                    }
+                }
+            ],
+            "\f": [
+                {
+                    "@id": {
+                        "@id": "http://www.Department0.University0.edu/Course1"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/FullProfessor0"
+            },
+            "@type": [
+                "\u0015"
+            ],
+            "\u0007": [
+                {
+                    "@id": {
+                        "@id": "http://www.Department0.University0.edu/Course1"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/Course1"
+            },
+            "@type": [
+                "\u0018"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateStudent7"
+            },
+            "@type": [
+                "\u001d"
+            ],
+            "\u000b": [
+                {
+                    "@id": {
+                        "@id": "http://www.Department0.University0.edu/AssociateProfessor0"
+                    }
+                }
+            ],
+            "\f": [
+                {
+                    "@id": {
+                        "@id": "http://www.Department0.University0.edu/GraduateCourse2"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/AssociateProfessor0"
+            },
+            "@type": [
+                "\u0015"
+            ],
+            "\u0007": [
+                {
+                    "@id": {
+                        "@id": "http://www.Department0.University0.edu/GraduateCourse2"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateCourse2"
+            },
+            "@type": [
+                "\u0018"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateStudent1"
+            },
+            "@type": [
+                "\u001d"
+            ],
+            "\u000b": [
+                {
+                    "@id": {
+                        "@id": "http://www.Department0.University0.edu/AssociateProfessor0"
+                    }
+                }
+            ],
+            "\f": [
+                {
+                    "@id": {
+                        "@id": "http://www.Department0.University0.edu/GraduateCourse2"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/AssociateProfessor0"
+            },
+            "@type": [
+                "\u0015"
+            ],
+            "\u0007": [
+                {
+                    "@id": {
+                        "@id": "http://www.Department0.University0.edu/GraduateCourse2"
+                    }
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateCourse2"
+            },
+            "@type": [
+                "\u0018"
+            ]
+        }
+    ]
+}

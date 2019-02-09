@@ -1,0 +1,17 @@
+{
+    "@graph": [
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateStudent2"
+            },
+            "@type": [
+                "\u001d"
+            ],
+            "\f": [
+                {
+                    "@id": "http://www.Department0.University0.edu/GraduateCourse0"
+                }
+            ]
+        }
+    ]
+}

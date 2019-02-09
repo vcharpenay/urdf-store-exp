@@ -1,0 +1,148 @@
+{
+    "@graph": [
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent9"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent3"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent12"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent8"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent17"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent2"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent11"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent7"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent16"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent1"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent10"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent6"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent15"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent0"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent5"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent14"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent4"
+            },
+            "@type": [
+                "#"
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent13"
+            },
+            "@type": [
+                "#"
+            ]
+        }
+    ]
+}

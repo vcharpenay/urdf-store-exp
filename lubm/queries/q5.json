@@ -1,0 +1,11 @@
+{
+    "@graph": [
+        {
+            "@id": "_:X",
+            "@type": ["\u0016"],
+            "\u0006": [{
+                "@id": "http://www.Department0.University0.edu"
+            }]
+        }
+    ]
+}

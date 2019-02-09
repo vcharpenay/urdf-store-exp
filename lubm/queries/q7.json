@@ -1,0 +1,21 @@
+{
+  "@graph": [
+    {
+      "@id": "_:X",
+      "@type": ["\u001d"],
+      "\f": [{
+        "@id": "_:Y"
+      }]
+    },
+    {
+      "@id": "_:Y",
+      "@type": ["\u0018"]
+    },
+    {
+      "@id": "http://www.Department0.University0.edu/AssociateProfessor0",
+      "\u0007": [{
+        "@id": "_:Y"
+      }]
+    }
+  ]
+}

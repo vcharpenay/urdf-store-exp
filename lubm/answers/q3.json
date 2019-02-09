@@ -1,0 +1,56 @@
+{
+    "@graph": [
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/AssistantProfessor0/Publication3"
+            },
+            "@type": [
+                "\u001b"
+            ],
+            "\n": [
+                {
+                    "@id": "http://www.Department0.University0.edu/AssistantProfessor0"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/AssistantProfessor0/Publication2"
+            },
+            "@type": [
+                "\u001b"
+            ],
+            "\n": [
+                {
+                    "@id": "http://www.Department0.University0.edu/AssistantProfessor0"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/AssistantProfessor0/Publication1"
+            },
+            "@type": [
+                "\u001b"
+            ],
+            "\n": [
+                {
+                    "@id": "http://www.Department0.University0.edu/AssistantProfessor0"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/AssistantProfessor0/Publication0"
+            },
+            "@type": [
+                "\u001b"
+            ],
+            "\n": [
+                {
+                    "@id": "http://www.Department0.University0.edu/AssistantProfessor0"
+                }
+            ]
+        }
+    ]
+}

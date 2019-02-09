@@ -1,0 +1,420 @@
+{
+    "@graph": [
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent9"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/AssociateProfessor0"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent3"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/FullProfessor1"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateStudent6"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent12"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/FullProfessor0"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateStudent7"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateStudent1"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent8"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/AssistantProfessor0"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent17"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent2"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent11"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/Lecturer1"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateStudent0"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent7"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent16"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent1"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent10"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateStudent5"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent6"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/Lecturer0"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent15"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent0"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateStudent4"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent5"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent14"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateStudent3"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent4"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/UndergraduateStudent13"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        },
+        {
+            "@id": {
+                "@id": "http://www.Department0.University0.edu/GraduateStudent2"
+            },
+            "@type": [
+                "\u0016"
+            ],
+            "\u0006": [
+                {
+                    "@id": "http://www.Department0.University0.edu"
+                }
+            ]
+        }
+    ]
+}
